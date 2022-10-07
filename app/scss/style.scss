@@ -108,6 +108,52 @@
 
 }
 
+.footer {
+  background-color: $default;
+  padding: 75px 112px;
+  gap: 20px;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: block;
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+    min-width: 530px;
+  }
+
+  &__left-item {
+    padding-bottom: 22px;
+    max-width: 505px;
+  }
+
+  &__left-item-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+&__right{
+  display: block;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+}
+&__right-subtitle{
+  padding-bottom: 22px;
+}
+
+
+}
+
+
+
+
+
+
 .title {
   margin-top: 106px;
   margin-bottom: 150px;
@@ -133,6 +179,7 @@
 
 .business {
   margin-bottom: 150px;
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -149,14 +196,15 @@
   &__item {
     display: block;
     max-width: 600px;
-    &:hover{
-       box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
-       transition: all .3s;
+
+    &:hover {
+      box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
+      transition: all .3s;
     }
-   
+
     border-radius: 20px;
     padding: 30px;
-  
+
   }
 
   &__item-title {
