@@ -1,0 +1,33 @@
+body {
+  min-height: 100%;
+  width: 1440px;
+  background-image: url('../images/bg.png');
+  color: $default;
+  @extend %circe-400;
+
+  a:hover {
+    color: $hover;
+    transition: all 0.3s;
+
+  }
+
+
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+
+}
+
+.section__title {
+  font-size: 32px;
+  line-height: 42px;
+  color: #dbdbdb;
+  @extend %manrope-400;
+}
+.all{
+  font-size: 14px;
+    line-height: 20px;
+    color: #dbdbdb;
+}
