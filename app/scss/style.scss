@@ -47,7 +47,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__form{
+    display: flex;
 
+  }
   &__form-input {
     border: none;
     background-color: #fff;
@@ -59,12 +62,13 @@
   &__contact {
     color: $default;
     margin-right: 35px;
+    display: flex;
   }
 
   &__right-btn {
     border: none;
     background-color: transparent;
-    display: inline-block;
+    display: flex;
   }
 
   &__bottom {
