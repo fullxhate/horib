@@ -4,7 +4,6 @@ body {
   margin: 0 auto;
   background-image: url('../images/bg.png');
   background-size: cover;
-  background-repeat: repeat;
   color: $default;
   @extend %circe-400;
 
