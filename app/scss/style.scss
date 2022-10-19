@@ -116,17 +116,13 @@
     border-radius: 14px;
     padding: 12px 20px;
 
-    &:hover &__list-hover{
-      
+    &:hover {
       background-color: $hover;
       transition: all .3s;
-
     }
   }
-    &__list--bg:hover .header__list-hover{
-      display: inline-flex;
-     
-    }
+
+
 
 
   &__list-hover {
@@ -136,7 +132,7 @@
     gap: 35px;
     position: absolute;
     top: 65px;
-    right: 0;
+    right: 160px;
     display: none;
     background-color: #fff;
   }
@@ -144,18 +140,20 @@
 
   &__sub-inner {
     margin-right: 35px;
+    width: 393px;
   }
 
   &__sub-list {
     padding-bottom: 20px;
+    width: 393px;
 
   }
 
-&__sub-list-link{
-  font-size: 14px;
+  &__sub-list-link {
+    font-size: 14px;
     line-height: 20px;
     color: $default;
-}
+  }
 
 
 
