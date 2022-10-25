@@ -72,6 +72,7 @@
     background-color: transparent;
     display: flex;
     cursor: pointer;
+    position: relative;
 
     &:hover {
       color: $hover;
@@ -158,24 +159,32 @@
 
 
 }
+.myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
 
 .modal {
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: 100px;
+  left: 700px;
   bottom: 0;
-  left: 0;
   z-index: 1000;
   background: rgba(62, 63, 88, 0.15);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: scroll;
-  padding: 60px 15px;
-  padding: 60px 15px;
-  max-width: 450px;
-  padding: 30px;
+  width: 450px;
   background-color: #fff;
+  display: none;
+  padding: 30px;
 
   &__window {
     display: block;
@@ -264,6 +273,7 @@
   }
 
 }
+
 
 .calculate {
   margin-bottom: 150px;
