@@ -129,11 +129,11 @@
   &__list-hover {
     display: flex;
     justify-content: space-between;
-    padding: 30px 112px 50px;
-    gap: 35px;
+    padding: 20px 112px 50px;
+    gap: 20px;
     position: absolute;
-    top: 65px;
-    right: 160px;
+    top: 120px;
+    right: 215px;
     display: none;
     background-color: #fff;
   }
@@ -172,7 +172,7 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 700px;
   bottom: 0;
@@ -185,6 +185,9 @@
   background-color: #fff;
   display: none;
   padding: 30px;
+  body{
+    background-color: #000;
+  }
 
   &__window {
     display: block;
