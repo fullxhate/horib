@@ -29,5 +29,41 @@ $(document).mouseup(function (e) {
     block.hide();
   }
 });
+$(document).ready(function () {
+  $('.faq__question--one').click(function () {
+    $('.faq__text--one').slideToggle(300);
+    
+    return false;
+  });
+});
+$(document).ready(function () {
+  $('.faq__question--two').click(function () {
+    $('.faq__text--two').slideToggle(300);
+
+    return false;
+  });
+});
+$(document).ready(function () {
+  $('.faq__question--three').click(function () {
+    $('.faq__text--three').slideToggle(300);
+
+    return false;
+  });
+});
+$(document).ready(function () {
+  $('.faq__question--four').click(function () {
+    $('.faq__text--four').slideToggle(300);
+
+    return false;
+  });
+});
+$(document).ready(function () {
+  $('.faq__question--five').click(function () {
+    $('.faq__text--five').slideToggle(300);
+
+    return false;
+  });
+});
+
 
 

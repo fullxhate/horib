@@ -1,23 +1,77 @@
-$default:#3E3F58;
-$hover:#E86630;
-%circe-400{
-    font-family: 'Circe-Regular', sans-serif;
-      font-weight: 400;
-      font-style: normal;
-}
-%circe-700{
-      font-family: 'Circe-Bold', sans-serif;
-        font-weight: 700;
-        font-style: normal;
+$default: #3E3F58;
+$hover: #E86630;
+
+%circe-400 {
+  font-family: 'Circe-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-%manrope-400{
-      font-family: 'Manrope-Regular', sans-serif;
-        font-weight: 400;
-        font-style: normal;
+%circe-700 {
+  font-family: 'Circe-Bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
-%manrope-800{
-      font-family: 'Manrope-ExtraBold', sans-serif;
-        font-weight: 800;
-        font-style: normal;
+
+%manrope-400 {
+  font-family: 'Manrope-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+%manrope-800 {
+  font-family: 'Manrope-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+%btn {
+  border-radius: 14px;
+  border: none;
+  padding: 12px 20px;
+  gap: 4px;
+  background-color: $hover;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.traditional {
+  
+  &-top {
+    display: flex;
+  }
+
+  &-left {
+    display: block;
+    width: 695px;
+
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 32px;
+    line-height: 34px;
+    padding-bottom: 20px;
+    color: #452C60;
+    padding-top: 75px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 630px;
+    padding-bottom: 20px;
+  }
+  &__btn{
+    @extend %btn;
+  }
+}
+
+
+
+
+
+
+
