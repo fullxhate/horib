@@ -64,6 +64,11 @@ $(document).ready(function () {
     return false;
   });
 });
+$(function () {
+  $('.faq__img').on('click', function() {
+    $(this).toggleClass('transform');
+  });
+});
 
 
 
