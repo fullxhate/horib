@@ -66,6 +66,7 @@ $hover: #E86630;
   }
   &__btn{
     @extend %btn;
+    cursor: pointer;
   }
 }
 
