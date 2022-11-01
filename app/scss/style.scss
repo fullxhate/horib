@@ -113,14 +113,10 @@
   }
 
   &__list--bg {
-    background-color: #452C60;
+    background-color: $hover;
     border-radius: 14px;
     padding: 12px 20px;
 
-    &:hover {
-      background-color: $hover;
-      transition: all .3s;
-    }
   }
 
 
@@ -188,7 +184,7 @@
     align-items: center;
     background: rgba(62, 63, 88, 0.15);
     display: none;
-    z-index: 3;
+    z-index: 1;
     
     
   }
@@ -898,38 +894,6 @@
     cursor: pointer;
   }
 
-  &-bottom__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &-bottom__link {
-    text-align: center;
-    display: block;
-    align-items: center;
-    padding: 30px;
-    gap: 10px;
-    width: 186px;
-    height: 164.53px;
-    box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
-    border-radius: 20px;
-    background-color: #fff;
-
-    img {
-      margin-left: 30px;
-    }
-
-
-
-  }
-
-  &-bottom__link-text {
-    font-size: 14px;
-    line-height: 20px;
-    color: $default;
-    margin-top: 10px;
-  }
 
 
 }
@@ -1020,6 +984,39 @@
       margin-bottom: 20px;
     }
 
+  }
+}
+.traditional {
+
+  &-top {
+    display: flex;
+  }
+
+  &-left {
+    display: block;
+    width: 695px;
+
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 32px;
+    line-height: 34px;
+    padding-bottom: 20px;
+    color: #452C60;
+    padding-top: 75px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 630px;
+    padding-bottom: 20px;
+  }
+
+  &__btn {
+    @extend %btn;
+    cursor: pointer;
   }
 }
 

@@ -35,40 +35,10 @@ $hover: #E86630;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.traditional {
-  
-  &-top {
-    display: flex;
-  }
 
-  &-left {
-    display: block;
-    width: 695px;
-
-  }
-
-  &__title {
-    @extend %manrope-800;
-    font-size: 32px;
-    line-height: 34px;
-    padding-bottom: 20px;
-    color: #452C60;
-    padding-top: 75px;
-  }
-
-  &__text {
-    font-size: 14px;
-    line-height: 20px;
-    width: 630px;
-    padding-bottom: 20px;
-  }
-  &__btn{
-    @extend %btn;
-    cursor: pointer;
-  }
-}
 
 
 

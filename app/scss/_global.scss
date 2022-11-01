@@ -5,8 +5,11 @@ body {
   padding-top: 10px;
   background-image: url('../images/bg.png');
   background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   color: $default;
   @extend %circe-400;
+  
 
   a:hover {
     color: $hover;

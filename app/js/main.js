@@ -26,11 +26,18 @@ $(document).ready(function () {
   $('.header__right-btn ').on('click' ,function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297) .css('display', 'flex');
     return false;
-
   });
 });
+$(document).ready(function () {
+  $('.modal-wrapper').on('click', function () {
+    $('.modal-wrapper').fadeOut(297)
+  })
+  });
+
+
+
 $(document).mouseup(function (e) {
-  var block = $(".modal", ".modal-close" );
+  var block = $(".modal-wrapper" );
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
