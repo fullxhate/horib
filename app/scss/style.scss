@@ -172,7 +172,7 @@
   background-color: #fff;
   display: none;
   padding: 30px;
-
+  border-radius: 20px;
   &-wrapper {
     position: fixed;
     display: flex;
@@ -613,6 +613,7 @@
   &__item {
     display: block;
     max-width: 600px;
+    
 
     &:hover {
       box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);

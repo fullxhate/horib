@@ -33,6 +33,11 @@ $(document).ready(function () {
     $('.modal-wrapper').fadeOut(297)
   })
   });
+$(document).ready(function () {
+  $('.modal').on('click', function () {
+    $('.modal-wrapper').css('display', 'block');
+  })
+  });
 
 
 
