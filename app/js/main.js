@@ -82,6 +82,37 @@ $(document).ready(function () {
     return false;
   });
 });
+$(document).ready(function () {
+  $('.business__items-all__link').on('click', function () {
+    $('.business__items-more--one').slideToggle(300).fadeIn(297).css('display', 'flex'), $('.business__img').toggleClass('transform');
+
+    return false;
+  });
+});
+$(document).mouseup(function (e) {
+  var block = $(".business__items-more--one");
+  if (!block.is(e.target) && block.has(e.target).length === 0) {
+    block.hide();
+  }
+});
+$(document).ready(function () {
+  $('.business__img-link').on('click', function () {
+    $('.business__items-more--two').slideToggle(300).fadeIn(297).css('display', 'flex'), $('.business__img').toggleClass('transform');
+
+    return false;
+  });
+});
+$(document).mouseup(function (e) {
+  var block = $(".business__items-more--two");
+  if (!block.is(e.target) && block.has(e.target).length === 0) {
+    block.hide();
+  }
+});
+$(function () { 
+  var mixer = mixitup('.business__filter-category');
+});
+
+
 
 
 

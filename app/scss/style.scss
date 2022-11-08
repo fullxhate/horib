@@ -173,6 +173,7 @@
   display: none;
   padding: 30px;
   border-radius: 20px;
+
   &-wrapper {
     position: fixed;
     display: flex;
@@ -185,8 +186,8 @@
     background: rgba(62, 63, 88, 0.15);
     display: none;
     z-index: 1;
-    
-    
+
+
   }
 
 
@@ -572,7 +573,7 @@
 
 
 .title {
-  margin-top: 106px;
+  padding-top: 120px;
   margin-bottom: 150px;
 }
 
@@ -595,46 +596,118 @@
 }
 
 .business {
-  margin-bottom: 150px;
+  margin-top: 100px;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  &__subtitle {
+    padding-bottom: 20px;
   }
 
-  &__items {
+  &__top {
+    margin-bottom: 50px;
+  }
+
+  &__items-all {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__items-all__link {}
+
+  &__img {
+    transition: all 0.3s linear;
+  }
+
+  &__img.transform {
+    transform: rotate(90deg);
+  }
+
+  &__filter {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+  &__filter-btn {
+    color: $default;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $hover;
+      color: #fff;
+      border-radius: 14px;
+      transition: all .3s;
+    }
+  }
+
+  &__items-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__items-top,
+  &__items-more {
     display: flex;
     flex-wrap: wrap;
-    grid-column: 2;
+    grid-column: 3;
+    grid-gap: 18px;
 
+  }
+
+  &__items-more {
+    display: none;
   }
 
   &__item {
     display: block;
-    max-width: 600px;
-    
-
-    &:hover {
-      box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
-      transition: all .3s;
-    }
-
+    width: 392px;
+    box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
     border-radius: 20px;
     padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
 
   }
 
-  &__item-title {
+
+  &__item-text {
     font-size: 22px;
     line-height: 26px;
     @extend %circe-700;
-    padding-bottom: 20px;
+    color: $default;
+
+    &:hover {
+      color: $hover;
+      transition: all .3s;
+    }
+
   }
 
   &__subtitle {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  &__personal,
+  &__finance {
+    display: flex;
+
+    .business__item {
+      margin-right: 20px;
+    }
+  }
+
+  .mixitup-control-active {
+    background-color: $hover;
+    color: #fff;
+    border-radius: 14px;
+    transition: all .3s;
   }
 
 }
@@ -987,6 +1060,7 @@
 
   }
 }
+
 .traditional {
 
   &-top {

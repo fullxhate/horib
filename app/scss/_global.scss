@@ -35,11 +35,11 @@ body {
 .section__title {
   font-size: 32px;
   line-height: 42px;
-  color: #dbdbdb;
+  color: $default;
   @extend %manrope-400;
 }
 .all{
   font-size: 14px;
     line-height: 20px;
-    color: #dbdbdb;
+    color: $default;
 }
