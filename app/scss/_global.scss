@@ -1,15 +1,36 @@
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1440 *10);
+
+//   @media (max-width :1024px) {
+//     font-size: calc(100vw / 768 *10);
+//   }
+
+
+//   @media (max-width :767px) {
+//     font-size: calc(100vw / 500 *10);
+//   }
+
+//   @media (max-width :500px) {
+//     font-size: calc(100vw / 375 *10);
+//   }
+}
+
 body {
   min-height: 100%;
-  width: 1440px;
+  width: 144rem;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 1rem;
   background-image: url('../images/bg.png');
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
+  // background-position: center;
   background-repeat: no-repeat;
   color: $default;
   @extend %circe-400;
-  
+
+  a {
+    color: $default;
+  }
 
   a:hover {
     color: $hover;
@@ -21,25 +42,27 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 120rem;
   margin: 0 auto;
 
 }
+
 .container--page {
-  max-width: 1230px;
+  max-width: 123rem;
   margin: 0 auto;
   background-color: #fff;
 
 }
 
 .section__title {
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
   color: $default;
   @extend %manrope-400;
 }
-.all{
-  font-size: 14px;
-    line-height: 20px;
-    color: $default;
+
+.all {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: $default;
 }
