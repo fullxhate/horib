@@ -285,7 +285,26 @@
   }
 
 }
-
+.breadcrumbs{
+  padding-top: 5rem;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $default;
+    @extend %circe-700;
+    &:last-child{
+      color: #dbdbdb;
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
 
 
 
@@ -1004,14 +1023,43 @@
 
 }
 
-.programms {
-  padding-top: 150px;
-
+.business__page {
+padding-top: 12rem;
   &-top {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 3rem;
   }
+
+    
+        &-left {
+          display: block;
+          width: 69.5rem;
+          margin-right: 10rem;
+    
+        }
+    
+        &-title {
+          @extend %manrope-800;
+          font-size: 6.8rem;
+          line-height: 7.1rem;
+          padding-bottom: 2rem;
+          color: $default;
+          padding-top: 2rem;
+        }
+    
+        &-text {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          width: 63rem;
+          padding-bottom: 2rem;
+        }
+    
+        &-btn {
+          @extend %btn;
+          cursor: pointer;
+        }
+
 
   &-bottom__inner {
     display: flex;
@@ -1027,7 +1075,7 @@
     height: 301.06px;
     box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
     border-radius: 20px;
-    background-color: #fff;
+    
   }
 
   &-bottom__title {
@@ -1044,7 +1092,9 @@
 
 
   }
-
+&-right{
+  padding-bottom: 9rem;
+}
 
 }
 
@@ -1095,41 +1145,11 @@
 
 .traditional {
 
-  &-top {
-    display: flex;
-  }
 
-  &-left {
-    display: block;
-    width: 695px;
-
-  }
-
-  &__title {
-    @extend %manrope-800;
-    font-size: 32px;
-    line-height: 34px;
-    padding-bottom: 20px;
-    color: #452C60;
-    padding-top: 75px;
-  }
-
-  &__text {
-    font-size: 14px;
-    line-height: 20px;
-    width: 630px;
-    padding-bottom: 20px;
-  }
-
-  &__btn {
-    @extend %btn;
-    cursor: pointer;
-  }
 }
 
 .types {
-  background-color: #fff;
-  padding-bottom: 150px;
+  padding-top: 10rem;
 
   &__title {
     width: 700px;
