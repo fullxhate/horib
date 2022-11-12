@@ -42,40 +42,40 @@
             <img src="images/icons/text.svg" alt="">
             Задать вопрос
 
-
           </button>
           <div class="modal-wrapper">
+            <div class="modal">
 
-          </div>
-          <div class="modal">
-
-            <div class="modal__window">
-              <div class="modal__window-top">
-                <h4 class="modal__window-title">
-                  Задать вопрос
-                </h4>
-                <p class="modal__window-subtitle">
-                  Заполните заявку онлайн — вам не нужно посещать офиc
-                </p>
+              <div class="modal__window">
+                <div class="modal__window-top">
+                  <h4 class="modal__window-title">
+                    Задать вопрос
+                  </h4>
+                  <p class="modal__window-subtitle">
+                    Заполните заявку онлайн — вам не нужно посещать офиc
+                  </p>
+                </div>
+                <form class="modal__window-form">
+                  <select name="item" id="" class="modal__window-select">
+                    <option value="">Продукты и услуги</option>
+                  </select>
+                  <input class="modal__window-firts" type="text" placeholder="Заголовок вопроса">
+                  <input class="modal__window-second" type="text" placeholder="Текст вопроса">
+                  <p class="modal__window-text">
+                    Нажимая кнопку «Отправить», вы соглашаетесь с
+                    <a href="#">
+                      обработкой персональных данных
+                    </a>
+                  </p>
+                  <button class="modal__window-btn">
+                    Отправить
+                  </button>
+                </form>
               </div>
-              <form class="modal__window-form">
-                <select name="item" id="" class="modal__window-select">
-                  <option value="">Продукты и услуги</option>
-                </select>
-                <input class="modal__window-firts" type="text" placeholder="Заголовок вопроса">
-                <input class="modal__window-second" type="text" placeholder="Текст вопроса">
-                <p class="modal__window-text">
-                  Нажимая кнопку «Отправить», вы соглашаетесь с
-                  <a href="#">
-                    обработкой персональных данных
-                  </a>
-                </p>
-                <button class="modal__window-btn">
-                  Отправить
-                </button>
-              </form>
             </div>
           </div>
+
+          <div class="modal-close"></div>
 
 
 
@@ -121,7 +121,7 @@
                 </a>
               </li>
               <li class="header__list">
-                <a class="header__list-link" href="#">
+                <a class="header__list-link" href="about.html">
                   О компании
                 </a>
               </li>
@@ -134,111 +134,253 @@
                 <a class="header__list-link header__list-link--bg" href="#">
                   Страховой Случай
                 </a>
+
               </li>
+
             </ul>
+
+
+
           </nav>
+
         </div>
       </div>
     </div>
   </header>
-  <section class="business-page">
+
+  <section class="breadcrumbs">
     <div class="container">
-      <div class="business-page__top">
-        <h2 class="business-page__title">
-          Для бизнеса
-        </h2>
-        <p class="business-page__text">
-          Мы считаем, что в страховании юридических лиц важен опыт. Сотрудники нашей компании обладают достаточным
-          опытом
-          обеспечения юридических лиц различными продуктами, которые предлагает в настоящее время страховой рынок.
-        </p>
-        <button class="business-page__btn">
-          Оставить заявку
-        </button>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            / Для бизнеса
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            / Страхование яхт и катеров
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="business__page">
+    <div class="container">
+      <div class="business__page-top">
+        <div class="business__page-left">
+          <h2 class="business__page-title">
+            Страхование яхт и катеров
+          </h2>
+          <p class="business__page-subtitle">
+            Доверьте заботу о страховании вашей яхты или катера профессионалам нашей компании. Премиальное обслуживание
+            от Компании
+            Горизонт!
+          </p>
+          <button class="business__page-btn">
+            Оставить заявку
+          </button>
+        </div>
+        <div class="business__page-right">
+          <img class="business__page-img" src="images/business/7.png" alt="img">
+        </div>
       </div>
     </div>
   </section>
+  <section class="business__page-text">
+    <div class="container">
+      <div class="section__title">
+        Что нужно знать?
+      </div>
+
+      <div class="business__page-side">
+        <div class="business__page-left">
+          <p class="business__page-about__text">
+            Яхты и катера относятся к дорогостоящему имуществу и, без сомнения, требуют надежного страхования. Стоит
+            отметить тот
+            факт, что не так уж и много страховых компаний, которые предлагают страхование маломерных судов, в том числе
+            яхт и
+            катеров. И среди этого небольшого количества надежных и проверенных страховых компаний еще меньше.
+          </p>
+          <p class="business__page-about__text">
+            Мы уверены, что владельцы катеров и яхт менее всех прочих клиентов хотели бы тратить много времени на
+            погружение в
+            детали размещения риска в страхование, и уж тем более, принимать участие в волоките, связанной с
+            урегулированием
+            страховых событий. Поэтому в процессе страхования яхт и катеров наша особая задача - сделать процесс
+            страхования и
+            урегулирования страховых случаев максимально простым и несложным для страхователя.
+          </p>
+          <p class="business__page-about__text">
+            Наша компания имеет богатый опыт в страховании яхт и катеров по всему миру, находящихся, как под флагом
+            России, так и
+            под флагами других стран, поэтому мы предлагаем эффективные условия страхования, как с точки зрения затрат,
+            так и по
+            набору рисков, актуальных для конкретного класса судна и акватории использования.
+          </p>
 
 
+          <div class="business__page-left__choise">
+        Мы обеспечиваем страхованием следующие типы судов:
+          </div>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+          Парусные яхты;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Парусные катамараны;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Моторные катамараны;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Моторные катера и яхты;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Гидроциклы и лодки.
+          </p>
 
 
+          <p class="business__page-about__text">
+        Мы рекомендуем вам обратиться в нашу компанию для расчета стоимости страхования КАСКО яхт и катеров, а также всех рисков
+        ответственности, и вы получите предложение, действительно заслуживающее вашего внимания!
+          </p>
+        </div>
+
+
+        <div class="business__page-right">
+          <p class="business__page-right-text">
+            Своим клиентам мы предлагаем результативные подходы, позволяющие решать все имеющиеся задачи, разрабатывать
+            и воплощать
+            в жизнь индивидуальный стратегический план.
+          </p>
+          <button class="business__page-right__btn">
+            Оставить заявку
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="business__page-pluses">
+    <div class="container">
+      <div class="business__page-pluses-title section__title">
+        Какие проблемы мы решим за вас?
+      </div>
+      <div class="business__page-pluses__inner">
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Проведём экспертную оценку
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Мы отслеживаем платёжеспособность и юридическую состоятельность рекомендованных страховых компаний на всём
+            протяжении
+            договор страхования.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Внесём изменения в договор
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Своевременно предлагаем вносить изменения в договоры страхования, и если потребуется заменять страховщиков
+            (одних
+            на других).
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Снизим тарифы
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Следим за изменением тарифов. Если тарифы на рынке будут снижаться, проведём переговоры о снижении тарифов
+            со страховщиками.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Поможем с госорганами
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Обеспечиваем поддержку прохождения договоров страхования в контролирующих органах.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Окажем юридическую поддержку
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Отслеживаем изменения в нормативной базе страхования.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="partners">
     <div class="container">
       <div class="partners__top">
         <div class="partners__title section__title">
           Партнеры, которые нам доверяют
         </div>
-        <a class="partners__text all">
-          Все партнеры
-        </a>
       </div>
       <div class="partners__group">
-        <img src="images/partners/1.svg" alt="">
-        <img src="images/partners/2.svg" alt="">
-        <img src="images/partners/3.svg" alt="">
-        <img src="images/partners/4.svg" alt="">
-        <img src="images/partners/5.svg" alt="">
-        <img src="images/partners/6.svg" alt="">
-        <img src="images/partners/7.svg" alt="">
-        <img src="images/partners/8.svg" alt="">
+        <img src="images/main/partners/1.png" alt="">
+        <img src="images/main/partners/2.png" alt="">
+        <img src="images/main/partners/3.png" alt="">
+        <img src="images/main/partners/4.png" alt="">
+        <img src="images/main/partners/5.png" alt="">
+        <img src="images/main/partners/6.png" alt="">
+        <img src="images/main/partners/7.png" alt="">
+        <img src="images/main/partners/8.png" alt="">
+        <img src="images/main/partners/9.png" alt="">
+        <img src="images/main/partners/10.png" alt="">
+        <img src="images/main/partners/11.png" alt="">
+        <img src="images/main/partners/12.png" alt="">
+        <img src="images/main/partners/13.png" alt="">
+        <img src="images/main/partners/14.png" alt="">
+        <img src="images/main/partners/15.png" alt="">
+        <img src="images/main/partners/16.png" alt="">
+        <img src="images/main/partners/17.png" alt="">
+        <img src="images/main/partners/18.png" alt="">
+        <img src="images/main/partners/19.png" alt="">
+        <img src="images/main/partners/20.png" alt="">
+        <img src="images/main/partners/21.png" alt="">
+        <img src="images/main/partners/22.png" alt="">
+        <img src="images/main/partners/23.png" alt="">
+        <img src="images/main/partners/24.png" alt="">
+        <img src="images/main/partners/25.png" alt="">
+        <img src="images/main/partners/26.png" alt="">
+        <img src="images/main/partners/27.png" alt="">
       </div>
     </div>
   </section>
-  <section class="clients">
-    <div class="container">
-      <div class="clients__top">
-        <div class="clients__title
-        section__title">Клиенты о работе с нами
-        </div>
-      </div>
-      <div class="clients__slider">
-        <div class="clients__inner">
-          <div class="clients__content">
-            <img class="clients__img" src="images/clients/1.png" alt="">
-            <div class="clients__about">
-              <div class="clients__text">
-                Добровольное медицинское страхование — это своевременное оказание качественной медицинской помощи в
-                полном
-                объеме, с
-                применением высокоэффективных методов диагностики и лечения.
-              </div>
-              <div class="clients__firm">
-                СПАО “Ингосстрах”
-              </div>
-              <p class="clients__name">
-                Середин E.A.
-              </p>
-            </div>
-          </div>
 
 
-        </div>
-        <div class="clients__inner">
-          <div class="clients__content">
-            <img class="clients__img" src="images/clients/1.png" alt="">
-            <div class="clients__about">
-              <div class="clients__text">
-                Добровольное медицинское страхование — это своевременное оказание качественной медицинской помощи в
-                полном
-                объеме, с
-                применением высокоэффективных методов диагностики и лечения.
-              </div>
-              <div class="clients__firm">
-                СПАО “Ингосстрах”
-              </div>
-              <p class="clients__name">
-                Середин E.A.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="popular">
-    <div class="container">
+    <div class="container ">
       <div class="popular__top">
         <h4 class="popular__title">
           Популярные запросы

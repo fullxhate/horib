@@ -95,7 +95,7 @@ $(function () {
 
 
 
-  var mixer = mixitup('.business__filter-category');
+  let mixer = mixitup('.business__filter-btn');
   
 
   $('.calculate__item-btn--house').on('click' , function () {

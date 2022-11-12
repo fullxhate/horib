@@ -35,10 +35,11 @@
 
   &__eye {
     display: flex;
-    align-items: center;
+    align-items: center center;
     color: $default;
     font-size: 1.4rem;
     line-height: 140%;
+    gap: 0.3rem;
 
   }
 
@@ -50,6 +51,7 @@
 
   &__form {
     display: flex;
+    align-items: center;
 
   }
 
@@ -62,9 +64,12 @@
   }
 
   &__contact {
+    display: flex;
+    align-items: center;
     color: $default;
     margin-right: 3rem;
     display: flex;
+    gap: 0.3rem;
   }
 
   &__right-btn {
@@ -74,6 +79,7 @@
     cursor: pointer;
     position: relative;
     align-items: center;
+    gap: 0.3rem;gap: 0.3rem;
 
     &:hover {
       color: $hover;
@@ -285,23 +291,28 @@
   }
 
 }
-.breadcrumbs{
+
+.breadcrumbs {
   padding-top: 5rem;
-  &__list{
+
+  &__list {
     display: flex;
     align-items: center;
   }
-  &__item{
+
+  &__item {
     margin-left: 1rem;
     font-size: 1.4rem;
     line-height: 2rem;
     color: $default;
     @extend %circe-700;
-    &:last-child{
+
+    &:last-child {
       color: #dbdbdb;
     }
   }
-  &__link{
+
+  &__link {
     color: inherit;
   }
 }
@@ -383,13 +394,12 @@
 .business {
   margin-top: 10rem;
 
-
   &__top {
     margin-bottom: 5rem;
   }
 
   &__items-all {
-    display: flex;
+    display: block;
     align-items: center;
 
   }
@@ -863,10 +873,11 @@
     line-height: 2rem;
     font-size: 1.4rem;
   }
-&__inner--more{
-  z-index: 1;
-  
-}
+
+  &__inner--more {
+    z-index: 1;
+
+  }
 
   &__inner--more:hover {
     content: '';
@@ -875,13 +886,15 @@
     background-position: center;
     cursor: pointer;
     z-index: 3;
+
     h4,
-    p{
+    p {
       filter: blur(0.2rem);
     }
   }
+
   transition: all .3s;
-  
+
 
 
 
@@ -889,13 +902,13 @@
 
 .popular {
   padding: 15rem 11.2rem 7.5rem;
-  gap: 4rem ;
+  gap: 4rem;
   background-color: #F8F8FC;
   color: #452C60;
 
-&__top{
-  padding-bottom: 4rem;
-}
+  &__top {
+    padding-bottom: 4rem;
+  }
 
   &__links {
     display: flex;
@@ -1024,79 +1037,156 @@
 }
 
 .business__page {
-padding-top: 12rem;
+  padding-top: 12rem;
+
   &-top {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
   }
-
-    
-        &-left {
-          display: block;
-          width: 69.5rem;
-          margin-right: 10rem;
-    
-        }
-    
-        &-title {
-          @extend %manrope-800;
-          font-size: 6.8rem;
-          line-height: 7.1rem;
-          padding-bottom: 2rem;
-          color: $default;
-          padding-top: 2rem;
-        }
-    
-        &-text {
-          font-size: 1.4rem;
-          line-height: 2rem;
-          width: 63rem;
-          padding-bottom: 2rem;
-        }
-    
-        &-btn {
-          @extend %btn;
-          cursor: pointer;
-        }
-
-
-  &-bottom__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  &-info{
+    padding-bottom: 3rem;
   }
 
-  &-bottom__list {
-    padding: 30px;
-    gap: 10px;
-    width: 376.33px;
-    height: 301.06px;
-    box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
-    border-radius: 20px;
-    
-  }
 
-  &-bottom__title {
-    font-size: 22px;
-    line-height: 26px;
+  &-left {
+    display: block;
+    width: 69.5rem;
+    margin-right: 10rem;
+    padding-bottom: 10rem;
+  }
+  &-left__choise{
     @extend %circe-700;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 2rem;
+    font-size: 1.4rem
   }
 
-  &-bottom__text {
-    font-size: 14px;
-    line-height: 20px;
+  &-title {
+    width: 78rem;
+    @extend %manrope-800;
+    font-size: 6.8rem;
+    line-height: 7.1rem;
+    padding-bottom: 2rem;
+    color: $default;
+    padding-top: 2rem;
+  }
 
+  &-subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 63rem;
+    padding-bottom: 2rem;
+  }
+
+  &-btn {
+    @extend %btn;
+    cursor: pointer;
+  }
+
+
+
+  &-right {
+    padding-bottom: 9rem;
+  }
+
+  &__title {
+    width: 70rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+
+  &-side {
+    display: flex;
+  }
+
+  &-left {
+    width: 70rem;
+  }
+
+  &-left__text {
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &-left__choise {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  &-left__select {
+    display: flex;
+    align-items: top center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 72rem;
+    padding-bottom: 1rem;
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+
+
+  &-about__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+
+  &-right {
+    margin-left: 10rem;
+  }
+
+
+  &-right-text {
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    width: 39rem;
 
   }
-&-right{
-  padding-bottom: 9rem;
+    &-pluses-title{
+      padding-top: 12rem;
+      padding-bottom: 4rem;
+    }
+
+  &-right__btn {
+    @extend %btn;
+  }
+
+  &-pluses__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    width: 39.2rem;
+  }
+
+  &-pluses__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &-pluses__top-title {
+    margin-left: 1rem;
+    width: 39rem;
+    @extend %circe-700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+ 
+  &-pluses__text {
+    padding: 1rem 3rem;
+  }
 }
 
-}
+
+
 
 .faq {
   padding-top: 150px;
@@ -1141,106 +1231,20 @@ padding-top: 12rem;
     }
 
   }
-}
 
-.traditional {
 
 
 }
 
-.types {
-  padding-top: 10rem;
+.traditional {}
 
-  &__title {
-    width: 700px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-  }
 
-  &__side {
-    display: flex;
-  }
-
-  &-left {
-    width: 700px;
-  }
-
-  &-left__text {
-    padding-bottom: 20px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  &-left__choise {
-    @extend %circe-700;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  &-left__select {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 20px;
-    width: 720px;
-
-    img {
-      margin-right: 10px;
-    }
-  }
-
-  &-right {
-    margin-left: 100px;
-  }
-
-  &-right-text {
-    @extend %circe-700;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    width: 412px;
-
-  }
-
-  &-right__btn {
-    @extend %btn;
-  }
-}
 
 .pluses {
   background-color: #fff;
   padding-bottom: 150px;
 
-  &__title {
-    margin-bottom: 40px;
-    width: 720px;
-  }
 
-  &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    width: 392px;
-  }
-
-  &__top {
-    display: flex;
-    align-items: center;
-  }
-
-  &__top-title {
-    margin-left: 10px;
-    width: 358px;
-    @extend %circe-700;
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  &__text {
-    padding: 10px 30px;
-  }
 
 }
 
