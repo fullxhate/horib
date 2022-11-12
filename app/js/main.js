@@ -1,6 +1,6 @@
 
 $(document).mouseup(function (e) {
-  var block = $(".modal-wrapper , , .business__img-one , .business__items-more--two ,.calculate__form-inner--life , .calculate__item-btn--house, ..calculate__item-btn--transport , .calculate__item-btn--art");
+  var block = $(".modal-wrapper , .business__img-one , .business__items-more--two ,.calculate__form-inner--life , .calculate__item-btn--house, ..calculate__item-btn--transport , .calculate__item-btn--art");
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
@@ -31,44 +31,34 @@ $(function () {
     $('.modal-wrapper').css('display', 'block');
   });
 
-  $('.faq__question--one').on('click', function () {
-    $('.faq__text--one').slideToggle(300), $('.faq__img--one').toggleClass('transform');
+  $('.reinsurance-faq__question--one').on('click', function () {
+    $('.reinsurance-faq__text--one').slideToggle(300), $('.reinsurance-faq__img--one').toggleClass('transform');
 
     return false;
   });
 
-  $('.faq__question--one').on('click', function () {
-    $('.faq__text--one').slideToggle(300), $('.faq__img--one').toggleClass('transform');
+
+  $('.reinsurance-faq__question--two').on('click', function () {
+    $('.reinsurance-faq__text--two').slideToggle(300), $('.reinsurance-faq__img--two').toggleClass('transform');
 
     return false;
   });
 
-  $('.faq__question--two').on('click', function () {
-    $('.faq__text--two').slideToggle(300), $('.faq__img--two').toggleClass('transform');
+
+  $('.reinsurance-faq__question--three').on('click', function () {
+    $('.reinsurance-faq__text--three').slideToggle(300), $('.reinsurance-faq__img--three').toggleClass('transform');
 
     return false;
   });
 
-  $('.faq__question--two').on('click', function () {
-    $('.faq__text--two').slideToggle(300), $('.faq__img--two').toggleClass('transform');
+  $('.reinsurance-faq__question--four').on('click', function () {
+    $('.reinsurance-faq__text--four').slideToggle(300), $('.reinsurance-faq__img--four').toggleClass('transform');
 
     return false;
   });
 
-  $('.faq__question--three').on('click', function () {
-    $('.faq__text--three').slideToggle(300), $('.faq__img--three').toggleClass('transform');
-
-    return false;
-  });
-
-  $('.faq__question--four').on('click', function () {
-    $('.faq__text--four').slideToggle(300), $('.faq__img--four').toggleClass('transform');
-
-    return false;
-  });
-
-  $('.faq__question--five').on('click', function () {
-    $('.faq__text--five').slideToggle(300), $('.faq__img--five').toggleClass('transform');
+  $('.reinsurance-faq__question--five').on('click', function () {
+    $('.reinsurance-faq__text--five').slideToggle(300), $('.reinsurance-faq__img--five').toggleClass('transform');
 
     return false;
   });
