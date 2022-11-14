@@ -63,6 +63,37 @@ $(function () {
 
     return false;
   });
+  $('.marketplace-faq__question--one').on('click', function () {
+    $('.marketplace-faq__text--one').slideToggle(300), $('.marketplace-faq__img--one').toggleClass('transform');
+
+    return false;
+  });
+
+
+  $('.marketplace-faq__question--two').on('click', function () {
+    $('.marketplace-faq__text--two').slideToggle(300), $('.marketplace-faq__img--two').toggleClass('transform');
+
+    return false;
+  });
+
+
+  $('.marketplace-faq__question--three').on('click', function () {
+    $('.marketplace-faq__text--three').slideToggle(300), $('.marketplace-faq__img--three').toggleClass('transform');
+
+    return false;
+  });
+
+  $('.marketplace-faq__question--four').on('click', function () {
+    $('.marketplace-faq__text--four').slideToggle(300), $('.marketplace-faq__img--four').toggleClass('transform');
+
+    return false;
+  });
+
+  $('.marketplace-faq__question--five').on('click', function () {
+    $('.marketplace-faq__text--five').slideToggle(300), $('.marketplace-faq__img--five').toggleClass('transform');
+
+    return false;
+  });
 
   // $('.business__img-one').on('click', function () {
   //   $('.business__items-more--one').fadeIn(297).css('display', 'block'), $('.business__img-one').toggleClass('transform');

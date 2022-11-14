@@ -745,7 +745,7 @@
 
   &__page {
     display: flex;
-    align-items: center;
+
   }
 
   &__left-top {
@@ -765,6 +765,7 @@
     color: $hover;
     margin-left: 1rem;
 
+
   }
 
   &__left-center {
@@ -775,7 +776,7 @@
   &__left-txt {
     font-size: 1.4rem;
     line-height: 2rem;
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   &__left-bottom {
@@ -793,6 +794,7 @@
     font-size: 1.4rem;
     line-height: 2rem;
     color: #fff;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
 
     &:hover {
       background-color: $hover;
@@ -807,7 +809,6 @@
     display: flex;
     grid-column: 2;
     flex-wrap: wrap;
-    padding-top: 14rem;
 
   }
 
@@ -1465,20 +1466,20 @@
   }
 
   &__title {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 4rem;
+    padding-top: 10rem;
     @extend %manrope-800;
-    font-size: 68px;
-    line-height: 71px;
+    font-size: 6.8rem;
+    line-height: 7.1rem;
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 25px;
-    width: 830px;
-    margin-left: 215px;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    width: 83rem;
+    margin-left: 21.5rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 
   &__inner {
@@ -1488,99 +1489,153 @@
   }
 
   &__link {
-    padding: 30px;
-    box-shadow: 0px 6px 12px -6px rgba(248, 248, 252, 0.12), 0px 8px 24px -4px rgba(69, 44, 96, 0.08);
-    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    border-radius: 2rem;
     background-color: #fff;
-    width: 290px;
-    height: 220px;
+    width: 29rem;
+    height: 22rem;
 
   }
 
   &__link-title {
     @extend %circe-700;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
     color: $default;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 
   }
 
   &__link-text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
     color: $default;
 
   }
 
-}
-
-.history {
-  padding-top: 150px;
-
-  &__title {
-    margin-bottom: 40px;
+  &__history {
+    padding-top: 15rem;
   }
 
-  &-side {
+  &-title {
+    margin-bottom: 4rem;
+  }
+
+  &__history-side {
     display: flex;
   }
 
-  &__left {
-    width: 600px;
+  &__history-left {
+    width: 60rem;
   }
 
-  &__text {
-    font-size: 14px;
-    line-height: 20px;
-    padding-top: 20px;
+  &__history-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 2rem;
   }
 
-  &__right {
-    margin-left: 123px;
+  &__history-right {
+    margin-left: 12rem;
+    width: 50rem
   }
 
   &__right-text {
     @extend %circe-700;
-    font-size: 14px;
-    line-height: 20px;
-    width: 500px;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   &__btn {
     @extend %btn
   }
-}
 
-.team {
-  padding-top: 150px;
-
-  &__title {
-    padding-bottom: 40px;
+  &-right__files {
+    padding-top: 0;
   }
 
-  &__inner {
+  &__right-files {
+    display: flex;
+    grid-column: 2;
+    flex-wrap: wrap;
+
+  }
+
+  &__right-file {
+    width: 23.5rem;
+    padding: 2rem;
+  }
+
+  &__right-file__name {
+    @extend %circe-700;
+    padding: 1rem 0 1rem 0;
+  }
+
+  &__right-file-info {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #dbdbdb;
+    }
+
+    img {
+      margin: 0 0.8rem 0 0.8rem;
+    }
+
+  }
+
+
+
+  &__team {
+    padding-top: 15rem;
+  }
+
+  &__team-title {
+    padding-bottom: 4rem;
+  }
+
+  &__team-inner {
     display: flex;
     justify-content: space-between;
+    margin-right: 10rem;
+
+
   }
 
-  &__name {
+  &__team-info {
+    display: flex;
+    flex-direction: column
+  }
+
+  &__team-name {
     @extend %circe-700;
-    font-size: 14px;
-    line-height: 16px;
-    padding-top: 10px;
-    width: 186px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-top: 1rem;
+
+
   }
 
-  &__job {
-    font-size: 14px;
-    line-height: 16pxpx;
-    padding-top: 10px;
-    width: 186px;
+  &__team-job--first {
+    width: 15.6rem;
   }
+
+  &__team-job {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-top: 1rem;
+
+  }
+
+
 }
+
+
 
 .licenses {
   padding-top: 150px;
@@ -1717,7 +1772,6 @@
   &-faq__text {
     font-size: 1.4rem;
     line-height: 2rem;
-    padding: 3rem;
     display: none;
     width: 80rem;
 
@@ -1726,6 +1780,31 @@
     }
 
   }
+        &-faq__text-choise {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          margin-bottom: 2rem;
+        
+        }
+    
+        &-faq__select {
+          display: flex;
+          align-items: top center;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          width: 72rem;
+          padding-bottom: 1rem;
+    
+          img {
+            margin-right: 1rem;
+          }
+        }
+    
+    
+        &-faq__text-choise {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
 
   &__pluses-title {
     padding-top: 12rem;
@@ -1818,18 +1897,51 @@
     display: flex;
     justify-content: space-between;
   }
-  &__left-title{
+
+  &__left-title {
     padding-bottom: 4rem;
   }
 
-&__left-text{
-  font-size: 1.4rem;
-  line-height: 2rem;
-  padding-bottom: 3rem;
-}
-&__left-btn__link{
-  @extend %btn
-}
+  &__left-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  &__left-btn__link {
+    @extend %btn
+  }
+
+  &__right-files {
+    display: flex;
+    grid-column: 2;
+    flex-wrap: wrap;
+
+  }
+
+  &__right-file {
+    width: 23.5rem;
+    padding: 2rem;
+  }
+
+  &__right-file__name {
+    @extend %circe-700;
+    padding: 1rem 0 1rem 0;
+  }
+
+  &__right-file-info {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #dbdbdb;
+    }
+
+    img {
+      margin: 0 0.8rem 0 0.8rem;
+    }
+
+  }
 
 
 }
