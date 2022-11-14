@@ -1,6 +1,6 @@
 
 $(document).mouseup(function (e) {
-  var block = $(".modal-wrapper , .business__img-one , .business__items-more--two ,.calculate__form-inner--life , .calculate__item-btn--house, ..calculate__item-btn--transport , .calculate__item-btn--art");
+  var block = $(".modal-wrapper , .business__img-one , .business__items-more--two , .calculate__form-inner--life , .calculate__item-btn--house, .calculate__item-btn--transport , .calculate__item-btn--art");
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
@@ -18,13 +18,14 @@ $(document).mouseup(function (e) {
 $(function () { 
 
 
+
   $('.header__right-btn ').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     return false;
   });
 
   $('.modal-wrapper').on('click', function () {
-    $('.modal-wrapper ,.modal').fadeOut(297)
+    $('.modal-wrapper ,.modal , .header__list-more').fadeOut(297)
   });
 
   $('.modal').on('click', function () {
@@ -63,12 +64,23 @@ $(function () {
     return false;
   });
 
-  $('.business__img-one').on('click', function () {
-    $('.business__items-more--one').slideToggle(300).fadeIn(297).css('display', 'flex'), $('.business__img-one').toggleClass('transform');
-  $('.business__img-one.transform').on('click', function () {
-    $('.business__items-more--one').fadeOut(297).css('display', 'none'), $('.business__img-one').removeClass('transform');
+  // $('.business__img-one').on('click', function () {
+  //   $('.business__items-more--one').fadeIn(297).css('display', 'block'), $('.business__img-one').toggleClass('transform');
+  // $('.business__img-one.transform').on('click', function () {
+  //   $('.business__items-more--one').fadeOut(297).css('display', 'none'), $('.business__img-one').removeClass('transform');
     
-  });
+  // });
+  // });
+  $(".business__items-more--one").slice(0, 3).show();
+  $("body").on('click touchstart', '.business__img-one', function (e) {
+    e.preventDefault();
+    $(".business__items-more--one:hidden").slice(0, 3).slideDown();
+    if ($(".business__items-more--one:hidden").length == 0) {
+      $(".business__img-one").css('visibility', 'hidden');
+    }
+    $('html,body').animate({
+      scrollTop: $(this).offset().top
+    }, 1000);
   });
 
   $('.business__img-two').on('click', function () {
@@ -83,9 +95,6 @@ $(function () {
 
 
 
-
-
-  let mixer = mixitup('.business__filter-btn');
   
 
   $('.calculate__item-btn--house').on('click' , function () {

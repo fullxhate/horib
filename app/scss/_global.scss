@@ -2,18 +2,18 @@ html {
   box-sizing: border-box;
   font-size: calc(100vw / 1440 *10);
 
-//   @media (max-width :1024px) {
-//     font-size: calc(100vw / 768 *10);
-//   }
+  @media (max-width :1024px) {
+    font-size: calc(100vw / 768 *10);
+  }
 
 
-//   @media (max-width :767px) {
-//     font-size: calc(100vw / 500 *10);
-//   }
+  @media (max-width :767px) {
+    font-size: calc(100vw / 500 *10);
+  }
 
-//   @media (max-width :500px) {
-//     font-size: calc(100vw / 375 *10);
-//   }
+  @media (max-width :500px) {
+    font-size: calc(100vw / 375 *10);
+  }
 }
 
 body {
