@@ -1,6 +1,6 @@
 
 $(document).mouseup(function (e) {
-  var block = $(".modal-wrapper , .business__img-one , .business__items-more--two , .calculate__form-inner--life , .calculate__item-btn--house, .calculate__item-btn--transport , .calculate__item-btn--art");
+  var block = $(".modal-wrapper  , .business__items-more--two , .calculate__form-inner--life , .calculate__item-btn--house, .calculate__item-btn--transport , .calculate__item-btn--art");
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
