@@ -110,9 +110,44 @@ $(function () {
     $('.business__items-more--two ').css('display' ,'flex');
     $('.business__img-two').toggleClass('transform');
   });
+  $('.audit-faq__question--one').on('click', function () {
+    $('.audit-faq__text--one').slideToggle(300), $('.audit-faq__img--one').toggleClass('transform');
+
+    return false;
+  });
+
+  $('.audit-faq__question--two').on('click', function () {
+    $('.audit-faq__text--two').slideToggle(300), $('.audit-faq__img--two').toggleClass('transform');
+
+    return false;
+  });
 
 
 
+  $('.contacts__btn--contacts').on('click' , function () {
+    $('.contacts__btn--contacts').toggleClass('active');
+    $('.contacts__btn--requisites , .contacts__btn--info').removeClass('active');
+    $('.contacts__info--contacts').slideToggle(300);
+    $('.contacts__info--requisites ,.contacts__info--info').css('display' , 'none');
+
+
+  });
+  $('.contacts__btn--requisites').on('click' , function () {
+    $('.contacts__btn--requisites').toggleClass('active');
+    $('.contacts__btn--contacts , .contacts__btn--info').removeClass('active');
+    $('.contacts__info--requisites').slideToggle(300);
+    $('.contacts__info--contacts ,.contacts__info--info').css('display', 'none');
+  
+
+  });
+  $('.contacts__btn--info').on('click' , function () {
+    $('.contacts__btn--info').toggleClass('active');
+    $('.contacts__btn--requisites , .contacts__btn--contacts').removeClass('active');
+    $('.contacts__info--info').slideToggle(300);
+    $('.contacts__info--contacts ,.contacts__info--requisites').css('display', 'none');
+
+
+  });
 
 
 
