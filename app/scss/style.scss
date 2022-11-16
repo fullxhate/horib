@@ -471,6 +471,14 @@
       border-radius: 1.4rem;
       transition: all .3s;
     }
+
+  }
+
+  &__filter-btn:focus {
+    background-color: $hover;
+    color: #fff;
+    border-radius: 1.4rem;
+    outline: none;
   }
 
   &__items-list {
@@ -638,13 +646,21 @@
 
   &__item-btn.active {
     background-color: $hover;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  &__item-btn:focus {
+    background-color: $hover;
+    color: #fff;
+    outline: none;
   }
 
   &__item-btn--business {
     margin-right: 2rem;
     border: 0.1rem solid $default;
     position: relative;
-    background-color: #fff;
+    background-color: transparent;
 
     &::after {
       position: absolute;
@@ -661,8 +677,15 @@
     padding: 3rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     border-radius: 2rem;
+
+  }
+
+  &__form-inner--house,
+  &__form-inner--transport,
+  &__form-inner--art {
     display: none;
   }
+
 
   // &__form-btn--life,
   // &__form-btn--house,
@@ -689,6 +712,7 @@
     font-size: 1.4rem;
     line-height: 2rem;
     margin-bottom: 2rem;
+    padding-top: 1rem;
   }
 
   &__form-list {
@@ -701,7 +725,8 @@
     line-height: 2rem;
   }
 
-  &__form-place {
+  &__form-place,
+  &__form-gender {
     width: 20.2rem;
     border-radius: 1.4rem;
     padding: 0.8rem 1.2rem;
@@ -714,7 +739,9 @@
 
   &__form-data__in,
   &__form-data__out,
-  &__form-age {
+  &__form-age,
+  &__form-num {
+
     width: 20.2rem;
     border-radius: 1.4rem;
     padding: 0.8rem 1.2rem;
@@ -741,10 +768,25 @@
     gap: 0.4rem;
     background-color: #fff;
     border-radius: 1.4rem;
-    border: 0.1rem solid $default;
     margin-right: 2rem;
     font-size: 1.4rem;
     line-height: 2rem;
+    @extend %circe-700;
+    color: #452C60;
+
+  }
+
+  &__form-choise {
+    padding: 0.8rem 1.6rem;
+    background-color: transparent;
+    border: 0.1rem solid $default;
+    border-radius: 1.4rem;
+    margin-right: 2rem;
+  }
+
+  &__form-choise:active {
+    color: $hover;
+    border: 0.1rem solid $hover;
   }
 
   &__form-radio {
@@ -754,6 +796,9 @@
 
   }
 
+  &__form-radio:checked {}
+
+
   &__form-btn {
     margin-top: 2rem;
     padding: 1.2rem 2rem;
@@ -762,6 +807,9 @@
     background-color: #452C60;
     color: #fff;
     cursor: pointer;
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
 
@@ -2275,14 +2323,16 @@
     }
   }
 
-  &__btn--contacts {
-    background-color: $hover;
-    color: #fff;
-  }
+
 
   &__btn.active {
     background-color: $hover;
     color: #fff;
+  }
+  &__btn:focus {
+    background-color: $hover;
+    color: #fff;
+    outline: none;
   }
 
   &__info-inner {

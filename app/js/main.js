@@ -1,28 +1,13 @@
 
 $(document).mouseup(function (e) {
-  var block = $(".modal-wrapper  , .business__items-more--two , .calculate__form-inner--life , .calculate__item-btn--house, .calculate__item-btn--transport , .calculate__item-btn--art");
+  var block = $(".modal-wrapper  , .modal");
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
 });
-$(document).mouseup(function (e) {
-  var block = $(".modal");
-  if (!block.is(e.target) && block.has(e.target).length === 0) {
-    block.hide();
-  }
-});
-
-
 
 
 $(function () { 
-
-
-
-  // $('.header__list-link--business').on('click', function () {
-  //   $('.header__list-more , .modal-wrapper').css('display', 'flex')
-  //   return false;
-  // });
   $('.header__right-btn ').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     return false;
@@ -145,29 +130,67 @@ $(function () {
     $('.contacts__btn--requisites , .contacts__btn--contacts').removeClass('active');
     $('.contacts__info--info').slideToggle(300);
     $('.contacts__info--contacts ,.contacts__info--requisites').css('display', 'none');
+  });
 
-
+  $('.business__filter-btn--responsibility').on('click' , function () {
+    $('.business__filter-btn--responsibility').addClass('active');
+    $('.business__category-responsibility').fadeIn(297);
+    $('.business__category-property , .business__category-finance, business__category-personal, .business__category-property ').css('display' , 'none');
+    $('.business__filter-btn--property , .business__filter-btn--finance , .business__filter-btn--personal').removeClass('active');
+  });
+  $('.business__filter-btn--property').on('click' , function () {
+    $('.business__filter-btn--property').addClass('active');
+    $('.business__category-property').fadeIn(297);
+    $('.business__category-responsibility , .business__category-finance , .business__category-personal ').css('display' , 'none');
+    $('.business__filter-btn--responsibility , .business__filter-btn--finance , .business__filter-btn--personal').removeClass('active');
+  });
+  $('.business__filter-btn--finance').on('click' , function () {
+    $('.business__filter-btn--finance').addClass('active');
+    $('.business__category-finance').fadeIn(297);
+    $('.business__category-responsibility , .business__category-property, .business__category-personal ').css('display' , 'none');
+    $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--personal').removeClass('active');
+  });
+  $('.business__filter-btn--personal').on('click' , function () {
+    $('.business__filter-btn--personal').addClass('active');
+    $('.business__category-personal').fadeIn(297);
+    $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display' , 'none');
+    $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--finance').removeClass('active');
+  });
+  
+  $('.business__filter-btn--all').on('click' , function () {
+    $('.business__filter-btn--all').addClass('active');
+    $('.business__category-personal,.business__category-responsibility ,.business__category-property ,.business__category-personal  ').fadeIn(297);
+    // $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display' , 'none');
+    $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--finance,.business__filter-btn--personal').removeClass('active');
   });
 
 
 
-  
 
-  $('.calculate__item-btn--house').on('click' , function () {
-    $('.calculate__form-inner--house').slideToggle(300).fadeIn(297).css('display', 'block'), $('.calculate__item-btn--house').addClass('active'),
-      $('.calculate__form-inner--transport, .calculate__form-inner--life, .calculate__form-inner--art').removeClass('active').fadeOut(297).css('display', 'none'); return false;
-  })
-  $('.calculate__item-btn--transport').on('click' , function () {
-    $('.calculate__form-inner--transport').slideToggle(300).fadeIn(297).css('display', 'block'), $('.calculate__item-btn--transport').addClass('active'), $('.calculate__form-inner--house, .calculate__form-inner--life, .calculate__form-inner--art').removeClass('active').fadeOut(297).css('display', 'none'); return false;
-  })
-  $('.calculate__item-btn--art').on('click' , function () {
-    $('.calculate__form-inner--art').slideToggle(300).fadeIn(297).css('display', 'block'), $('.calculate__item-btn--art').addClass('active'),
-      $('.calculate__form-inner--transport, .calculate__form-inner--life, .calculate__form-inner--house').removeClass('active').fadeOut(297).css('display', 'none')
-  })
-  $('.calculate__item-btn--life').on('click' , function () {
+  $('.calculate__item-btn--house').on('click', function () {
+    $('.calculate__form-inner--house').slideToggle(300).fadeIn(297).css('display', 'block');
+    $('.calculate__item-btn--house').addClass('active');
+    $('.calculate__item-btn--art , .calculate__item-btn--transport , .calculate__item-btn--life').removeClass('active');
+    $('.calculate__form-inner--transport , .calculate__form-inner--art , .calculate__form-inner--life').fadeOut(297).css('display', 'none'); return false;
+  });
+  $('.calculate__item-btn--transport').on('click', function () {
+    $('.calculate__form-inner--transport').slideToggle(300).fadeIn(297).css('display', 'block');
+    $('.calculate__item-btn--transport').addClass('active');
+    $('.calculate__item-btn--art , .calculate__item-btn--house , .calculate__item-btn--life').removeClass('active')
+    $('.calculate__form-inner--house , .calculate__form-inner--art , .calculate__form-inner--life').fadeOut(297).css('display', 'none'); return false;
+  });
+  $('.calculate__item-btn--art').on('click', function () {
+    $('.calculate__form-inner--art').slideToggle(300).fadeIn(297).css('display', 'block'), $('.calculate__item-btn--art').addClass('active');
+    $('.calculate__item-btn--transport , .calculate__item-btn--house , .calculate__item-btn--life').removeClass('active');
+    $('.calculate__form-inner--house , .calculate__form-inner--transport , .calculate__form-inner--life').fadeOut(297).css('display', 'none'); return false;
+
+
+  });
+  $('.calculate__item-btn--life').on('click', function () {
     $('.calculate__form-inner--life').slideToggle(300).fadeIn(297).css('display', 'block'), $('.calculate__item-btn--life').addClass('active'),
-      $('.calculate__form-inner--transport, .calculate__form-inner--house, .calculate__form-inner--art').removeClass('active').fadeOut(297).css('display', 'none');return  true;
-      
+      $('.calculate__item-btn--transport , .calculate__item-btn--house , .calculate__item-btn--art').removeClass('active');
+    $('.calculate__form-inner--house , .calculate__form-inner--transport , .calculate__form-inner--art').fadeOut(297).css('display', 'none'); return true;
+
   })
 });
 

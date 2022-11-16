@@ -238,25 +238,25 @@
       </div>
       <div class="business__filter">
         <div class="business__filter-list">
-          <button type class="business__filter-btn">
+          <button autofocus type class="business__filter-btn business__filter-btn--all">
             Все предложения
           </button>
-          <button type="button" class="business__filter-btn">
+          <button type="button" class="business__filter-btn business__filter-btn--property">
             Имущество
           </button>
-          <button type="button" class="business__filter-btn">
+          <button type="button" class="business__filter-btn business__filter-btn--responsibility">
             Ответственность
           </button>
-          <button type="button" class="business__filter-btn">
+          <button type="button" class="business__filter-btn business__filter-btn--finance">
             Финансовые риски
           </button>
-          <button type="button" class="business__filter-btn">
+          <button type="button" class="business__filter-btn business__filter-btn--personal">
             Личное страхование
           </button>
         </div>
       </div>
       <div class="business__filter-category">
-        <div class="business__category">
+        <div class="business__category-property">
           <p class="business__subtitle">
             Имущество
           </p>
@@ -319,6 +319,7 @@
 
           </div>
         </div>
+
 
         <div class="business__category-responsibility ">
           <p class="business__subtitle">
@@ -392,7 +393,7 @@
             </div>
           </div>
         </div>
-        <div class="business__category-personal mix category-d">
+        <div class="business__category-personal">
           <p class="business__subtitle ">
             Личное страхование
           </p>
@@ -486,7 +487,7 @@
             <button class="calculate__item-btn calculate__item-btn--business">
               Для бизнеса
             </button>
-            <button class="calculate__item-btn calculate__item-btn--life">
+            <button autofocus class="calculate__item-btn calculate__item-btn--life">
               Жизни и здоровье
             </button>
             <button class="calculate__item-btn calculate__item-btn--house">
@@ -539,7 +540,7 @@
             <div class="calculate__form-bottom">
               <button class="calculate__form-add">
                 <img src="images/icons/add.svg" alt="">
-                Добавить Туристическая
+                Добавить Туриста
               </button>
               <input class="calculate__form-radio" type="radio">Годовой полис
               <input class="calculate__form-radio" type="radio">Уже путешествую
@@ -565,35 +566,50 @@
             <div class="calculate__form-center">
               <select class="calculate__form-list" name="" id="">
                 <option value="1">
-                  Туристическая страховка
+                  Страхование ипотеки
                 </option>
                 <option value="2">
-                  Туристическая страховка
+                  Страхование ипотеки
                 </option>
                 <option value="3">
-                  Туристическая страховка
+                  Страхование ипотеки
                 </option>
                 <option value="4">
-                  Туристическая страховка
+                  Страхование ипотеки
                 </option>
               </select>
               <select class="calculate__form-place" name="" id="">
-                <option value="">
-                  Куда собираетесь
+                <option value="1">
+                  В каком банке?
+                </option>
+                <option value="2">
+                  Сбербанк
+                </option>
+                <option value="3">
+                  ВТБ
+                </option>
+                <option value="4">
+                  Альфа банк
+                </option>
+                <option value="5">
+                  Открытые
                 </option>
               </select>
-              <input class="calculate__form-data__in" type="date" placeholder="Уезжаете">
-              <input class="calculate__form-data__out" type="date" placeholder="Вовзращаетесь">
+              <input class="calculate__form-data__out" type="text" placeholder="Остаток по ипотеке">
               <input class="calculate__form-age" type="text" placeholder="Возраст">
+              <select class="calculate__form-gender" name="" id="">
+                <option value="1">Мужской</option>
+                <option value="2">Женский</option>
+              </select>
             </div>
             <div class="calculate__form-bottom">
-              <button class="calculate__form-add">
-                <img src="images/icons/add.svg" alt="">
-                Добавить Туристическая
-              </button>
-              <input class="calculate__form-radio" type="radio">Годовой полис
-              <input class="calculate__form-radio" type="radio">Уже путешествую
-
+              <div class="calculate__form-add">
+                Что нужно застраховать?
+              </div>
+              <button class="calculate__form-choise">Квартира</button>
+              <button class="calculate__form-choise">Жизнь</button>
+              <button class="calculate__form-choise">Квартира+Жизнь</button>
+              <button class="calculate__form-choise">Затрудняюсь ответить</button>
             </div>
             <div class="calculate__form-button">
               <button class="calculate__form-btn">
@@ -616,31 +632,26 @@
             <div class="calculate__form-center">
               <select class="calculate__form-list" name="" id="">
                 <option value="1">
-                  Туристическая страховка
+                  ОСАГО
                 </option>
                 <option value="2">
-                  Туристическая страховка
+                  КАСКО
                 </option>
                 <option value="3">
-                  Туристическая страховка
+
                 </option>
                 <option value="4">
-                  Туристическая страховка
+
                 </option>
               </select>
-              <select class="calculate__form-place" name="" id="">
-                <option value="">
-                  Куда собираетесь
-                </option>
-              </select>
-              <input class="calculate__form-data__in" type="date" placeholder="Уезжаете">
-              <input class="calculate__form-data__out" type="date" placeholder="Вовзращаетесь">
-              <input class="calculate__form-age" type="text" placeholder="Возраст">
+
+              <input class="calculate__form-num" type="text" placeholder="Номер авто">
+
             </div>
             <div class="calculate__form-bottom">
               <button class="calculate__form-add">
                 <img src="images/icons/add.svg" alt="">
-                Добавить Туристическая
+                Добавить Туриста
               </button>
               <input class="calculate__form-radio" type="radio">Годовой полис
               <input class="calculate__form-radio" type="radio">Уже путешествую
