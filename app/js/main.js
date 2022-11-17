@@ -109,6 +109,32 @@ $(function () {
 
 
 
+
+
+
+  $('.personal-faq__question--one').on('click', function () {
+    $('.personal-faq__text--one').slideToggle(300), $('.personal-faq__img--one').toggleClass('transform');
+
+    return false;
+  });
+  $('.personal-faq__question--two').on('click', function () {
+    $('.personal-faq__text--two').slideToggle(300), $('.personal-faq__img--two').toggleClass('transform');
+
+    return false;
+  });
+  $('.personal-faq__question--three').on('click', function () {
+    $('.personal-faq__text--three').slideToggle(300), $('.personal-faq__img--three').toggleClass('transform');
+
+    return false;
+  });
+  $('.personal-faq__question--four').on('click', function () {
+    $('.personal-faq__text--four').slideToggle(300), $('.personal-faq__img--four').toggleClass('transform');
+
+    return false;
+  });
+
+
+
   $('.contacts__btn--contacts').on('click' , function () {
     $('.contacts__btn--contacts').toggleClass('active');
     $('.contacts__btn--requisites , .contacts__btn--info').removeClass('active');

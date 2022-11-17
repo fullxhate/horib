@@ -2329,6 +2329,7 @@
     background-color: $hover;
     color: #fff;
   }
+
   &__btn:focus {
     background-color: $hover;
     color: #fff;
@@ -2359,5 +2360,392 @@
   &-side__right {
     padding-top: 3rem;
   }
+
+}
+
+.purchases {
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+
+  &-top {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
+  &-top__title {
+    @extend %manrope-800;
+    font-size: 6.8rem;
+    line-height: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  &-top__text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    width: 72rem;
+    margin-left: 24rem;
+    padding-bottom: 3rem;
+  }
+
+  &-top__btn {
+    @extend %btn;
+
+  }
+
+  &-programms__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+  }
+
+  &-programms__link {
+    background-color: #fff;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    width: 28.9rem;
+
+    img {
+      margin: 0 auto;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &-programms__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    @extend %circe-700;
+    width: 22.9rem;
+    text-align: center;
+  }
+
+
+
+
+
+  &-faq__btn {
+    border: none;
+    background-color: transparent;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+
+    &:hover {
+      background-color: $hover;
+      color: #fff;
+      border-radius: 1.4rem;
+      transition: all .3s;
+    }
+  }
+
+  &-faq__btn:focus {
+    background-color: $hover;
+    color: #fff;
+    border-radius: 1.4rem;
+    outline: none;
+  }
+
+  &-faq__title {
+    padding-bottom: 4rem;
+  }
+
+  &-faq__question {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    border-radius: 2rem;
+    width: 70rem;
+    height: 8rem;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 2rem;
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    img {
+      max-width: none;
+    }
+
+  }
+
+  &-faq__question--one {
+    width: 70rem;
+    height: 19rem;
+  }
+
+  &-faq__question--two {
+    height: 13.6rem;
+  }
+
+  &-faq__question-info {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    @extend %circe-400;
+    padding-top: 1rem;
+  }
+
+  &-faq__img {
+    transition: all 0.3s linear;
+  }
+
+  &-faq__img.transform {
+    transform: rotate(180deg);
+  }
+
+  &-faq__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 80rem;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+
+
+
+  &-faq__text-choise {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+
+  &-faq__right-text {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+
+  }
+
+  &-faq__right {
+    width: 39rem;
+    margin-left: 7rem;
+  }
+
+  &-faq__right-btn {
+    @extend %btn;
+
+  }
+
+  &-faq__side {
+    display: flex;
+
+  }
+
+  &-faq__files {
+    display: flex;
+    grid-column: 2;
+    flex-wrap: wrap;
+
+  }
+
+  &-faq__file {
+    width: 32.6rem;
+    padding: 2rem;
+  }
+
+  &-faq__file-name {
+    @extend %circe-700;
+    padding: 1rem 0 1rem 0;
+  }
+
+  &-faq__file-info {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #dbdbdb;
+    }
+
+    img {
+      padding: 0.7rem 0.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.personal {
+  padding-top: 10rem;
+  
+
+  &-top {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
+  &-top__title {
+    @extend %manrope-800;
+    font-size: 6.8rem;
+    line-height: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  &-top__text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    width: 72rem;
+    margin-left: 24rem;
+    padding-bottom: 10rem;
+  }
+
+  &-top__btn {
+    @extend %btn;
+
+  }
+
+  &-programms__inner {
+    display: flex;
+    grid-column: 3;
+    flex-wrap: wrap;
+    grid-gap: 0.7rem;
+    margin-top: 4rem;
+  }
+
+  &-programms__link {
+    background-color: #fff;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 39.2rem;
+    height: 20rem;
+
+
+
+  }
+
+  &-programms__title {
+    @extend %circe-700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  &-programms__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  &-faq{
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+
+  &-faq__title {
+    padding-bottom: 4rem;
+  }
+
+  &-faq__question {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 1rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    border-radius: 2rem;
+    width: 70rem;
+    height: 8rem;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 2rem;
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    img {
+      max-width: none;
+    }
+
+  }
+
+
+
+
+
+
+
+  &-faq__img {
+    transition: all 0.3s linear;
+  }
+
+  &-faq__img.transform {
+    transform: rotate(180deg);
+  }
+
+  &-faq__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 64rem;
+    display: none;
+
+    p {
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+  &-faq__right-text {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+
+  }
+
+  &-faq__right {
+    width: 39rem;
+    margin-left: 7rem;
+  }
+
+  &-faq__right-btn {
+    @extend %btn;
+
+  }
+
+  &-faq__side {
+    display: flex;
+
+  }
+  &-pluses{
+    padding-bottom: 7rem;
+  }
+  &-pluses__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-pluses__item{
+    margin-right: 2rem;
+    img{
+      margin: 0 auto
+    }
+  }
+  &-pluses__item-title{
+    @extend %circe-700;
+    line-height: 2.6rem;
+    font-size: 2.2rem;
+    text-align: center;
+    
+  }
+    &-pluses__item-text{
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-align: center;
+    }
 
 }
