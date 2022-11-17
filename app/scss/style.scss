@@ -428,17 +428,60 @@
 }
 
 .business {
-  margin-top: 10rem;
+
 
   &__top {
-    margin-bottom: 5rem;
-  }
-
-  &__items-all {
-    display: block;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-bottom: 8rem;
+    ;
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 6.8rem;
+    line-height: 7.1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__search {
+    border: none;
+    padding: 0.8rem 1.2rem;
+    width: 64.5rem;
+    height: 4.8rem;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
 
   }
+
+  &__search::placeholder {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #dbdbdb;
+  }
+
+  &__btn {
+    @extend %btn
+  }
+
+  .section__title {
+    padding-bottom: 4rem;
+  }
+
+
 
 
   &__img {
@@ -449,6 +492,7 @@
   &__img-one.transform,
   &__img-two.transform {
     transform: rotate(90deg);
+    right: 7rem;
   }
 
   &__filter {
@@ -493,7 +537,7 @@
     display: flex;
     flex-wrap: wrap;
     grid-column: 3;
-    gap: 0.7rem;
+    gap: 2rem;
     flex-grow: 0;
   }
 
@@ -515,11 +559,12 @@
 
   &__item {
     display: block;
-    width: 39rem;
+    width: 35rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     border-radius: 2rem;
     padding: 3rem;
     background-color: #fff;
+    gap: 2rem ;
 
   }
 
@@ -531,8 +576,7 @@
   &__img-one,
   &__img-two {
     position: relative;
-    right: 0;
-    gap: 1rem;
+    right: 0rem;
   }
 
   &__item-text {
@@ -558,9 +602,8 @@
   &__personal,
   &__finance {
     display: flex;
-
-    .business__item {
-      margin-right: 0.7rem;
+    a{
+      margin-right: 2rem;
     }
   }
 
@@ -980,21 +1023,21 @@
 
   }
 
-  &__inner--more:hover {
+  &__inner--more:hover .clients__inner-text {
+    
     content: '';
-    background-image: url('../images/main/licens.jpg');
+    background-image: url('../images/clients/1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     z-index: 3;
+    background-color: #F8F8FC;
+    transition: all .3s;
 
-    h4,
-    p {
-      filter: blur(0.2rem);
-    }
+
   }
 
-  transition: all .3s;
+
 
 
 
@@ -1005,7 +1048,7 @@
   padding: 15rem 11.2rem 7.5rem;
   gap: 4rem;
   background-color: #F8F8FC;
-  color: #452C60;
+
 
   &__top {
     padding-bottom: 4rem;
@@ -2579,7 +2622,7 @@
 
 .personal {
   padding-top: 10rem;
-  
+
 
   &-top {
     display: block;
@@ -2640,7 +2683,8 @@
     font-size: 1.4rem;
     line-height: 2rem;
   }
-  &-faq{
+
+  &-faq {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
@@ -2721,31 +2765,37 @@
     display: flex;
 
   }
-  &-pluses{
+
+  &-pluses {
     padding-bottom: 7rem;
   }
-  &-pluses__items{
+
+  &-pluses__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &-pluses__item{
+
+  &-pluses__item {
     margin-right: 2rem;
-    img{
+
+    img {
       margin: 0 auto
     }
   }
-  &-pluses__item-title{
+
+  &-pluses__item-title {
     @extend %circe-700;
     line-height: 2.6rem;
     font-size: 2.2rem;
     text-align: center;
-    
+
   }
-    &-pluses__item-text{
-      font-size: 1.4rem;
-      line-height: 2rem;
-      text-align: center;
-    }
+
+  &-pluses__item-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+  }
 
 }

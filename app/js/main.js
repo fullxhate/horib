@@ -185,7 +185,7 @@ $(function () {
   
   $('.business__filter-btn--all').on('click' , function () {
     $('.business__filter-btn--all').addClass('active');
-    $('.business__category-personal,.business__category-responsibility ,.business__category-property ,.business__category-personal  ').fadeIn(297);
+    $('.business__category-personal,.business__category-responsibility ,.business__category-property ,.business__category-finance  ').fadeIn(297);
     // $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display' , 'none');
     $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--finance,.business__filter-btn--personal').removeClass('active');
   });
