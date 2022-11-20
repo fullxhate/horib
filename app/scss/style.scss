@@ -5,7 +5,8 @@
 
 .header {
   font-size: 1.4rem;
-  line-height: 140%;
+  line-height: 2rem;
+
 
   &__top {
     display: flex;
@@ -357,8 +358,8 @@
 
 .footer {
   background-color: $default;
-  padding: 75px 112px;
-  gap: 20px;
+  padding: 7.5rem 11.2rem;
+  gap: 2rem;
 
   &__section {
     display: flex;
@@ -367,31 +368,31 @@
 
   &__left {
     display: block;
-    padding-right: 20px;
-    border-right: 1px solid #fff;
-    min-width: 530px;
+    padding-right: 2rem;
+    border-right: 0.1rem solid #fff;
+    min-width: 53rem;
   }
 
   &__left-item {
-    padding-bottom: 22px;
-    max-width: 505px;
+    padding-bottom: 2.2rem;
+    max-width: 50.5rem;
   }
 
   &__left-item-link {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
     color: #fff;
   }
 
   &__right {
     display: block;
     color: #fff;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 1rem;
+    padding-left: 2rem;
   }
 
   &__right-subtitle {
-    padding-bottom: 22px;
+    padding-bottom: 2.2rem;
   }
 
 
@@ -564,7 +565,7 @@
     border-radius: 2rem;
     padding: 3rem;
     background-color: #fff;
-    gap: 2rem ;
+    gap: 2rem;
 
   }
 
@@ -602,7 +603,8 @@
   &__personal,
   &__finance {
     display: flex;
-    a{
+
+    a {
       margin-right: 2rem;
     }
   }
@@ -1024,7 +1026,7 @@
   }
 
   &__inner--more:hover .clients__inner-text {
-    
+
     content: '';
     background-image: url('../images/clients/1.jpg');
     background-repeat: no-repeat;
@@ -1106,7 +1108,7 @@
 
   &__contact-btn {
     padding: 1.2rem 2rem;
-    gap: 0.4px;
+    gap: 0.4rem;
     color: #fff;
     background-color: $hover;
     border-radius: 1.4rem;
@@ -1181,7 +1183,7 @@
     border-radius: 2rem;
     margin-right: 2rem;
     width: 39rem;
-    height: 29.5rem;
+
   }
 
   &-programms__title {
@@ -1259,10 +1261,10 @@
     line-height: 2rem;
     padding: 3rem;
     display: none;
-    width: 804px;
+    width: 80rem;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
   }
@@ -1755,21 +1757,7 @@
 
 
 
-.licenses {
-  padding-top: 150px;
 
-  &__info {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__inner {
-    display: flex;
-    width: 495px;
-
-  }
-
-}
 
 .marketplace {
   padding-top: 15rem;
@@ -1894,7 +1882,7 @@
     width: 80rem;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
   }
@@ -2093,7 +2081,7 @@
     height: 4.8rem;
     border-radius: 1.4rem;
     padding: 0.8rem 1.2rem;
-    border: 1px solid #3E3F58;
+    border: 0.1rem solid #3E3F58;
     background-color: #fff;
     margin-bottom: 1rem;
 
@@ -2269,7 +2257,7 @@
     width: 80rem;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
   }
@@ -2550,7 +2538,7 @@
     width: 80rem;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
   }
@@ -2737,7 +2725,7 @@
     display: none;
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
   }
@@ -2799,3 +2787,5 @@
   }
 
 }
+
+@import 'media';

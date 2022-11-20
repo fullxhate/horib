@@ -217,8 +217,17 @@ $(function () {
       $('.calculate__item-btn--transport , .calculate__item-btn--house , .calculate__item-btn--art').removeClass('active');
     $('.calculate__form-inner--house , .calculate__form-inner--transport , .calculate__form-inner--art').fadeOut(297).css('display', 'none'); return true;
 
-  })
+  });
+
+$('.header__burger').on('click' , function () {
+  $('.header__menu-inner , .header__burger').toggleClass('active');
+  $('.header__menu-inner').slideToggle(300).css('display' , 'flex')
+})
+
 });
+
+
+
 
 
 
