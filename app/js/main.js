@@ -7,7 +7,7 @@ $(document).mouseup(function (e) {
 });
 
 
-$(function () { 
+$(function () {
   $('.header__right-btn ').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     return false;
@@ -86,13 +86,13 @@ $(function () {
 
   $('.business__img-one').on('click', function () {
     $('.business__items-more--one ').slideToggle(300);
-    $('.business__items-more--one ').css('display' ,'flex');
+    $('.business__items-more--one ').css('display', 'flex');
     $('.business__img-one').toggleClass('transform');
   });
 
   $('.business__img-two').on('click', function () {
     $('.business__items-more--two ').slideToggle(300);
-    $('.business__items-more--two ').css('display' ,'flex');
+    $('.business__items-more--two ').css('display', 'flex');
     $('.business__img-two').toggleClass('transform');
   });
   $('.audit-faq__question--one').on('click', function () {
@@ -135,55 +135,55 @@ $(function () {
 
 
 
-  $('.contacts__btn--contacts').on('click' , function () {
+  $('.contacts__btn--contacts').on('click', function () {
     $('.contacts__btn--contacts').toggleClass('active');
     $('.contacts__btn--requisites , .contacts__btn--info').removeClass('active');
     $('.contacts__info--contacts').slideToggle(300);
-    $('.contacts__info--requisites ,.contacts__info--info').css('display' , 'none');
+    $('.contacts__info--requisites ,.contacts__info--info').css('display', 'none');
 
 
   });
-  $('.contacts__btn--requisites').on('click' , function () {
+  $('.contacts__btn--requisites').on('click', function () {
     $('.contacts__btn--requisites').toggleClass('active');
     $('.contacts__btn--contacts , .contacts__btn--info').removeClass('active');
     $('.contacts__info--requisites').slideToggle(300);
     $('.contacts__info--contacts ,.contacts__info--info').css('display', 'none');
-  
+
 
   });
-  $('.contacts__btn--info').on('click' , function () {
+  $('.contacts__btn--info').on('click', function () {
     $('.contacts__btn--info').toggleClass('active');
     $('.contacts__btn--requisites , .contacts__btn--contacts').removeClass('active');
     $('.contacts__info--info').slideToggle(300);
     $('.contacts__info--contacts ,.contacts__info--requisites').css('display', 'none');
   });
 
-  $('.business__filter-btn--responsibility').on('click' , function () {
+  $('.business__filter-btn--responsibility').on('click', function () {
     $('.business__filter-btn--responsibility').addClass('active');
     $('.business__category-responsibility').fadeIn(297);
-    $('.business__category-property , .business__category-finance, business__category-personal, .business__category-property ').css('display' , 'none');
+    $('.business__category-property , .business__category-finance, business__category-personal, .business__category-property ').css('display', 'none');
     $('.business__filter-btn--property , .business__filter-btn--finance , .business__filter-btn--personal').removeClass('active');
   });
-  $('.business__filter-btn--property').on('click' , function () {
+  $('.business__filter-btn--property').on('click', function () {
     $('.business__filter-btn--property').addClass('active');
     $('.business__category-property').fadeIn(297);
-    $('.business__category-responsibility , .business__category-finance , .business__category-personal ').css('display' , 'none');
+    $('.business__category-responsibility , .business__category-finance , .business__category-personal ').css('display', 'none');
     $('.business__filter-btn--responsibility , .business__filter-btn--finance , .business__filter-btn--personal').removeClass('active');
   });
-  $('.business__filter-btn--finance').on('click' , function () {
+  $('.business__filter-btn--finance').on('click', function () {
     $('.business__filter-btn--finance').addClass('active');
     $('.business__category-finance').fadeIn(297);
-    $('.business__category-responsibility , .business__category-property, .business__category-personal ').css('display' , 'none');
+    $('.business__category-responsibility , .business__category-property, .business__category-personal ').css('display', 'none');
     $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--personal').removeClass('active');
   });
-  $('.business__filter-btn--personal').on('click' , function () {
+  $('.business__filter-btn--personal').on('click', function () {
     $('.business__filter-btn--personal').addClass('active');
     $('.business__category-personal').fadeIn(297);
-    $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display' , 'none');
+    $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display', 'none');
     $('.business__filter-btn--responsibility , .business__filter-btn--property , .business__filter-btn--finance').removeClass('active');
   });
-  
-  $('.business__filter-btn--all').on('click' , function () {
+
+  $('.business__filter-btn--all').on('click', function () {
     $('.business__filter-btn--all').addClass('active');
     $('.business__category-personal,.business__category-responsibility ,.business__category-property ,.business__category-finance  ').fadeIn(297);
     // $('.business__category-responsibility , .business__category-property, .business__category-finance').css('display' , 'none');
@@ -219,12 +219,30 @@ $(function () {
 
   });
 
-$('.header__burger').on('click' , function () {
-  $('.header__menu-inner , .header__burger').toggleClass('active');
-  $('.header__menu-inner').slideToggle(300).css('display' , 'flex')
-})
+  $('.header__burger').on('click', function () {
+    $('.header__menu-inner , .header__burger').toggleClass('active');
+    $('.header__menu-inner').slideToggle(300).css('display', 'flex')
+  });
 
+
+  $('.partners__toggle').on('click', function () {
+    $('.partners__group').toggleClass('hide');
+    if ($('.partners__group').hasClass('hide')) {
+      $('.partners__toggle').html('Подробнее');
+    } else {
+      $('.partners__toggle').html('Скрыть');
+    }
+
+    return false;
+  });
 });
+
+
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@
      }
 
      &__top {
-       display: block;
+       display: inherit;
      }
 
      &__left {
@@ -60,7 +60,7 @@
      }
 
      &__burger::before {
-       top: 0;
+       top: 0.4rem;
      }
 
      &__burger.active::before {
@@ -70,7 +70,7 @@
      }
 
      &__burger::after {
-       bottom: 0;
+       bottom: 0.4rem;
      }
 
      &__burger.active::after {
@@ -269,7 +269,6 @@
      }
 
      &__left-bottom {
-       text-align: center;
        margin-top: 4rem;
        margin-bottom: 5rem;
 
@@ -300,6 +299,127 @@
    }
 
    .partners {
-     display: none;
+     background-color: transparent;
+
+     .section__title {
+       font-size: 7rem;
+       text-align: center;
+       line-height: 6rem;
+       font-family: 'Manrope-ExtraBold', sans-serif;
+       font-weight: 800;
+       margin-bottom: 3rem;
+     }
+
+     &__toggle {
+       display: block;
+       padding: 2.4rem 3rem;
+       gap: 0.4rem;
+       background-color: #452c60;
+       border-radius: 2.4rem;
+       color: #fff;
+       margin-top: 2.5rem;
+       font-size: 3rem;
+       line-height: 2rem;
+       text-align: center;
+       border: none;
+     }
+
+     &__group {
+
+       margin-top: 6rem;
+
+       img {
+         margin: 0 auto;
+       }
+
+
+       position: relative;
+       overflow: hidden;
+     }
+
+     &__group.hide {
+       height: 20rem;
+
+       img {
+         margin: 0 auto;
+       }
+
+
+       position: relative;
+       overflow: hidden;
+
+
+     }
+
+     &__group.hide::after {
+       content: "";
+       display: block;
+       height: 10rem;
+       position: absolute;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0))
+     }
+   }
+
+   .clients {
+     .section__title {
+       font-size: 7rem;
+       text-align: center;
+       line-height: 6rem;
+       font-family: 'Manrope-ExtraBold', sans-serif;
+       font-weight: 800;
+       margin-bottom: 3rem;
+     }
+
+     &__feedback {
+       display: flex;
+       flex-direction: column;
+     }
+
+     &__inner {
+       margin-bottom: 3rem;
+       width: 120rem;
+     }
+
+     &__inner-title {
+       font-size: 3rem;
+       line-height: 3rem;
+     }
+
+     &__inner-text {
+       line-height: 3rem;
+       font-size: 2.4rem;
+     }
+
+
+
+   }
+
+   .popular {
+    padding-top: 5rem;
+     .section__title {
+       font-size: 7rem;
+       text-align: center;
+       line-height: 6rem;
+       font-family: 'Manrope-ExtraBold', sans-serif;
+       font-weight: 800;
+       margin-bottom: 3rem;
+     }
+         &__links-title{
+          font-size: 6rem;
+         }
+
+     &__links {
+       display: flex;
+       flex-direction: column;
+     }
+
+     &__link {
+       font-size: 3.4rem;
+       margin-bottom: 3rem;
+       line-height: 3rem;
+     }
    }
  }
