@@ -81,10 +81,10 @@
     position: relative;
   }
 
-  // .header__list:hover>.header__list-more {
-  //   display: flex;
-  //   transition: all .3s;
-  // }
+  .header__list:hover>.header__list-more {
+    display: flex;
+    transition: all .3s;
+  }
 
 
 
@@ -92,19 +92,18 @@
 
 
   &__list-more {
+    display: flex;
     position: absolute;
-    align-items: flex-start;
-    text-align: center;
     background-color: #fff;
-    width: 140rem;
+    width: 120rem;
     top: 4rem;
-    display: none;
     padding-top: 6rem;
     padding-bottom: 3rem;
     padding-left: 10rem;
     padding-right: 10rem;
     z-index: 10;
-    width: 30rem;
+    display: none;
+    
 
   }
 

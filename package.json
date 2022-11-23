@@ -126,6 +126,7 @@
     "glogg": "^1.0.2",
     "graceful-fs": "^4.2.10",
     "gulp-cli": "^2.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulplog": "^1.0.0",
     "has": "^1.0.3",
     "has-property-descriptors": "^1.0.0",

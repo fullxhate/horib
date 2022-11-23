@@ -228,9 +228,9 @@ $(function () {
   $('.partners__toggle').on('click', function () {
     $('.partners__group').toggleClass('hide');
     if ($('.partners__group').hasClass('hide')) {
-      $('.partners__toggle').html('Подробнее');
+      $('.partners__toggle').css('display', 'none');
     } else {
-      $('.partners__toggle').html('Скрыть');
+      $('.partners__toggle').css('display', 'none');
     }
 
     return false;
