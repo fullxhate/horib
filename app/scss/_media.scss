@@ -139,10 +139,11 @@
    }
 
    .business {
-    &__title{
-        font-size: 5rem;
-          line-height: 4rem;
-    }
+     &__title {
+       font-size: 5rem;
+       line-height: 4rem;
+     }
+
      &__filter {
        display: none;
      }
@@ -227,13 +228,15 @@
      &__img-two.transform {
        transform: rotate(90deg);
      }
-     &__page-pluses__inner{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 5rem;
+
+     &__page-pluses__inner {
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 5rem;
      }
-     &__page-pluses__text{
-      font-size: 1.5rem;
+
+     &__page-pluses__text {
+       font-size: 1.5rem;
      }
    }
 
@@ -608,10 +611,118 @@
        line-height: 1.5rem;
        margin-bottom: 1rem;
      }
-     &__team-job--first{
-      margin: 0 auto;
+
+     &__team-job--first {
+       margin: 0 auto;
      }
 
 
    }
+
+   .personal {
+     padding-top: 5rem;
+
+     &-top__title {
+       font-size: 4rem;
+       line-height: 4rem;
+       padding-bottom: 2rem;
+     }
+
+     &-top__text {
+       width: auto;
+       text-align: center;
+       margin-left: 0;
+       font-size: 2rem;
+     }
+
+     .section__title {
+       font-size: 3rem;
+       line-height: 4rem;
+       text-align: center;
+       line-height: 6rem;
+       font-family: 'Manrope-ExtraBold', sans-serif;
+       font-weight: 800;
+       margin-bottom: 3rem;
+     }
+
+     &-programms__link {
+       width: 45rem;
+       text-align: center;
+
+       img {
+         margin: 0 auto;
+       }
+
+       height: auto;
+       margin-bottom: 3rem;
+     }
+
+     &-programms__title {
+       font-size: 3rem;
+       line-height: 3rem;
+     }
+
+     &-programms__text {
+       font-size: 2rem;
+       line-height: 2rem;
+     }
+
+     &-faq {
+       padding-top: 10rem;
+       padding-bottom: 0;
+     }
+
+     &-faq__title {
+       font-size: 3rem;
+       line-height: 4rem;
+       text-align: center;
+       line-height: 6rem;
+       font-family: 'Manrope-ExtraBold', sans-serif;
+       font-weight: 800;
+
+     }
+
+     &-faq__question {
+       width: 45rem;
+     }
+
+     &-faq__question-title {
+       font-size: 2rem;
+     }
+
+     &-faq__text {
+       line-height: 3rem;
+       width: 45rem;
+       font-size: 2rem;
+
+      }
+
+     &-faq__about-text {
+       line-height: 3rem;
+       width: 45rem;
+       font-size: 2rem;
+     }
+
+     &-pluses__items {
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 5rem;
+     }
+
+     &-pluses__item {
+       margin-bottom: 2rem;
+     }
+
+     &-pluses__item-title {
+       line-height: 2.6rem;
+       font-size: 3rem;
+     }
+
+     &-pluses__item-text {
+       font-size: 2rem;
+       line-height: 2rem;
+       padding-top: 1rem;
+     }
+   }
+
  }
