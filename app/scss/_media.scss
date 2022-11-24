@@ -15,10 +15,10 @@
 
 
    .header {
-      .header__list:hover>.header__list-more {
-          display: none;
-          transition: all .3s;
-        }
+     .header__list:hover>.header__list-more {
+       display: none;
+       transition: all .3s;
+     }
 
      &__right {
        display: none;
@@ -780,19 +780,42 @@
        line-height: 2.5rem;
        font-size: 2rem;
      }
-         &-faq__question{
-          width: 45rem;
-          font-size: 1.7rem;
-         }
-                 &-faq__text {
-                   margin-bottom: 2rem;
-                   font-size: 1.5rem;
-                   width: 40rem;
-                   line-height: 2rem;
-                  
-                 }
+
+     &-faq__question {
+       width: 45rem;
+       font-size: 1.7rem;
+     }
+
+     &-faq__text {
+       margin-bottom: 2rem;
+       font-size: 1.5rem;
+       width: 40rem;
+       line-height: 2rem;
+
+     }
 
    }
 
+   .contacts {
+     &__title {
+       font-style: 4rem;
+       line-height: 4rem;
+     }
+     &__side{
+      display: flex;
+      flex-wrap: wrap;
+     }
+     &__btn{
+      margin-right: 0;
+     }
 
- }
+
+     &__text {
+       font-size: 2rem;
+       line-height: 2.5rem;
+       width: auto
+     }
+
+
+   }
+  }
