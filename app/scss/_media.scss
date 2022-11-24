@@ -1,8 +1,9 @@
  @media (max-width :500px) {
   body{
-      width: 50rem;
+      width: 100%;
       margin: 0 auto;
       padding: 1.5rem;
+      overflow-x: hidden;
     }
    .container {
     
@@ -242,6 +243,10 @@
      &__item {
        max-width: none;
        max-height: none;
+       text-align: center;
+       img{
+        margin: 0 auto;
+       }
 
        img {
          max-width: 50%;
@@ -252,12 +257,12 @@
      }
 
      &__item-title {
-       font-size: 2rem;
+       font-size: 2.2rem;
        line-height: 3rem;
      }
 
      &__subtitle {
-       font-size: 1.5rem;
+       font-size: 2.2rem;
        line-height: 2rem;
        width: auto;
 
@@ -430,7 +435,7 @@
    }
 
    .popular {
-     padding-top: 5rem;
+     padding: 5rem 0;
 
      .section__title {
        font-size: 3rem;
@@ -458,7 +463,7 @@
      }
 
      &__links-contact {
-       margin-top: 2rem;
+       margin-top: 10rem;
      }
    }
 
