@@ -139,6 +139,10 @@
    }
 
    .business {
+    &__title{
+        font-size: 5rem;
+          line-height: 4rem;
+    }
      &__filter {
        display: none;
      }
@@ -222,6 +226,14 @@
      &__img-one.transform,
      &__img-two.transform {
        transform: rotate(90deg);
+     }
+     &__page-pluses__inner{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+     }
+     &__page-pluses__text{
+      font-size: 1.5rem;
      }
    }
 
