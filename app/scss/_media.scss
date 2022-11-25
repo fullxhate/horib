@@ -6,6 +6,17 @@
      overflow-x: hidden;
    }
 
+   .section__title {
+     font-size: 3rem;
+     line-height: 4rem;
+     text-align: center;
+     line-height: 4rem;
+     font-family: 'Manrope-ExtraBold', sans-serif;
+     font-weight: 800;
+     margin-bottom: 2rem;
+     padding-top: 1rem;
+   }
+
    .container {
 
      max-width: 45rem;
@@ -356,7 +367,7 @@
    }
 
    .partners {
-     padding-top: 10rem;
+     padding-top: 5rem;
      background-color: transparent;
 
      .section__title {
@@ -637,6 +648,7 @@
        text-align: center;
        margin-left: 0;
        font-size: 2rem;
+       padding-bottom: 5rem;
      }
 
      .section__title {
@@ -801,12 +813,14 @@
        font-style: 4rem;
        line-height: 4rem;
      }
-     &__side{
-      display: flex;
-      flex-wrap: wrap;
+
+     &__side {
+       display: flex;
+       flex-wrap: wrap;
      }
-     &__btn{
-      margin-right: 0;
+
+     &__btn {
+       margin-right: 0;
      }
 
 
@@ -818,4 +832,224 @@
 
 
    }
-  }
+
+   .breadcrumbs {
+     &__link {
+       font-size: 1rem;
+       line-height: 1rem;
+     }
+   }
+
+   .reinsurens__traditional {
+     &-title {
+       font-size: 4rem;
+       line-height: 4rem;
+       width: auto;
+       text-align: start;
+     }
+
+     &-subtitle {
+       width: auto;
+     }
+
+     &-left {
+       width: auto;
+       margin-right: 0;
+       padding-bottom: 5rem;
+     }
+
+     &-right {
+       margin-left: 0;
+     }
+
+     &-left__choise {
+       width: 45rem;
+       font-size: 2.4rem;
+       line-height: 2.5rem;
+     }
+
+
+
+     &-about__text {
+       width: 45rem;
+       font-size: 2rem;
+
+     }
+
+     &-left__select {
+       width: 45rem;
+       font-size: 2rem;
+       line-height: 2.5rem;
+     }
+
+     &-pluses__inner {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     &-pluses__text {
+       p {
+         font-size: 1.5rem;
+       }
+
+     }
+
+   }
+
+   .audit {
+     padding-top: 5rem;
+     padding-bottom: 10rem;
+
+     &-top__title {
+       font-size: 4rem;
+       line-height: 4rem;
+       padding-bottom: 2rem;
+     }
+
+     &-top__text {
+       font-size: 2rem;
+       line-height: 2.5rem;
+       width: auto;
+       margin-left: 0;
+     }
+
+     &-programms__inner {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     &-programms__link {
+       width: 45rem;
+       margin-bottom: 3rem;
+       text-align: center;
+       margin-right: 0;
+
+       img {
+         margin: 0 auto;
+       }
+     }
+
+     &-programms__title {
+       font-size: 2.5rem;
+     }
+
+     &__pluses-inner {
+       display: flex;
+       flex-wrap: wrap;
+       width: auto;
+     }
+
+     &__pluses-text {
+       padding: 1rem 3rem;
+       font-size: 1.5rem;
+       line-height: 2rem;
+       width: auto;
+     }
+
+     &__pluses-items {
+       margin-bottom: 3rem;
+     }
+
+     &-faq__question {
+       width: 45rem;
+     }
+
+     &-faq__text {
+       width: 45rem;
+     }
+
+     &-faq__side {
+       display: block
+     }
+
+     &-faq__right {
+       width: auto;
+       margin-left: 0;
+     }
+   }
+
+   .marketplace {
+     padding-top: 5rem;
+
+     &-top__title {
+       font-size: 3.5rem;
+       line-height: 4rem;
+     }
+
+     &-top__text {
+       font-size: 2rem;
+       line-height: 2.5rem;
+       width: auto;
+       margin-left: 0;
+     }
+
+     &-programms__inner {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     &-programms__link {
+       width: 45rem;
+       margin-bottom: 3rem;
+       text-align: center;
+       margin-right: 0;
+
+       img {
+         margin: 0 auto;
+       }
+     }
+
+     &-programms__title {
+       font-size: 2.5rem;
+     }
+
+     &-faq__question {
+       width: 45rem;
+     }
+
+     &-faq__text {
+       width: 45rem;
+     }
+
+     &__pluses-inner {
+       display: flex;
+       flex-wrap: wrap;
+       width: auto;
+     }
+
+     &__pluses-items {
+       margin-bottom: 3rem;
+     }
+     &__widget-items{
+      display: flex;
+      flex-wrap: wrap;
+     }
+         &__widget-item{
+          width: 45rem;
+          text-align: center;
+         }
+         &__integration-text{
+          width: 45rem;
+          font-size: 2rem;
+          line-height: 3rem;
+         }
+         &__integration-right{
+          padding-top: 5rem;
+         }
+         &__right{
+          margin-top: 3rem;
+     
+         }
+         &__side{
+          display: block;
+         }
+         &__left-text{
+          width: 45rem;
+          font-size: 2rem;
+          line-height: 2.5rem;
+         }
+         &__left-btn__link{
+          margin-bottom: 5rem;
+         }
+   }
+ }
