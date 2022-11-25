@@ -253,6 +253,7 @@
      &__page-pluses__text {
        font-size: 1.5rem;
      }
+
    }
 
    .person {
@@ -1020,36 +1021,80 @@
      &__pluses-items {
        margin-bottom: 3rem;
      }
-     &__widget-items{
-      display: flex;
-      flex-wrap: wrap;
+
+     &__widget-items {
+       display: flex;
+       flex-wrap: wrap;
      }
-         &__widget-item{
-          width: 45rem;
-          text-align: center;
-         }
-         &__integration-text{
-          width: 45rem;
-          font-size: 2rem;
-          line-height: 3rem;
-         }
-         &__integration-right{
-          padding-top: 5rem;
-         }
-         &__right{
-          margin-top: 3rem;
-     
-         }
-         &__side{
-          display: block;
-         }
-         &__left-text{
-          width: 45rem;
-          font-size: 2rem;
-          line-height: 2.5rem;
-         }
-         &__left-btn__link{
-          margin-bottom: 5rem;
-         }
+
+     &__widget-item {
+       width: 45rem;
+       text-align: center;
+     }
+
+     &__integration-text {
+       width: 45rem;
+       font-size: 2rem;
+       line-height: 3rem;
+     }
+
+     &__integration-right {
+       padding-top: 5rem;
+     }
+
+     &__right {
+       margin-top: 3rem;
+
+     }
+
+     &__side {
+       display: block;
+     }
+
+     &__left-text {
+       width: 45rem;
+       font-size: 2rem;
+       line-height: 2.5rem;
+     }
+
+     &__left-btn__link {
+       margin-bottom: 5rem;
+     }
+   }
+
+   .business__page {
+     padding-top: 5rem;
+
+     &-title {
+       font-size: 4rem;
+       line-height: 4rem;
+       width: auto;
+     }
+
+     &-subtitle {
+       font-size: 2rem;
+       line-height: 2.5rem;
+       width: auto;
+     }
+     &-left{
+      width: auto;
+      margin-right: 0;
+     }
+     &-right{
+      display: none;
+     }
+     &-left__choise{
+      font-size: 2.4rem;
+      line-height: 3rem;
+      width: 45rem;
+
+     }
+     &-left__select{
+      width: 45rem;
+      p{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+     }
    }
  }
