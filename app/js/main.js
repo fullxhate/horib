@@ -84,6 +84,21 @@ $(function () {
     return false;
   });
 
+  $('.purchases-faq__question--one').on('click', function () {
+    $('.purchases-faq__text--one').slideToggle(300), $('.purchases-faq__img--one').toggleClass('transform');
+
+    return false;
+  });
+
+
+  $('.purchases-faq__question--two').on('click', function () {
+    $('.mpurchases-faq__text--two').slideToggle(300), $('.purchases-faq__img--two').toggleClass('transform');
+
+    return false;
+  });
+
+
+
   $('.business__img-one').on('click', function () {
     $('.business__items-more--one ').slideToggle(300);
     $('.business__items-more--one ').css('display', 'flex');

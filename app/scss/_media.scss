@@ -1004,6 +1004,12 @@
        font-size: 2.5rem;
      }
 
+     &-programms__text {
+       font-size: 2rem;
+       width: auto;
+
+     }
+
      &-faq__question {
        width: 45rem;
      }
@@ -1076,25 +1082,94 @@
        line-height: 2.5rem;
        width: auto;
      }
-     &-left{
-      width: auto;
-      margin-right: 0;
+
+     &-left {
+       width: auto;
+       margin-right: 0;
      }
-     &-right{
-      display: none;
+
+     &-right {
+       display: none;
      }
-     &-left__choise{
-      font-size: 2.4rem;
-      line-height: 3rem;
-      width: 45rem;
+
+     &-left__choise {
+       font-size: 2.4rem;
+       line-height: 3rem;
+       width: 45rem;
 
      }
-     &-left__select{
-      width: 45rem;
-      p{
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
+
+     &-left__select {
+       width: 45rem;
+
+       p {
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+       }
      }
    }
+
+   .purchases {
+     padding-top: 5rem;
+     padding-bottom: 10rem;
+
+     &-top__title {
+       font-size: 5rem;
+       line-height: 4rem;
+       padding-bottom: 2rem;
+     }
+
+     &-top__text {
+       font-size: 2rem;
+       line-height: 2.5rem;
+       width: auto;
+       margin-left: 0;
+       padding-bottom: 2rem;
+     }
+
+     &-programms__inner {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     &-programms__link {
+       width: 45rem;
+       margin-bottom: 3rem;
+       text-align: center;
+       margin-right: 0;
+
+       img {
+         margin: 0 auto;
+       }
+     }
+
+     &-programms__text {
+       font-size: 2rem;
+       width: auto;
+
+     }
+
+     &-faq__question--one {
+       width: 45rem;
+       height: 23rem;
+     }
+
+     &-faq__question--two {
+       width: 45rem;
+       height: 16rem;
+     }
+
+     &-faq__files {
+       display: flex;
+       flex-wrap: wrap;
+
+     }
+
+     &-faq__file {
+       width: auto;
+
+       img {}
+     }
+   }
+
  }
