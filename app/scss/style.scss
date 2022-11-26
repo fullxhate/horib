@@ -103,7 +103,7 @@
     padding-right: 10rem;
     z-index: 10;
     display: none;
-    
+
 
   }
 
@@ -188,6 +188,9 @@
 
 
 .modal {
+
+
+
   position: fixed;
   top: 9rem;
   left: 50rem;
@@ -326,7 +329,134 @@
     }
   }
 
+  &-two {
+    position: fixed;
+    top: 2rem;
+    left: 50rem;
+    bottom: 0;
+    z-index: 5;
+    background: rgba(62, 63, 88, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 43.2rem;
+    height: 70rem;
+    background-color: #fff;
+    display: none;
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+
+  &__insurance {
+    display: block;
+    transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+    transform: scale(1);
+    background-color: #fff;
+  }
+
+  &__insurance-top {
+    display: block;
+
+  }
+
+  &__insurance-title {
+    @extend %circe-700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__insurance-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+  }
+
+  &__insurance-form {
+    display: block;
+    flex-wrap: wrap;
+
+  }
+
+  &__insurance-select {
+    width: 37.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 0.1rem solid #3E3F58;
+    border-radius: 1.4rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &__insurance-firts,
+  &__insurance-second {
+    width: 37.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 0.1rem solid #3E3F58;
+    border-radius: 1.4rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #dbdbdb;
+  }
+
+  &__insurance-firts,
+  &__insurance-second::placeholder {
+    color: $default;
+  }
+
+  &__insurance-second{
+    min-height: 10rem;
+
+  }
+
+  &__insurance-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    a {
+      color: $default;
+    }
+  }
+
+  &__insurance-btn {
+    text-align: center;
+    padding: 1.2rem 2rem;
+    gap: 0.4rem;
+    background: #452C60;
+    border-radius: 2rem;
+    width: 37.2rem;
+    color: #fff;
+
+    &:hover {
+      background-color: $hover;
+      transition: all .3s;
+    }
+  }
+
+  &__insurance-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  &__insurance-checkbox{
+    padding-bottom: 1rem;
+  }
+
+  &__insurance-checkbox__input:checked+span {
+    color: $hover;
+    transition: all .3s;
+  }
+
+
+
 }
+
 
 .breadcrumbs {
   padding-top: 5rem;
@@ -972,9 +1102,10 @@
     grid-gap: 3rem;
 
   }
-    &__toggle{
-      display: none;
-    }
+
+  &__toggle {
+    display: none;
+  }
 }
 
 .clients {

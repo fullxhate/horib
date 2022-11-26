@@ -12,12 +12,16 @@ $(function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     return false;
   });
-
-  $('.modal-wrapper').on('click', function () {
-    $('.modal-wrapper ,.modal , .header__list-more').fadeOut(297)
+  $('.header__list--bg ').on('click', function () {
+    $('.modal-two').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
+    return false;
   });
 
-  $('.modal').on('click', function () {
+  $('.modal-wrapper').on('click', function () {
+    $('.modal-wrapper ,.modal , .header__list-more , .modal-two').fadeOut(297)
+  });
+
+  $('.modal , .modal-two').on('click', function () {
     $('.modal-wrapper').css('display', 'block');
   });
 
