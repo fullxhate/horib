@@ -36,48 +36,56 @@
             <img src="images/icons/text.svg" alt="">
             Задать вопрос
 
-
           </button>
           <div class="modal-wrapper">
+            <div class="modal">
 
-          </div>
-          <div class="modal">
-
-            <div class="modal__window">
-              <div class="modal__window-top">
-                <h4 class="modal__window-title">
-                  Задать вопрос
-                </h4>
-                <p class="modal__window-subtitle">
-                  Заполните заявку онлайн — вам не нужно посещать офиc
-                </p>
+              <div class="modal__window">
+                <div class="modal__window-top">
+                  <h4 class="modal__window-title">
+                    Задать вопрос
+                  </h4>
+                  <p class="modal__window-subtitle">
+                    Заполните заявку онлайн — вам не нужно посещать офиc
+                  </p>
+                </div>
+                <form class="modal__window-form">
+                  <select name="item" id="" class="modal__window-select">
+                    <option value="">Продукты и услуги</option>
+                  </select>
+                  <input class="modal__window-firts" type="text" placeholder="Заголовок вопроса">
+                  <input class="modal__window-second" type="text" placeholder="Текст вопроса">
+                  <p class="modal__window-text">
+                    Нажимая кнопку «Отправить», вы соглашаетесь с
+                    <a href="personal-date.html">
+                      обработкой персональных данных
+                    </a>
+                  </p>
+                  <button class="modal__window-btn">
+                    Отправить
+                  </button>
+                </form>
               </div>
-              <form class="modal__window-form">
-                <select name="item" id="" class="modal__window-select">
-                  <option value="">Продукты и услуги</option>
-                </select>
-                <input class="modal__window-firts" type="text" placeholder="Заголовок вопроса">
-                <input class="modal__window-second" type="text" placeholder="Текст вопроса">
-                <p class="modal__window-text">
-                  Нажимая кнопку «Отправить», вы соглашаетесь с
-                  <a href="personal-date.html">
-                    обработкой персональных данных
-                  </a>
-                </p>
-                <button class="modal__window-btn">
-                  Отправить
-                </button>
-              </form>
             </div>
           </div>
+
+          <div class="modal-close"></div>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="header__bottom">
         <div class="container">
           <nav class="header__menu">
             <ul class="header__menu-inner">
-              <li class="header__list">
-                <a class="header__list-link" href="business.html">
+              <li class="header__list header__list-business">
+                <a class="header__list-link header__list-link--business" href="business.html">
                   Для бизнеса
                 </a>
                 <ul class="header__list-more">
@@ -179,8 +187,8 @@
                 </a>
               </li>
               <li class="header__list">
-                <a class="header__list-link" href="#">
-                  Партнерам
+                <a class="header__list-link" href="marketplace.html">
+                  Маркетплейс
                 </a>
               </li>
               <li class="header__list">
@@ -202,253 +210,304 @@
                 <a class="header__list-link header__list-link--bg" href="#">
                   Страховой Случай
                 </a>
+              </li>
+
+            </ul>
+
+
+
+          </nav>
 
         </div>
-        </li>
-
-        </ul>
-
-
-
-        </nav>
-
       </div>
     </div>
-    </div>
   </header>
-  <section class="contacts">
+
+  <section class="breadcrumbs">
     <div class="container">
-      <div class="contacts__side">
-        <div class="contacts__side-left">
-          <div class="contacts__title">
-            Контакты
-          </div>
-          <p class="contacts__text">
-            Свяжитесь с нами так, как вам удобно — по телефону, почте или в чате.
-          </p>
-          <button autofocus class="contacts__btn contacts__btn--contacts">Контакты</button>
-          <button class="contacts__btn contacts__btn--requisites">Реквизиты</button>
-          <button class="contacts__btn contacts__btn--info">Юридическая информация</button>
-          <div class="contacts__info contacts__info--contacts">
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">+7 (495) 640 54 00</p>
-              <p class="contacts__info-subtitle">телефон центрального офиса в Москве</p>
-            </div>
-            <div class="contacts__info-inner contacts__info--info">
-              <p class="contacts__info-title">info@horib.ru</p>
-              <p class="contacts__info-subtitle">адрес электронной почты</p>
-            </div>
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">г. Москва, ул. Бауманская, д. 7</p>
-              <p class="contacts__info-subtitle">адрес центрального офиса в Москве</p>
-            </div>
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">С 10 до 17 (Пн-Сб)</p>
-              <p class="contacts__info-subtitle">график работы</p>
-            </div>
-          </div>
-          <div class="contacts__info contacts__info--requisites">
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">
-                Полное наименование:
-              </p>
-              <p class="contacts__info-subtitle">
-                Общество с ограниченной ответственностью "Горизонт страховой брокер"
-              </p>
-              <p class="contacts__info-title">
-                Сокращенное название:
-              </p>
-              <p class="contacts__info-subtitle">
-                ООО "Горизонт СБ"
-              </p>
-              <p class="contacts__info-title">
-                Наименование на английском языке:
-              </p>
-              <p class="contacts__info-subtitle">
-                Horizon IB, LLC
-              </p>
-              <p class="contacts__info-title">
-                Юридический адрес:
-              </p>
-              <p class="contacts__info-subtitle">
-                105005, г. Москва, ул. Бауманская, д. 7
-              </p>
-              <p class="contacts__info-title">
-                Фактический адрес:
-              </p>
-              <p class="contacts__info-subtitle">
-                105005, г. Москва, ул. Бауманская, д. 7
-              </p>
-              <p class="contacts__info-title">
-                Адрес для корреспонденции:
-              </p>
-              <p class="contacts__info-subtitle">
-                105005, г. Москва, ул. Бауманская, д. 7
-              </p>
-              <p class="contacts__info-title">
-                Горячая линия:
-              </p>
-              <p class="contacts__info-subtitle">
-                +7 (495) 640 54 00
-              </p>
-              <p class="contacts__info-title">
-                Телефон центра клиентского обслуживания:
-              </p>
-              <p class="contacts__info-subtitle">
-                +7 (495) 640 02 80
-              </p>
-              <p class="contacts__info-title">
-                Адрес в сети Internet:
-              </p>
-              <p class="contacts__info-subtitle">
-                www.horib.ru
-              </p>
-              <p class="contacts__info-title">
-                Адрес электронной почты:
-              </p>
-              <p class="contacts__info-subtitle">
-                info@horib.ru
-              </p>
-              <p class="contacts__info-title">
-                ИНН:
-              </p>
-              <p class="contacts__info-subtitle">
-                7701413231
-              </p>
-              <p class="contacts__info-title">
-                КПП:
-              </p>
-              <p class="contacts__info-subtitle">
-                770101001
-              </p>
-              <p class="contacts__info-title">
-                ОКВЭД:
-              </p>
-              <p class="contacts__info-subtitle">
-                66.29.9 Деятельность вспомогательная прочая в сфере страхования, кроме обязательного социального
-                страхования
-              </p>
-              <p class="contacts__info-title">
-                ОГРН:
-              </p>
-              <p class="contacts__info-subtitle">
-                5147746312181
-              </p>
-              <p class="contacts__info-title">
-                Расчётный счет:
-              </p>
-              <p class="contacts__info-subtitle">
-                40701810600000001396 [филиал «Центральный» Банка ВТБ (ПАО) в г. Москва]
-              </p>
-              <p class="contacts__info-title">
-                БИК:
-              </p>
-              <p class="contacts__info-subtitle">
-                044525411
-              </p>
-              <p class="contacts__info-title">
-                Корреспондентский счет:
-              </p>
-              <p class="contacts__info-subtitle">
-                30101810145250000411
-              </p>
-            </div>
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">info@horib.ru</p>
-              <p class="contacts__info-subtitle">адрес электронной почты</p>
-            </div>
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">г. Москва, ул. Бауманская, д. 7</p>
-              <p class="contacts__info-subtitle">адрес центрального офиса в Москве</p>
-            </div>
-            <div class="contacts__info-inner">
-              <p class="contacts__info-title">С 10 до 17 (Пн-Сб)</p>
-              <p class="contacts__info-subtitle">график работы</p>
-            </div>
-          </div>
-          <div class="contacts__info contacts__info--info">
-            <p class="business__page-about__text">
-              Любая информация, опубликованная на страницах сайта www.horib.ru, а также в любых полиграфических
-              материалах, выпущенных
-              и распространяемых ООО «Горизонт СБ», является объектом исключительных прав ООО «Горизонт СБ».
-
-
-            </p>
-            <p class="business__page-about__text">
-              Любой посетитель данного сайта вправе просматривать, копировать, распечатывать и распространять любой
-              документ,
-              опубликованный Компанией Горизонт на сайте, в случае, если:
-
-            </p>
-
-            <p class="business__page-left__select">
-              <img src="images/icons/choise.svg" alt="">
-              информация используется только в некоммерческих целях;
-
-
-            </p>
-            <p class="business__page-left__select">
-              <img src="images/icons/choise.svg" alt="">
-              информация не будет использоваться другими сайтами;
-            </p>
-            <p class="business__page-left__select">
-              <img src="images/icons/choise.svg" alt="">
-              при использовании информации ссылка на сайт www.horib.ru обязательна.
-            </p>
-
-
-
-            <p class="business__page-about__text">
-
-              Использование изображений, текстов и прочей информации с сайта www.horib.ru в коммерческих целях, а также
-              получение иных
-              материалов о компании, возможно только с письменного разрешения компании. Использование изображений людей
-              с сайта
-              компании и из любых полиграфических материалов компании возможно только с согласия правообладателя данных
-              фотографий
-              (ст.152.1 Гражданского Кодекса РФ). Для получения разрешения обращайтесь в ООО «Горизонт СБ» по контактам,
-              указанным на
-              данном сайте.
-
-            </p>
-            <p class="business__page-about__text">
-              В случае выявления фактов незаконного использования материалов настоящего сайта, правообладатель, в
-              соответствии с п. 3
-              ст. 1252, ст. 1301 Гражданского кодекса РФ вправе требовать выплаты компенсации в размере от десяти тысяч
-              рублей до пяти
-              миллионов рублей, определяемой по усмотрению суда исходя из характера нарушения.
-
-
-            </p>
-            <p class="business__page-about__text">
-              В случае если незаконным использованием материалов сайта правообладателю будет причинен крупный ущерб,
-              лицо, виновное в
-              совершении противоправных действий подлежит привлечению к уголовной ответственности в соответствии со ст.
-              146 и ст.
-              159.6 Уголовного кодекса РФ.
-
-            </p>
-            <p class="business__page-about__text">
-
-              Прочитав это, вы соглашаетесь с вышеупомянутыми условиями использования информации. О любых изменениях
-              условий мы будем
-              сообщать в этом разделе по мере их возникновения.
-            </p>
-
-          </div>
-
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="about.html">
+            / О компании
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="mission.html">
+            / Миссия и ценности
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="business__page">
+    <div class="container">
+      <div class="business__page-top">
+        <div class="business__page-left">
+          <h2 class="business__page-title">
+            Миссия и ценности
+          </h2>
         </div>
-        <div class="contacts-side__right">
-          <img src="images/map.jpg" alt="">
-        </div>
+
       </div>
     </div>
   </section>
+  <section class="business__page-text">
+    <div class="container">
 
+
+      <div class="business__page-side">
+        <div class="business__page-left">
+
+
+
+
+
+          <div class="business__page-left__choise">
+            Миссия:
+          </div>
+          <p class="business__page-about__text">
+            Мы открываем новые горизонты для вашего бизнеса с помощью лучших современных страховых решений.
+
+
+
+          </p>
+          <p class="business__page-about__text">
+            Мы оцениваем результаты нашей работы по прогрессу и достижениям наших клиентов.
+
+          </p>
+          <p class="business__page-about__text">
+            Мы формулируем наш подход к работе в выражении: "Ваш успех - наш успех!"
+
+          </p>
+          <div class="business__page-left__choise">
+            Ценности:
+
+
+
+
+          </div>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Нацеленность на результат;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Успешная команда;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Ответственность и честность;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+
+          </p>
+          Развитие и совершенствование.
+
+          <p class="business__page-about__text">
+
+
+            Наши ценности – набор правил и ориентиров, которые нас объединяют и определяют наш подход к работе.
+          </p>
+
+
+          <div class="business__page-left__choise">
+            Наши принципы:
+
+
+
+
+
+          </div>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Индивидуальный подход;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Минимально-возможный комплект запрашиваемых документов;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Оперативность;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Максимальное количество подходящих вариантов
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Конфиденциальность.
+          </p>
+          <div class="business__page-left__choise">
+            По страхованию мы предлагаем:
+          </div>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Помощь с формулировкой важных для вас условий договоров страхования. В качестве рекомендации мы можем
+            посоветовать, что
+            действительно для вас может быть важно;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Определение и оценка риска. Мы соберем все необходимое, чтобы проанализировать вашу ситуацию. Нам можно
+            доверять даже
+            деликатные подробности. Возможно заключение соглашение о неразглашении NDA;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Консультирование о возможных вариантах страховой защиты;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Организацию конкурсов по выбору лучшего варианта страхования. Это могут быть короткие и неформальные
+            конкурсы
+            (мини-тендеры) или, если вам это необходимо, большие конкурсы с подготовкой технического задания и
+            конкурсной
+            документации;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Помощь в выборе оптимальных вариантов из предложенных. При этом решение останется за вами;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            Сопровождение ваших договоров страхования – то есть помощь в получении от страховщиков страховых возмещений,
+            вовремя и
+            полностью.
+          </p>
+
+
+          <p class="business__page-about__text">
+            Обратитесь к нам, и вы получите предложение, действительно заслуживающее вашего внимания!
+          </p>
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- <section class="business__page-pluses">
+    <div class="container">
+      <div class="business__page-pluses-title section__title">
+        Какие проблемы мы решим за вас?
+      </div>
+      <div class="business__page-pluses__inner">
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Проведём экспертную оценку
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Мы отслеживаем платёжеспособность и юридическую состоятельность рекомендованных страховых компаний на всём
+            протяжении
+            договор страхования.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Внесём изменения в договор
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Своевременно предлагаем вносить изменения в договоры страхования, и если потребуется заменять страховщиков
+            (одних
+            на других).
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Снизим тарифы
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Следим за изменением тарифов. Если тарифы на рынке будут снижаться, проведём переговоры о снижении тарифов
+            со страховщиками.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Поможем с госорганами
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Обеспечиваем поддержку прохождения договоров страхования в контролирующих органах.
+          </p>
+        </div>
+        <div class="business__page-pluses__items">
+          <div class="business__page-pluses__top">
+            <img src="images/icons/done.png" alt="">
+            <h4 class="business__page-pluses__top-title">
+              Окажем юридическую поддержку
+            </h4>
+          </div>
+          <p class="business__page-pluses__text">
+            Отслеживаем изменения в нормативной базе страхования.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <section class="partners">
+    <div class="container">
+      <div class="partners__top">
+        <div class="partners__title section__title">
+          Партнеры, которые нам доверяют
+        </div>
+      </div>
+      <div class="partners__group">
+        <img src="images/main/partners/1.png" alt="">
+        <img src="images/main/partners/2.png" alt="">
+        <img src="images/main/partners/3.png" alt="">
+        <img src="images/main/partners/4.png" alt="">
+        <img src="images/main/partners/5.png" alt="">
+        <img src="images/main/partners/6.png" alt="">
+        <img src="images/main/partners/7.png" alt="">
+        <img src="images/main/partners/8.png" alt="">
+        <img src="images/main/partners/9.png" alt="">
+        <img src="images/main/partners/10.png" alt="">
+        <img src="images/main/partners/11.png" alt="">
+        <img src="images/main/partners/12.png" alt="">
+        <img src="images/main/partners/13.png" alt="">
+        <img src="images/main/partners/14.png" alt="">
+        <img src="images/main/partners/15.png" alt="">
+        <img src="images/main/partners/16.png" alt="">
+        <img src="images/main/partners/17.png" alt="">
+        <img src="images/main/partners/18.png" alt="">
+        <img src="images/main/partners/19.png" alt="">
+        <img src="images/main/partners/20.png" alt="">
+        <img src="images/main/partners/21.png" alt="">
+        <img src="images/main/partners/22.png" alt="">
+        <img src="images/main/partners/23.png" alt="">
+        <img src="images/main/partners/24.png" alt="">
+        <img src="images/main/partners/25.png" alt="">
+        <img src="images/main/partners/26.png" alt="">
+        <img src="images/main/partners/27.png" alt="">
+      </div>
+      <a class="partners__toggle" href="#">Еще 15</a>
+    </div>
+  </section> -->
 
 
   <section class="popular">
-    <div class="container">
+    <div class="container ">
       <div class="popular__top">
         <h4 class="popular__title section__title">
           Популярные запросы
