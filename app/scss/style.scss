@@ -659,7 +659,7 @@ body{
 
   }
 
-  &__filter-btn:focus {
+  &__filter-btn--all {
     background-color: $hover;
     color: #fff;
     border-radius: 1.4rem;
