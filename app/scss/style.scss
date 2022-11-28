@@ -2,6 +2,9 @@
 @import 'fonts';
 @import 'global';
 @import 'reset';
+body{
+  position: relative;
+}
 
 .header {
   font-size: 1.4rem;
@@ -164,11 +167,11 @@
 
   &__list-link--bg {
     color: #fff;
-    
+
 
     &:hover {
       color: #fff;
-      
+
     }
   }
 
@@ -176,9 +179,10 @@
     background-color: #452C60;
     border-radius: 1.4rem;
     padding: 1.2rem 2rem;
-    &:hover{
+
+    &:hover {
       background-color: $hover;
-      transition: all .3s ;
+      transition: all .3s;
     }
 
   }
@@ -414,7 +418,7 @@
     color: $default;
   }
 
-  &__insurance-second{
+  &__insurance-second {
     min-height: 10rem;
 
   }
@@ -450,7 +454,8 @@
     flex-wrap: wrap;
 
   }
-  &__insurance-checkbox{
+
+  &__insurance-checkbox {
     padding-bottom: 1rem;
   }
 
@@ -628,7 +633,7 @@
   &__img-one.transform,
   &__img-two.transform {
     transform: rotate(90deg);
-    right: 7rem;
+    right: 8rem;
   }
 
   &__filter {
@@ -663,6 +668,7 @@
 
   &__items-list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     margin-bottom: 3rem;
@@ -707,12 +713,13 @@
   &__item--position,
   &__item--position-two {
     position: relative;
+
   }
 
   &__img-one,
   &__img-two {
     position: relative;
-    right: 0rem;
+    right: 8rem;
   }
 
   &__item-text {
@@ -1125,10 +1132,11 @@
   &__center {
     display: flex;
     align-items: center;
-
-    img {
-      max-width: none;
+    img{
+      width: 43%;
+      margin: 0 auto;
     }
+
   }
 
   &__feedback {
@@ -1143,6 +1151,7 @@
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     background-color: #fff;
     margin-right: 2rem;
+    z-index: 1;
 
   }
 
@@ -1150,6 +1159,7 @@
     @extend %circe-700;
     font-size: 2.2rem;
     line-height: 2.6rem;
+    z-index: 1;
 
   }
 
@@ -1157,33 +1167,40 @@
     padding-top: 1rem;
     line-height: 2rem;
     font-size: 1.4rem;
-  }
-
-  &__inner--more {
     z-index: 1;
+  }
+    &__inner--hover{
+      position: relative;
+    }
 
+  &__inner--pictures {
+    position: absolute;
+    right: 34%;
+    display: none;
+    
+    background-color: transparent;
+    backdrop-filter: 0.2rem;
+    
+    
+    
   }
 
-  &__inner--more:hover .clients__inner-text {
-
-    content: '';
-    background-image: url('../images/clients/1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  &__inner--hover:hover ~ &__inner--pictures {
+    display: block;
     cursor: pointer;
-    z-index: 3;
-    background-color: #F8F8FC;
     transition: all .3s;
-
-
+   
+    
   }
-
-
-
-
-
-
+ 
 }
+
+
+
+
+
+
+
 
 .popular {
   padding: 15rem 11.2rem 7.5rem;
