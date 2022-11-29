@@ -1,3 +1,33 @@
+let center = [55.77650668374518, 37.67593860218166];
+ymaps.ready(init);
+
+function init() {
+  let map = new ymaps.Map('map', {
+    center: center,
+    zoom: 19
+  });
+
+  let placemark = new ymaps.Placemark(center, {}, {
+    iconLayout: 'default#imageWithContent',
+    iconImageHref: './images/map.png',
+    iconImageSize: [40 ,46],
+    iconImageOffset : [ 50, -80],
+  });
+  map.controls.remove('geolocationControl'); // удаляем геолокацию
+  map.controls.remove('searchControl'); // удаляем поиск
+  map.controls.remove('trafficControl'); // удаляем контроль трафика
+  map.controls.remove('typeSelector'); // удаляем тип
+  map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+  map.controls.remove('rulerControl'); // удаляем контрол правил
+  map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+  map.geoObjects.add(placemark);
+}
+
+
+
+
 
 $(document).mouseup(function (e) {
   let block = $(".modal-wrapper  , .modal , .modal-two");
@@ -261,7 +291,17 @@ $(function () {
 
     return false;
   });
+
 });
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2547,8 +2547,20 @@ body{
   &-side__right {
     padding-top: 3rem;
   }
+  &__map{
+    width: 60.8rem;
+    height: 61.4rem;
+  }
+
 
 }
+    [class*='ground-pane'] {
+      filter: grayscale(1);
+    }
+
+    [class*='copyrights-pane']{
+      display: none;
+    }
 
 .purchases {
   padding-top: 10rem;
