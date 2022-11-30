@@ -30,7 +30,7 @@ function init() {
 
 
 $(document).mouseup(function (e) {
-  let block = $(".modal-wrapper  , .modal , .modal-two");
+  let block = $(".modal-wrapper  , .modal , .modal-two, ");
   if (!block.is(e.target) && block.has(e.target).length === 0) {
     block.hide();
   }
@@ -42,10 +42,13 @@ $(document).mouseup(function (e) {
 $(function () {
   $('.header__right-btn , .btn__sand').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
+    $('body').css('overflow', 'hidden');
+    
     return false;
   });
   $('.header__list--bg ').on('click', function () {
     $('.modal-two').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
+    $('body').css('overflow', 'hidden');
     
     return false;
   });
@@ -53,13 +56,12 @@ $(function () {
 
   $('.modal-wrapper').on('click', function () {
     $('.modal-wrapper ,.modal , .header__list-more , .modal-two').fadeOut(297);
-    if (window.matchMedia('(max-width: 500px)').matches) {
-      $('.modal-wrapper ,.modal , .header__list-more , .modal-two').fadeOut(297);
-    }
+    $('body').css('overflow', 'auto');
   });
 
   $('.modal , .modal-two').on('click', function () {
     $('.modal-wrapper').css('display', 'block');
+    $('body').css('overflow', 'hidden');
   });
 
   $('.reinsurance-faq__question--one').on('click', function () {

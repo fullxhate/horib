@@ -200,7 +200,7 @@ body{
 .modal {
 
 
-
+  
   position: fixed;
   top: 9rem;
   left: 50rem;
@@ -216,6 +216,7 @@ body{
   display: none;
   padding: 3rem;
   border-radius: 2rem;
+  overflow: hidden;
 
   &-wrapper {
     position: fixed;
@@ -229,6 +230,7 @@ body{
     background: rgba(62, 63, 88, 0.15);
     display: none;
     z-index: 1;
+    overflow: auto;
 
 
   }
@@ -245,6 +247,7 @@ body{
     background: rgba(62, 63, 88, 0.15);
     display: none;
     z-index: 1;
+    overflow: hidden;
 
 
   }
