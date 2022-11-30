@@ -1323,7 +1323,8 @@ body{
   }
 
   &-top__btn {
-    @extend %btn
+    @extend %btn;
+    margin-right: 13rem;   
   }
 
   &-programms__inner {

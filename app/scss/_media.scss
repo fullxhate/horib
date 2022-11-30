@@ -38,17 +38,31 @@
      }
 
      &__right {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 2rem;
+
+     }
+
+     &__form {
        display: none;
      }
 
+
      &__top {
        display: inherit;
+       box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+
      }
 
      &__left {
        display: flex;
        justify-content: space-between;
        align-items: center;
+     }
+
+     .modal {
+       left: 3rem;
      }
 
 
@@ -127,7 +141,7 @@
      &__list-link {
        font-size: 3rem;
        line-height: 3rem;
-       padding-bottom: 3rem;
+       margin-bottom: 3rem;
      }
 
      &__list--bg {
@@ -1093,10 +1107,11 @@
        line-height: 2.5rem;
        width: auto;
      }
-             &-side--types {
-               display: flex;
-               flex-wrap: wrap;
-             }
+
+     &-side--types {
+       display: flex;
+       flex-wrap: wrap;
+     }
 
      &-left {
        width: auto;

@@ -40,7 +40,7 @@ $(document).mouseup(function (e) {
 
 
 $(function () {
-  $('.header__right-btn ').on('click', function () {
+  $('.header__right-btn , .btn__sand').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     return false;
   });
