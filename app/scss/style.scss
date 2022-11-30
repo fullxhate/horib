@@ -1632,7 +1632,6 @@ body{
 
   &-right {
     padding-bottom: 20rem;
-    margin-left: 10rem;
   }
 
   &__title {
@@ -1645,8 +1644,14 @@ body{
     display: flex;
   }
 
+
   &-left {
     width: 70rem;
+  }
+  &-left--types {
+    width: auto;
+    margin-right: 0;
+   
   }
 
   &-left__text {
@@ -1674,6 +1679,9 @@ body{
       margin-right: 1rem;
     }
   }
+    &-left__select--types{
+      width: auto;
+    }
 
 
   &-about__text {

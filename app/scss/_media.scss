@@ -5,10 +5,11 @@
      padding: 1.5rem;
      overflow-x: hidden;
    }
-   .modal-two{
-    height: 73rem;
-    left: auto;
-    padding: 2rem;
+
+   .modal-two {
+     height: 73rem;
+     left: auto;
+     padding: 2rem;
    }
 
    .section__title {
@@ -835,9 +836,10 @@
        line-height: 2.5rem;
        width: auto
      }
-     &__map{
-      width: 45rem;
-      height: 45rem;
+
+     &__map {
+       width: 45rem;
+       height: 45rem;
      }
 
 
@@ -1091,6 +1093,10 @@
        line-height: 2.5rem;
        width: auto;
      }
+             &-side--types {
+               display: flex;
+               flex-wrap: wrap;
+             }
 
      &-left {
        width: auto;
@@ -1099,6 +1105,14 @@
 
      &-right {
        display: none;
+     }
+
+     &-right--types {
+       display: block;
+     }
+
+     &-left--types {
+       padding-bottom: 0;
      }
 
      &-left__choise {
