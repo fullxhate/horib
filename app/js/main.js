@@ -128,8 +128,8 @@ $(function () {
   });
 
   $('.purchases-faq__question--one').on('click', function () {
-    $('.purchases-faq__text--one').slideToggle(300), $('.purchases-faq__img--one').toggleClass('transform');
-
+    $('.purchases-faq__files').slideToggle(300), $('.purchases-faq__img--one').toggleClass('transform');
+    $('.purchases-faq__files').css('display' , 'flex');
     return false;
   });
 

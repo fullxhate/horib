@@ -595,6 +595,7 @@ body {
     line-height: 7.1rem;
     text-align: center;
     padding-bottom: 2rem;
+    width: 81rem;
   }
 
   &__text {
@@ -602,6 +603,7 @@ body {
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding-bottom: 2rem;
+    width: 70rem;
   }
 
   &__search {
@@ -634,7 +636,12 @@ body {
     position: relative;
   }
 
-
+&__item-about{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+  text-align: start;
+}
 
 
   &__img {
@@ -645,13 +652,13 @@ body {
   &__img-one.transform,
   &__img-two.transform {
     transform: rotate(90deg);
-    right: 8rem;
+    right: 2rem;
   }
 
   &__img-one.transform {
     position: absolute;
-    position: absolute;
-    top: 25rem;
+    
+    top: 36rem;
   }
 
   &__filter {
@@ -719,7 +726,7 @@ body {
 
   &__item {
     display: block;
-    width: 35rem;
+    width: 37rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     border-radius: 2rem;
     padding: 3rem;
@@ -737,7 +744,7 @@ body {
   &__img-one,
   &__img-two {
     position: relative;
-    right: 8rem;
+    right: 2rem;
   }
 
   &__item-text {
@@ -958,6 +965,18 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
   }
+     &__form-data__in::-webkit-calendar-picker-indicator{
+        color: transparent;
+          opacity: 1;
+          background: url('../images/calendar.svg') no-repeat center;
+          background-size: contain;
+     }
+     &__form-data__out::-webkit-calendar-picker-indicator{
+        color: transparent;
+          opacity: 1;
+          background: url('../images/calendar.svg') no-repeat center;
+          background-size: contain;
+     }
 
   &__form-bottom {
     display: flex;
@@ -977,8 +996,8 @@ body {
     margin-right: 2rem;
     font-size: 1.4rem;
     line-height: 2rem;
-    @extend %circe-700;
     color: #452C60;
+    border: 1px solid $default;
 
   }
 
@@ -1016,6 +1035,7 @@ body {
     @extend %circe-700;
     font-size: 1.4rem;
     line-height: 2rem;
+    border: 1px solid $default;
   }
 
 
@@ -1325,7 +1345,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
   }
 
   &-top__title {
@@ -1338,14 +1358,14 @@ body {
   &-top__text {
     font-size: 1.8rem;
     line-height: 2.5rem;
-    width: 70rem;
-    margin-left: 20rem;
+    width: 74rem;
+    margin-left: 21rem;
     padding-bottom: 3rem;
   }
 
   &-top__btn {
     @extend %btn;
-    margin-right: 13rem;
+    margin-right: 7rem;
   }
 
   &-programms__inner {
@@ -1353,6 +1373,7 @@ body {
     justify-content: space-between;
     padding-top: 3rem;
   }
+
 
   &-programms__link {
     background-color: #fff;
@@ -1374,6 +1395,9 @@ body {
   &-programms__text {
     font-size: 1.4rem;
     line-height: 2rem;
+  }
+  &-faq__title{
+    padding-bottom: 4rem;
   }
 
   &-faq {
@@ -1715,6 +1739,9 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  &-about__text--price{
+    width: 60rem
+  }
 
 
 
@@ -1752,14 +1779,21 @@ body {
 
   &-pluses__top-title {
     margin-left: 1rem;
-    width: 39rem;
+    width: 40rem;
     @extend %circe-700;
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
 
   &-pluses__text {
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
+  }
+  &-price{
+    padding-top: 15rem;
+  }
+  &-price__side{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -1918,7 +1952,8 @@ body {
 
   &__team-info {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-right: 2rem;
   }
 
   &__team-name {
@@ -1990,20 +2025,24 @@ body {
     padding: 3rem;
     border-radius: 2rem;
     margin-right: 2rem;
-    width: 39rem;
-    height: 29.5rem;
+    width: 29rem;
+    
   }
 
   &-programms__title {
     @extend %circe-700;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     padding: 1rem 0 1rem 0;
+    width: 24rem;
   }
 
   &-programms__text {
     font-size: 1.4rem;
     line-height: 2rem;
+  }
+  &-faq__title{
+    padding-bottom: 4rem;
   }
 
   &-faq {
@@ -2134,6 +2173,9 @@ body {
     font-size: 1.4rem;
     line-height: 2rem, ;
   }
+  &__widget-title{
+    padding-bottom: 4rem;
+  }
 
   &__widget {
     padding-top: 15rem;
@@ -2167,7 +2209,7 @@ body {
     line-height: 2rem;
   }
 
-  &__integration {
+  &__integration-side {
     display: flex;
     justify-content: space-between;
     padding-top: 15rem;
@@ -2186,6 +2228,7 @@ body {
 
   &__help {
     padding-top: 15rem;
+    padding-bottom: 7.5rem;
 
   }
 
@@ -2202,10 +2245,12 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
     padding-bottom: 3rem;
+    width: 60rem;
   }
 
   &__left-btn__link {
-    @extend %btn
+    @extend %btn;
+    margin-top: 3rem;
   }
 
   &__right-files {
@@ -2851,7 +2896,6 @@ body {
     display: flex;
     grid-column: 3;
     flex-wrap: wrap;
-    grid-gap: 0.7rem;
     margin-top: 4rem;
   }
 
@@ -2860,8 +2904,10 @@ body {
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     padding: 3rem;
     border-radius: 2rem;
-    width: 39.2rem;
-    height: 20rem;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    
+    
 
 
 
@@ -2877,6 +2923,7 @@ body {
   &-programms__text {
     font-size: 1.4rem;
     line-height: 2rem;
+    width: 33rem;
   }
 
   &-faq {
@@ -2962,6 +3009,7 @@ body {
   }
 
   &-pluses {
+  
     padding-bottom: 7rem;
   }
 
@@ -2973,6 +3021,7 @@ body {
 
   &-pluses__item {
     margin-right: 2rem;
+      margin-top: 4rem;
 
     img {
       margin: 0 auto
