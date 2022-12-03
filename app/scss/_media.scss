@@ -763,7 +763,11 @@
    }
 
    .reinsurance {
+    overflow: hidden;
      padding-top: 5rem;
+    &-top__btn {
+        margin-right: 0rem;
+      }
 
      &-top__title {
        font-size: 4rem;
