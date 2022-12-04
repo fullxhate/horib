@@ -1,3 +1,4 @@
+
 let center = [55.77650668374518, 37.67593860218166];
 ymaps.ready(init);
 
@@ -24,6 +25,12 @@ function init() {
 
   map.geoObjects.add(placemark);
 }
+
+$(window).on('load' ,function () {
+  
+  $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
+  
+});
 
 
 
@@ -294,14 +301,12 @@ $(function () {
     return false;
   });
 
-  // $('.business__item').hover(function () {
-  //   $(this).stop().animate({ width: "37.5rem", height: "auto", left: "0", top: "0" }, 400);
-  // },
-  //   function () {
-  //     $(this).stop().animate({ width: "37rem", height: "auto", left: "0", top: "0" }, 400);
-  //   });
-
 });
+
+
+
+
+
 
 
 

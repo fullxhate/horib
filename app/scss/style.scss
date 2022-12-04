@@ -7,6 +7,25 @@ body {
   position: relative;
 }
 
+.preloaders {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloaders__img {
+  font-size: 7rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -3.5rem 0 0 -3.5rem;
+}
+
+
 .header {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -104,7 +123,7 @@ body {
   &__list-more {
     display: flex;
     position: absolute;
-    background-color:#fff;
+    background-color: #fff;
     width: 120rem;
     top: 4rem;
     padding-top: 6rem;
@@ -125,9 +144,8 @@ body {
     width: 28rem;
     margin-right: 2rem;
     text-align: start;
-    
-    padding: 1.5rem
 
+    padding: 1.5rem
   }
 
   &__list-more__title {
@@ -636,16 +654,17 @@ body {
   .section__title {
     padding-bottom: 4rem;
   }
-  &__category-property{
+
+  &__category-property {
     position: relative;
   }
 
-&__item-about{
-  font-size: 1.4rem;
-  line-height: 2rem;
-  padding-top: 1rem;
-  text-align: start;
-}
+  &__item-about {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+    text-align: start;
+  }
 
 
   &__img {
@@ -661,7 +680,7 @@ body {
 
   &__img-one.transform {
     position: absolute;
-    
+
     top: 36rem;
   }
 
@@ -738,9 +757,14 @@ body {
     gap: 2rem;
     transition: transform .2s;
   }
-    &__item:hover{
-      transform: scale(1);
+
+  &__item:hover {
+    transform: scale(1.1);
+
+    .business__item-text {
+      color: $hover;
     }
+  }
 
 
   &__item--position,
@@ -767,6 +791,10 @@ body {
       transition: all .3s;
     }
 
+  }
+
+  &__item-about {
+    color: $default ;
   }
 
   &__subtitle {
@@ -973,18 +1001,20 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
   }
-     &__form-data__in::-webkit-calendar-picker-indicator{
-        color: transparent;
-          opacity: 1;
-          background: url('../images/calendar.svg') no-repeat center;
-          background-size: contain;
-     }
-     &__form-data__out::-webkit-calendar-picker-indicator{
-        color: transparent;
-          opacity: 1;
-          background: url('../images/calendar.svg') no-repeat center;
-          background-size: contain;
-     }
+
+  &__form-data__in::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url('../images/calendar.svg') no-repeat center;
+    background-size: contain;
+  }
+
+  &__form-data__out::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url('../images/calendar.svg') no-repeat center;
+    background-size: contain;
+  }
 
   &__form-bottom {
     display: flex;
@@ -1404,7 +1434,8 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
   }
-  &-faq__title{
+
+  &-faq__title {
     padding-bottom: 4rem;
   }
 
@@ -1747,7 +1778,8 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
-  &-about__text--price{
+
+  &-about__text--price {
     width: 60rem
   }
 
@@ -1796,10 +1828,12 @@ body {
   &-pluses__text {
     padding: 1rem 4rem;
   }
-  &-price{
+
+  &-price {
     padding-top: 15rem;
   }
-  &-price__side{
+
+  &-price__side {
     display: flex;
     justify-content: space-between;
   }
@@ -2034,7 +2068,7 @@ body {
     border-radius: 2rem;
     margin-right: 2rem;
     width: 29rem;
-    
+
   }
 
   &-programms__title {
@@ -2049,7 +2083,8 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
   }
-  &-faq__title{
+
+  &-faq__title {
     padding-bottom: 4rem;
   }
 
@@ -2181,7 +2216,8 @@ body {
     font-size: 1.4rem;
     line-height: 2rem, ;
   }
-  &__widget-title{
+
+  &__widget-title {
     padding-bottom: 4rem;
   }
 
@@ -2914,8 +2950,8 @@ body {
     border-radius: 2rem;
     margin-bottom: 3rem;
     margin-right: 1rem;
-    
-    
+
+
 
 
 
@@ -3017,7 +3053,7 @@ body {
   }
 
   &-pluses {
-  
+
     padding-bottom: 7rem;
   }
 
@@ -3029,7 +3065,7 @@ body {
 
   &-pluses__item {
     margin-right: 2rem;
-      margin-top: 4rem;
+    margin-top: 4rem;
 
     img {
       margin: 0 auto
