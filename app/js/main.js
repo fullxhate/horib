@@ -294,8 +294,14 @@ $(function () {
     return false;
   });
 
-});
+  // $('.business__item').hover(function () {
+  //   $(this).stop().animate({ width: "37.5rem", height: "auto", left: "0", top: "0" }, 400);
+  // },
+  //   function () {
+  //     $(this).stop().animate({ width: "37rem", height: "auto", left: "0", top: "0" }, 400);
+  //   });
 
+});
 
 
 

@@ -177,6 +177,11 @@
      &__title {
        font-size: 5rem;
        line-height: 4rem;
+       width: auto;
+     }
+
+     &__text {
+       width: auto;
      }
 
      &__filter {
@@ -196,6 +201,12 @@
        font-family: 'Manrope-ExtraBold', sans-serif;
        font-weight: 800;
        padding-bottom: 0;
+     }
+
+     &__item-about {
+       text-align: center;
+       font-size: 1.5rem;
+       line-height: 2rem;
      }
 
      &__finance,
@@ -763,11 +774,12 @@
    }
 
    .reinsurance {
-    overflow: hidden;
+     overflow: hidden;
      padding-top: 5rem;
-    &-top__btn {
-        margin-right: 0rem;
-      }
+
+     &-top__btn {
+       margin-right: 0rem;
+     }
 
      &-top__title {
        font-size: 4rem;

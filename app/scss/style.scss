@@ -53,6 +53,7 @@ body {
     border: none;
     color: $default;
     width: 7rem;
+    background-color: transparent;
   }
 
   &__form-input::placeholder {
@@ -92,7 +93,7 @@ body {
 
   .header__list:hover>.header__list-more {
     display: flex;
-    transition: all .3s;
+    transition: all .3s ease 1s;
   }
 
 
@@ -103,7 +104,7 @@ body {
   &__list-more {
     display: flex;
     position: absolute;
-    background-color: #fff;
+    background-color:#fff;
     width: 120rem;
     top: 4rem;
     padding-top: 6rem;
@@ -112,6 +113,8 @@ body {
     padding-right: 10rem;
     z-index: 10;
     display: none;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    border-radius: 1.4rem;
 
 
   }
@@ -122,7 +125,8 @@ body {
     width: 28rem;
     margin-right: 2rem;
     text-align: start;
-    padding-bottom: 1.5rem;
+    
+    padding: 1.5rem
 
   }
 
@@ -732,8 +736,12 @@ body {
     padding: 3rem;
     background-color: #fff;
     gap: 2rem;
-
+    transition: transform .2s;
   }
+    &__item:hover{
+      transform: scale(1);
+    }
+
 
   &__item--position,
   &__item--position-two {
