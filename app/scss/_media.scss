@@ -1113,15 +1113,21 @@
      padding-top: 5rem;
 
      &-title {
-       font-size: 4rem;
+       font-size: 3.3rem;
        line-height: 4rem;
        width: auto;
+       text-align: center;
      }
 
      &-subtitle {
        font-size: 2rem;
        line-height: 2.5rem;
        width: auto;
+       text-align: center;
+     }
+
+     &-btn {
+       margin-left: 34%;
      }
 
      &-side--types {
@@ -1132,6 +1138,7 @@
      &-left {
        width: auto;
        margin-right: 0;
+       padding-bottom: 5rem;
      }
 
      &-right {
