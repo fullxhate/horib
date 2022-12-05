@@ -28,11 +28,11 @@
         </p>
         <form class="email-form__inner">
           <input type="text" class="email-form__info" placeholder="Имя">
-          <input type="text" class="email-form__info" placeholder="+ 7">
-          <input type="text" class="email-form__info" placeholder="Email">
+          <input type="tel" class="email-form__info" placeholder="+ 7">
+          <input type="email" required pattern="{@}" class="email-form__info" placeholder="Email">
           <input type="text" class="email-form__info" placeholder="Город">
-          <input type="text" class="email-form__info" placeholder="Логин для входа в систему">
-          <input type="text" class="email-form__info" placeholder="Пароль">
+          <input type="text" pattern="[a-z]{1,15]" class="email-form__info" placeholder="Логин для входа в систему">
+          <input type="password" class="email-form__info" placeholder="Пароль">
         </form>
         <p class="email-form__sand">
           Нажимая кнопку «Отправить», вы соглашаетесь с обработкой персональных данных.
