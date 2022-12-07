@@ -26,6 +26,12 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
+// const swiper = new Swiper('.business__items-list', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,});
+
+
 $(window).on('load' ,function () {
   
   $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
@@ -47,6 +53,12 @@ $(document).mouseup(function (e) {
 
 
 $(function () {
+
+
+
+
+
+
   $('.header__right-btn , .btn__sand').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     $('body').css('overflow', 'hidden');
@@ -149,17 +161,17 @@ $(function () {
 
 
 
-  $('.business__img-one').on('click', function () {
-    $('.business__items-more--one ').slideToggle(300);
-    $('.business__items-more--one ').css('display', 'flex');
-    $('.business__img-one').toggleClass('transform');
-  });
+  // $('.business__img-one').on('click', function () {
+  //   $('.business__items-more--one ').slideToggle(300);
+  //   $('.business__items-more--one ').css('display', 'flex');
+  //   $('.business__img-one').toggleClass('transform');
+  // });
 
-  $('.business__img-two').on('click', function () {
-    $('.business__items-more--two ').slideToggle(300);
-    $('.business__items-more--two ').css('display', 'flex');
-    $('.business__img-two').toggleClass('transform');
-  });
+  // $('.business__img-two').on('click', function () {
+  //   $('.business__items-more--two ').slideToggle(300);
+  //   $('.business__items-more--two ').css('display', 'flex');
+  //   $('.business__img-two').toggleClass('transform');
+  // });
   $('.audit-faq__question--one').on('click', function () {
     $('.audit-faq__text--one').slideToggle(300), $('.audit-faq__img--one').toggleClass('transform');
 
