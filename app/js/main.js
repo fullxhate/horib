@@ -39,7 +39,21 @@ $(window).on('load' ,function () {
 });
 
 
-
+new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  autoHeight: true,
+  slidesPerGroup: 1,
+  mousewheel: {
+    sensitivity: 1,
+  },
+  breakpoints: {
+    500 : {
+      slidesPerView :1,
+      slidesPerGroup: 1,
+    }
+    }
+});
 
 
 $(document).mouseup(function (e) {
