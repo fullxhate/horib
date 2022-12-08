@@ -46,7 +46,7 @@ new Swiper('.swiper', {
   },
   loop : false,
   trueMode : true,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 20,
   autoHeight: true,
   slidesPerGroup: 1,
