@@ -40,6 +40,8 @@ $(window).on('load' ,function () {
 
 
 new Swiper('.swiper', {
+  loop : false,
+  trueMode : true,
   slidesPerView: 3,
   spaceBetween: 20,
   autoHeight: true,
@@ -47,12 +49,7 @@ new Swiper('.swiper', {
   mousewheel: {
     sensitivity: 1,
   },
-  breakpoints: {
-    500 : {
-      slidesPerView :1,
-      slidesPerGroup: 1,
-    }
-    }
+
 });
 
 
