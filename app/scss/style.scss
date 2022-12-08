@@ -754,12 +754,21 @@ body {
   // }
   .swiper-wrapper{
     height: 20rem !important;
+    padding: 1rem;
   }
     .swiper-slide,
   .swiper-slide-active,
   .swiper-slide-next {
     height: 11rem !important;
-    width: 33rem !important;
+    width: 32rem !important;
+  }
+  .swiper-button-next::after{
+    font-size: 1.8rem;
+    color: #000;
+    margin-left: 3rem;
+  }
+  .swiper-button-prev::after{
+display: none;
   }
 
 
@@ -798,8 +807,8 @@ body {
   }
 
   &__item-text {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     @extend %circe-700;
     color: $default;
     padding-top: 1rem;
@@ -1335,6 +1344,7 @@ body {
   &__links-right {
     display: flex;
     flex-direction: column;
+    margin-right: 1rem;
   }
 
   &__link {

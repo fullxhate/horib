@@ -237,21 +237,17 @@
        }
      }
 
-     &__items-top,
-     &__items-more {
-       display: block;
-     }
 
-     &__items-more--one,
-     &__items-more--two {
-       display: none;
-     }
+ 
 
      &__item-text {
        font-size: 2.2rem;
        line-height: 2.6rem;
      }
-
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
 
      &__item {
        width: 45rem;

@@ -6,13 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horib</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+
+
 </head>
 
 <body>
-<div class="preloaders">
-  <img class="preloaders__img" src="images/preload.gif">
-</div>
+  <div class="preloaders">
+    <img class="preloaders__img" src="images/preload.gif">
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__top">
@@ -25,10 +28,6 @@
           </div>
         </div>
         <div class="header__right">
-          <form action="index.html" class="header__form">
-            <img src="images/icons/search.svg" alt="">
-            <input class="header__form-input" placeholder="Поиск" type="search">
-          </form>
           <a class="header__contact" href="tel:+74956405400">
             <img src="images/icons/phone.svg" alt="иконка звонка">
             +7 (495) 640 54 00
@@ -82,7 +81,7 @@
                     <p class="header__list-more__title">Страхование имущества</p>
                     <a class="header__list-more__link" href="company.html">
                       Производственные предприятия
-  
+
                     </a>
                     <a class="header__list-more__link" href="property.html">
                       Залоговое имущество
@@ -119,7 +118,7 @@
                     <p class="header__list-more__title">Ответственность</p>
                     <a class="header__list-more__link" href="quality.html">
                       Гражданская ответственность
-  
+
                     </a>
                     <a class="header__list-more__link" href="professional.html">
                       Профессиональная ответственность
@@ -133,24 +132,24 @@
                     <a class="header__list-more__link" href="quality-carrier.html">
                       ОСОПО и ОСГОП - ОСП
                     </a>
-  
+
                     <p class="header__list-more__title">
                       Фин риски
                     </p>
                     <a class="header__list-more__link" href="debtor.html">
                       Дебиторка
-  
+
                     </a>
                     <a class="header__list-more__link" href="contract.html">
                       Неисполнение договорных обязательств
                     </a>
-  
+
                   </li>
                   <li class="header__list-more__item">
                     <p class="header__list-more__title">
                       Личное страхование
-  
-  
+
+
                     </p>
                     <a class="header__list-more__link" href="dms.html">
                       Медицинское страхование
@@ -212,11 +211,12 @@
                   </div>
                   <form class="modal__insurance-form">
                     <input class="modal__insurance-firts" type="text" placeholder="Имя">
-  
-                    <input class="modal__insurance-firts" type="text" placeholder="Телефон">
+
+                    <input class="modal__insurance-firts" type="tel" placeholder="Телефон">
                     <input class="modal__insurance-firts" type="text" placeholder="Город">
-  
-                    <input class="modal__insurance-firts" type="date" placeholder="Дата страхвого случая">
+
+                    <input class="modal__insurance-firts modal__insurance-firts--date" type="date"
+                      placeholder="Дата страхвого случая">
                     <input class="modal__insurance-second" type="text" placeholder="Дополнительная информация">
                     <p class="modal__window-text">
                       Текущая стадия страхового события
@@ -248,10 +248,10 @@
                           Другое
                         </span>
                       </label>
-  
-  
+
+
                     </ul>
-  
+
                     <p class="modal__window-text">
                       Нажимая кнопку «Отправить», вы соглашаетесь с
                       <a href="personal-date.html">
@@ -266,7 +266,7 @@
               </div>
             </ul>
           </nav>
-  
+
         </div>
       </div>
     </div>
@@ -377,121 +377,131 @@
             <img src="images/icons/choise.svg" alt="">
             деятельность по оказанию транспортных услуг (такси, грузоперевозки, курьерская доставка);
           </p>
+
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            деятельность медицинских учреждений и салонов красоты;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            строительство;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            деятельность в области культуры, спорта, организации досуга и развлечений; сельское, лесное хозяйство,
+            охота,
+            рыболовство и рыбоводство;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство металлургическое;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство электрического оборудования;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство машин и оборудования;
+          </p>
+
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство автотранспортных средств;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство мебели;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство пищевых изделий;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство химических веществ и продуктов;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство лекарственных средств ;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            производство резиновых и пластмассовых изделий.
+          </p>
+          <div class="business__page-left__choise">
+            Мы имеем богатый опыт в страховании ответственности за качество следующих видов предприятий:
+          </div>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            недостатка товара, работы, услуги, несоответствие товара, работы, услуги: техническим регламентам; условиям
+            договора;
+            целям, для которых товар работа, услуга такого рода обычно используется; целям, о которых изготовитель,
+            продавец,
+            исполнитель был поставлен в известность потребителем при заключении договора; образцу и/или описанию при
+            продаже
+            товара
+            по образцу и/или описанию;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            недостатков и особых свойств материалов, оборудования, инструментов и т.д., использованных для производства
+            товара,
+            выполнения работы, оказания услуги;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            недостоверной или недостаточной информации о товаре, работе, услуге;
+          </p>
+          <p class="business__page-left__select">
+            <img src="images/icons/choise.svg" alt="">
+            иных причин, предусмотренных законодательством, действующим на территории страхования.
+          </p>
+
+
+          <p class="business__page-about__text">
+            Мы всегда помогаем перевозчикам и экспедиторам определиться с выбором условий и подобрать оптимальную
+            программу
+            страхования, как по стоимости полиса, так и по набору рисков.
+
+
+
+          </p>
+          <p class="business__page-about__text">
+            Договоры страхования ответственности за качество заключаются в пользу третьих лиц – физических лиц, жизни,
+            здоровью
+            и/или имуществу которых может быть причинен вред и/или юридических лиц, имуществу которых может быть
+            причинен
+            вред.
+            Стоит отметить, что договор страхования ответственности за качество будет покрывать претензии от любых
+            третьих
+            лиц,
+            которые получат ущерб от деятельности страхователя. Это могут быть прямые клиенты, клиенты клиентов
+            страхователя, а так
+            же случайные третьи лица и так далее.
+          </p>
+
+
+
+
         </div>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          деятельность медицинских учреждений и салонов красоты;
-        </p>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          строительство;
-        </p>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          деятельность в области культуры, спорта, организации досуга и развлечений; сельское, лесное хозяйство, охота,
-          рыболовство и рыбоводство;
-        </p>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          производство металлургическое;
-        </p>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          производство электрического оборудования;
-        </p>
-        <p class="business__page-left__select">
-          <img src="images/icons/choise.svg" alt="">
-          производство машин и оборудования;
-        </p>
+        <div class="business__page-right">
+          <p class="business__page-right-text">
+            Своим клиентам мы предлагаем результативные подходы, позволяющие решать все имеющиеся задачи, разрабатывать
+            и воплощать
+            в жизнь индивидуальный стратегический план.
+          </p>
+          <button class="business__page-right__btn btn__sand">
+            Оставить заявку
+          </button>
+        </div>
+
       </div>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство автотранспортных средств;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство мебели;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство пищевых изделий;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство химических веществ и продуктов;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство лекарственных средств ;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        производство резиновых и пластмассовых изделий.
-      </p>
-      <div class="business__page-left__choise">
-        Мы имеем богатый опыт в страховании ответственности за качество следующих видов предприятий:
-      </div>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        недостатка товара, работы, услуги, несоответствие товара, работы, услуги: техническим регламентам; условиям
-        договора;
-        целям, для которых товар работа, услуга такого рода обычно используется; целям, о которых изготовитель,
-        продавец,
-        исполнитель был поставлен в известность потребителем при заключении договора; образцу и/или описанию при продаже
-        товара
-        по образцу и/или описанию;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        недостатков и особых свойств материалов, оборудования, инструментов и т.д., использованных для производства
-        товара,
-        выполнения работы, оказания услуги;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        недостоверной или недостаточной информации о товаре, работе, услуге;
-      </p>
-      <p class="business__page-left__select">
-        <img src="images/icons/choise.svg" alt="">
-        иных причин, предусмотренных законодательством, действующим на территории страхования.
-      </p>
 
 
-      <p class="business__page-about__text">
-        Мы всегда помогаем перевозчикам и экспедиторам определиться с выбором условий и подобрать оптимальную
-        программу
-        страхования, как по стоимости полиса, так и по набору рисков.
-
-
-
-      </p>
-      <p class="business__page-about__text">
-        Договоры страхования ответственности за качество заключаются в пользу третьих лиц – физических лиц, жизни,
-        здоровью
-        и/или имуществу которых может быть причинен вред и/или юридических лиц, имуществу которых может быть причинен
-        вред.
-        Стоит отметить, что договор страхования ответственности за качество будет покрывать претензии от любых третьих
-        лиц,
-        которые получат ущерб от деятельности страхователя. Это могут быть прямые клиенты, клиенты клиентов
-        страхователя, а так
-        же случайные третьи лица и так далее.
-      </p>
 
 
     </div>
-
-
-    <div class="business__page-right">
-      <p class="business__page-right-text">
-        Своим клиентам мы предлагаем результативные подходы, позволяющие решать все имеющиеся задачи, разрабатывать
-        и воплощать
-        в жизнь индивидуальный стратегический план.
-      </p>
-      <button class="business__page-right__btn btn__sand">
-        Оставить заявку
-      </button>
-    </div>
-
     </div>
     </div>
   </section>
@@ -606,7 +616,7 @@
 
 
   <section class="popular">
-    <div class="container ">
+    <div class="container">
       <div class="popular__top">
         <h4 class="popular__title section__title">
           Популярные запросы
@@ -617,119 +627,98 @@
           <h4 class="popular__links-title">
             Бизнесу
           </h4>
-          <a class="popular__link" href="#">
-            Страхование имущества
+          <a class="popular__link" href="autopark.html">
+            Страхование автопарка
           </a>
-          <a class="popular__link" href="#">
-            Страхование ответственности
+          <a class="popular__link" href="avia.html">
+            Авиационное страхование
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="trains.html">
+            Страхование железнодорожноготранспорта
+          </a>
+          <a class="popular__link" href="quality.html">
+            Страхование ответственности за качество
+          </a>
+          <a class="popular__link" href="quality-warning.html">
+            Страхование ответственности владельца опасного объекта
+          </a>
+          <a class="popular__link" href="quality-carrier.html">
+            Страхование ответственности за перевозчика
+          </a>
+          <a class="popular__link" href="professional.html">
+            Профессиональная ответственность
+          </a>
+          <a class="popular__link" href="contract.html">
+            Страхование ответственности за нарушение договорных обязательств
+          </a>
+          <a class="popular__link" href="dms.html">
             ДМС для организаций
           </a>
-          <a class="popular__link" href="#">
-            Страхование отвеьсвенности директоров и должностных лиц
+          <a class="popular__link" href="collective.html">
+            Коллективное страхование от несчастных случаев и болезней
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="responsibility.html">
+            Страхование ответсвенности директоров и должностных лиц
+          </a>
+          <a class="popular__link" href="debtor.html">
             Страхование дебиторской задолженности
           </a>
-          <a class="popular__link" href="#">
-            Страхование банков
-          </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="farm.html">
             Сельскохозяйственное страхование
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="yacht.html">
             Страхование яхт и катеров
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="work.html">
             Страхование строительно-монтажных работ
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="carrier.html">
             Страхование перевозчиков и эспедиторов
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="cargo.html">
             Страхование грузов
           </a>
-          <a class="popular__link" href="#">
-            Страхование туроператоров
-          </a>
-          <a class="popular__link" href="#">
-            Страхование кибер рисков
-          </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="customs.html">
             Страхование ответственности таможенного представителя (брокера)
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="property.html">
             Страхование залогового имущества
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="yacht.html">
             Страхование яхт и катеров
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="personal.html">
             Частным лицам
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="personal-date.html">
             Калькулятор ОСАГО
           </a>
-          <a class="popular__link" href="#">
-            ОСАГО онлайн
+          <a class="popular__link" href="tmc.html ">
+            Страхование ТМЦ
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="personal.html">
             КАСКО
-          </a>
-          <a class="popular__link" href="#">
-            Страхование для путешественников
-          </a>
-          <a class="popular__link" href="#">
-            Страхование ипотеки
-          </a>
-          <a class="popular__link" href="#">
-            Страхование жизни при ипотеке
-          </a>
-          <a class="popular__link" href="#">
-            Страхование недвижимости
-          </a>
-          <a class="popular__link" href="#">
-            Страхование от несчастных случаев
           </a>
           <h4 class="popular__links-title">
             Закупки
           </h4>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="purchases.html">
             Текущие закупки
-
+  
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="purchases.html">
             Архив закупок
           </a>
         </div>
-
-
-
+  
+  
+  
         <div class="popular__links-right">
           <h4 class="popular__links-title">
             Частным Лицам
           </h4>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="personal.html">
             Калькулятор ОСАГО
-          </a>
-          <a class="popular__link" href="#">
-            ОСАГО онлайн
-          </a>
-          <a class="popular__link" href="#">
-            КАСКО
-          </a>
-          <a class="popular__link" href="#">
-            Страхование для путешественников
-          </a>
-          <a class="popular__link" href="#">
-            Страхование ипотеки
-          </a>
-          <a class="popular__link" href="#">
-            Страхование жизни при ипотеке
-          </a>
-          <a class="popular__link" href="#">
-            Страхование недвижимости
           </a>
           <a class="popular__link" href="#">
             Страхование от несчастных случаев
@@ -737,55 +726,35 @@
           <h4 class="popular__links-title">
             Перестрахование
           </h4>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="traditional-reinsurens.html">
             Перестрахование по традиционным видам страхования
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="sanctions.html">
             Перестрахование санкционных рисков
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="not-standart.html">
             Перестраховочные емкости и облигаторные программы по нестандартным рискам
           </a>
           <h4 class="popular__links-title">
             О компании
           </h4>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="about.html">
             О компании
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="mission.html">
             Миссия и ценности
           </a>
-          <a class="popular__link" href="#">
-            Рейтинги и сертификаты
-          </a>
-          <a class="popular__link" href="#">
-            Партнёры компании
-          </a>
-          <a class="popular__link" href="#">
-            Клиенты
-          </a>
-          <a class="popular__link" href="#">
-            Новости Компании
-          </a>
-          <a class="popular__link" href="#">
-            Благодарственные письма
-          </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="types.html">
             Виды страхованияв
           </a>
-          <a class="popular__link" href="#">
-            Материалы для скачивания
-          </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="carrier.html">
             Страхование перевозчиков и эспедиторов
           </a>
-          <a class="popular__link" href="#">
-            Карьера в компании
-          </a>
-          <a class="popular__link" href="#">
+  
+          <a class="popular__link" href="contacts.html">
             Контакты и реквизиты
           </a>
-          <a class="popular__link" href="#">
+          <a class="popular__link" href="contacts.html">
             Юридическая информация
           </a>
         </div>
@@ -802,7 +771,7 @@
               <p class="popular__contact-text">
                 адрес электронной почты
               </p>
-
+  
             </div>
             <div class="popular__contact-adress">
               <span class="popular__contact-city">
@@ -820,23 +789,13 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
   <footer class="footer">
     <div class="container">
       <div class="footer__section">
         <div class="footer__left">
           <ul class="footer__left-item">
             <li class="footer__left-item">
-              <a class="footer__left-item-link" href="#">
+              <a class="footer__left-item-link" href="personal-date.html">
                 Пользовательское соглашение
               </a>
             </li>
@@ -846,7 +805,7 @@
               </a>
             </li>
             <li class="footer__left-item">
-              <a class="footer__left-item-link" href="#">
+              <a class="footer__left-item-link" href="personal-date.html">
                 Политика о порядке обработки персональных данных
               </a>
             </li>
@@ -878,17 +837,17 @@
             <p class="footer__right-subtitle ">
               Все права защищены
             </p>
-            <img class="footer__right-img" src="images/logo-footer.png" alt="">
+            <img class="footer__right-img" src="images/logo-footer.png" alt="logo footer">
           </div>
         </div>
       </div>
-
+  
     </div>
-
+  
   </footer>
-
-<script src="https://api-maps.yandex.ru/2.1/?apikey=5ca7c517-8f94-429f-8335-382a3cdcc972&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=5ca7c517-8f94-429f-8335-382a3cdcc972&lang=ru_RU"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
-</body>
-
-</html>
+  </body>
+  
+  </html>

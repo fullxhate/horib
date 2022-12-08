@@ -40,6 +40,10 @@ $(window).on('load' ,function () {
 
 
 new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
   loop : false,
   trueMode : true,
   slidesPerView: 3,
@@ -49,6 +53,29 @@ new Swiper('.swiper', {
   mousewheel: {
     sensitivity: 1,
   },
+  breakpoints: {
+
+    320: {
+      slidesPerView :'auto' ,
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter : 0,
+      slidesPerGroup: 1,
+      
+    },
+    480: {
+      slidesPerView :3 ,
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter : 0,
+      slidesPerGroup: 1,
+      
+    },
+    992: {
+      slidesPerView :3 ,
+    },
+  },
+
 
 });
 
