@@ -78,6 +78,11 @@ new Swiper('.swiper', {
 
 
 });
+let carousel = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }})
 
 
 $(document).mouseup(function (e) {

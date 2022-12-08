@@ -759,13 +759,16 @@ body {
     .swiper-slide,
   .swiper-slide-active,
   .swiper-slide-next {
-    height: 11rem !important;
+    height: 12rem !important;
     width: 32rem !important;
   }
+    .swiper-button-next{
+      right: 0rem;
+    }
+
   .swiper-button-next::after{
     font-size: 1.8rem;
     color: #000;
-    margin-left: 3rem;
   }
   .swiper-button-prev::after{
 display: none;
