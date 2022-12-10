@@ -87,6 +87,15 @@ body {
     margin-right: 2.5rem;
     display: flex;
     gap: 0.3rem;
+
+    svg:hover path{
+      stroke: #E86630;
+    }
+  }
+
+
+  &__contact:hover svg path {
+    fill: #E86630;
   }
 
   &__right-btn {
@@ -97,7 +106,6 @@ body {
     position: relative;
     align-items: center;
     gap: 0.4rem;
-
 
     &:hover {
       color: $hover;
@@ -729,9 +737,7 @@ body {
     margin-bottom: 3rem;
   }
 
-  &__items-top {
-
-  }
+  &__items-top {}
 
   // &__items-more {
   //   display: none;
@@ -752,26 +758,53 @@ body {
   //   width: 120rem;
   //   height: 100%;
   // }
-  .swiper-wrapper{
-    height: 20rem !important;
-    padding: 1rem;
+  .swiper {
+    width: 118rem;
   }
-    .swiper-slide,
+
+  .swiper-wrapper {
+    height: 20rem !important;
+    padding: 2rem 0.5rem;
+    width: 120rem;
+  }
+
+  .swiper-slide,
   .swiper-slide-active,
   .swiper-slide-next {
     height: 12rem !important;
-    width: 32rem !important;
+    width: 32.4rem !important;
   }
-    .swiper-button-next{
-      right: 0rem;
-    }
 
-  .swiper-button-next::after{
-    font-size: 1.8rem;
-    color: #000;
+  .swiper-button-next {
+    right: 0rem;
   }
-  .swiper-button-prev::after{
-display: none;
+  .swiper-wrapper--business {
+    height: 24rem !important;
+    padding: 1rem 0;
+    width: 120rem;
+  }
+
+  .swiper-slide--business,
+  .swiper-slide-active--business,
+  .swiper-slide-next--business {
+    height: 17rem !important;
+    width: 32.4rem !important;
+  }
+
+  // .swiper-button-next {
+  //   right: 0rem;
+  // }
+
+  // .swiper-button-next::after {
+  //   font-size: 1.8rem;
+  //   color: #000;
+  // }
+
+  // .swiper-button-prev::after {
+  //   display: none;
+  // }
+  .swiper-pagination-progressbar-fill{
+     background-color:#452c60
   }
 
 
@@ -779,7 +812,6 @@ display: none;
     display: block;
     width: 37rem ;
     height: 17rem;
-
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     border-radius: 2rem;
     padding: 3rem;
@@ -815,6 +847,7 @@ display: none;
     @extend %circe-700;
     color: $default;
     padding-top: 1rem;
+    width: 33rem;
 
     &:hover {
       color: $hover;
@@ -825,6 +858,8 @@ display: none;
 
   &__item-about {
     color: $default ;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
   }
 
   &__subtitle {

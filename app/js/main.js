@@ -37,19 +37,35 @@ $(window).on('load' ,function () {
   $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
   
 });
+$(document).ready(function () {
+  let brand = $.cookie('business__filter-btn--all');
+  if (!!brand) {
+    $('.tab button[value=' + brand + ']').addClass("active");
+  }
+  initBrandSelector();
+});
 
 
 new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev'
+  // },
   loop : false,
   trueMode : true,
   slidesPerView: 'auto',
-  spaceBetween: 20,
+  spaceBetween: 17,
   autoHeight: true,
   slidesPerGroup: 1,
+  slidesOffsetAfter: 0,
+  slidesOffsetBefore: 0,
+  WatchSlidesProgress: true,
+  pagination : {
+    el : '.swiper-pagination',
+    type : 'progressbar',
+  },
+  
+ 
   mousewheel: {
     sensitivity: 1,
   },
@@ -78,11 +94,7 @@ new Swiper('.swiper', {
 
 
 });
-let carousel = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }})
+
 
 
 $(document).mouseup(function (e) {
