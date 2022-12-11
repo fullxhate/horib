@@ -872,9 +872,10 @@ body {
   &__personal,
   &__finance {
     display: flex;
+    padding: 2rem 0.5rem;
 
     a {
-      margin-right: 2rem;
+      margin-right: 1.3rem;
     }
   }
 
