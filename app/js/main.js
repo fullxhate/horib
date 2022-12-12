@@ -63,7 +63,7 @@ let swiper = new Swiper('.swiper__one', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+    
   },
 
 
@@ -83,7 +83,6 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
       },
 
 
@@ -126,7 +125,6 @@ let swiper__two = new Swiper('.swiper__two', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets : true,
   },
 
 
@@ -144,7 +142,6 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
       },
     480: {
       slidesPerView: 3,

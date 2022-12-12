@@ -238,31 +238,37 @@
      }
 
 
- 
+
 
      &__item-text {
        font-size: 2.2rem;
        line-height: 2.6rem;
      }
-             .swiper {
-               width: auto;
-             }
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      display: none;
-    }
-         .swiper-pagination {
-           display: block;
-         }
-    .swiper-pagination-bullet{
-      background-color: #452c60;
-    }
-        .swiper-horizontal>.swiper-pagination-progressbar,
-        .swiper-pagination-progressbar.swiper-pagination-horizontal,
-        .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
-        .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
-          top: 22rem;
-        }
+
+     .swiper {
+       width: auto;
+     }
+
+
+     .swiper-button-next::after,
+     .swiper-button-prev::after {
+       display: none;
+     }
+
+     .swiper-pagination {
+       display: block;
+     }
+
+     .swiper-pagination-bullet {
+       background-color: #452c60;
+     }
+
+     .swiper-horizontal>.swiper-pagination-progressbar,
+     .swiper-pagination-progressbar.swiper-pagination-horizontal,
+     .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+     .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+       top: 22rem;
+     }
 
      &__item {
        width: 45rem;
@@ -274,8 +280,13 @@
          margin: 0 auto;
        }
      }
-     &__item-text{
-      width: auto;
+
+     &__item:hover {
+       transform: none;
+     }
+
+     &__item-text {
+       width: auto;
      }
 
      &__img-one,
