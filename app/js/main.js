@@ -11,8 +11,8 @@ function init() {
   let placemark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#imageWithContent',
     iconImageHref: './images/map.png',
-    iconImageSize: [40 ,46],
-    iconImageOffset : [ 50, -80],
+    iconImageSize: [40, 46],
+    iconImageOffset: [50, -80],
   });
   map.controls.remove('geolocationControl'); // удаляем геолокацию
   map.controls.remove('searchControl'); // удаляем поиск
@@ -32,10 +32,10 @@ function init() {
 //   loop: true,});
 
 
-$(window).on('load' ,function () {
-  
+$(window).on('load', function () {
+
   $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
-  
+
 });
 $(document).ready(function () {
   let brand = $.cookie('business__filter-btn--all');
@@ -46,13 +46,13 @@ $(document).ready(function () {
 });
 
 
-new Swiper('.swiper', {
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev'
-  // },
-  loop : false,
-  trueMode : true,
+let swiper = new Swiper('.swiper__one', {
+  navigation: {
+    nextEl: '.swiper-button-next--first ',
+    prevEl: '.swiper-button-prev--first',
+  },
+  loop: false,
+  trueMode: true,
   slidesPerView: 'auto',
   spaceBetween: 17,
   autoHeight: true,
@@ -60,40 +60,96 @@ new Swiper('.swiper', {
   slidesOffsetAfter: 0,
   slidesOffsetBefore: 0,
   WatchSlidesProgress: true,
-  pagination : {
-    el : '.swiper-pagination',
-    type : 'progressbar',
-  },
-  
- 
+
+
   mousewheel: {
     sensitivity: 1,
   },
   breakpoints: {
 
     320: {
-      slidesPerView :'auto' ,
+      slidesPerView: 'auto',
       loop: false,
       trueMode: true,
-      slidesOffsetAfter : 0,
+      slidesOffsetAfter: 0,
       slidesPerGroup: 1,
-      
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar'
+      },
+
+
+
     },
     480: {
-      slidesPerView :3 ,
+      slidesPerView: 3,
       loop: false,
       trueMode: true,
-      slidesOffsetAfter : 0,
+      slidesOffsetAfter: 0,
       slidesPerGroup: 1,
-      
+      observer: true,
+      observeParents: true,
+
+
     },
     992: {
-      slidesPerView :3 ,
+      slidesPerView: 3,
     },
   },
 
 
 });
+
+let swiper__two = new Swiper('.swiper__two', {
+  navigation: {
+    nextEl: '.swiper-button-next--twice',
+    prevEl: '.swiper-button-prev--twice',
+
+  },
+  loop: false,
+  trueMode: true,
+  slidesPerView: 'auto',
+  spaceBetween: 17,
+  autoHeight: true,
+  slidesPerGroup: 1,
+  slidesOffsetAfter: 0,
+  slidesOffsetBefore: 0,
+  WatchSlidesProgress: true,
+
+
+  mousewheel: {
+    sensitivity: 1,
+  },
+  breakpoints: {
+
+    320: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar'
+
+    },
+    480: {
+      slidesPerView: 3,
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+
+
+}});
 
 
 
@@ -117,13 +173,13 @@ $(function () {
   $('.header__right-btn , .btn__sand').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     $('body').css('overflow', 'hidden');
-    
+
     return false;
   });
   $('.header__list--bg ').on('click', function () {
     $('.modal-two').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
     $('body').css('overflow', 'hidden');
-    
+
     return false;
   });
 
@@ -203,7 +259,7 @@ $(function () {
 
   $('.purchases-faq__question--one').on('click', function () {
     $('.purchases-faq__files').slideToggle(300), $('.purchases-faq__img--one').toggleClass('transform');
-    $('.purchases-faq__files').css('display' , 'flex');
+    $('.purchases-faq__files').css('display', 'flex');
     return false;
   });
 

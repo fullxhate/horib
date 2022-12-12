@@ -616,7 +616,6 @@ body {
 
 .business {
 
-
   &__top {
     padding-top: 10rem;
     display: flex;
@@ -761,6 +760,9 @@ body {
   .swiper {
     width: 118rem;
   }
+  .swiper__arrow{
+    position: relative;
+  }
 
   .swiper-wrapper {
     height: 20rem !important;
@@ -776,8 +778,26 @@ body {
   }
 
   .swiper-button-next {
-    right: 0rem;
+    right: -2rem;
   }
+    .swiper-button-prev{
+      left: -2rem;
+      font-size: 1.8rem;
+      color: #000;
+    }
+  .swiper-button-next--twice {
+    right: -2rem;
+    position: absolute;
+    top: -13rem;
+    
+  }
+    .swiper-button-prev--twice{
+      left: -2rem;
+      font-size: 1.8rem;
+      color: #000;
+      position: absolute;
+      top: -13rem;
+    }
   .swiper-wrapper--business {
     height: 24rem !important;
     padding: 1rem 0;
@@ -790,22 +810,38 @@ body {
     height: 17rem !important;
     width: 32.4rem !important;
   }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled{
+      opacity: 0;
+    }
 
-  // .swiper-button-next {
-  //   right: 0rem;
-  // }
 
-  // .swiper-button-next::after {
-  //   font-size: 1.8rem;
-  //   color: #000;
-  // }
+
+  .swiper-button-next--first::after{ 
+    font-size: 1.8rem;
+    color: #000;
+  }
+    .swiper-button-prev--first::after{
+        font-size: 1.8rem;
+          color: #000;
+    }
+  .swiper-button-next--twice::after{ 
+    font-size: 1.8rem;
+    color: #000;
+  }
+    .swiper-button-prev--twice::after{
+        font-size: 1.8rem;
+          color: #000;
+    }
 
   // .swiper-button-prev::after {
   //   display: none;
   // }
-  .swiper-pagination-progressbar-fill{
-     background-color:#452c60
-  }
+
+    .swiper-button-next--first,
+    .swiper-button-prev--first {
+      top: 60%;
+    }
 
 
   &__item {
