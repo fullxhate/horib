@@ -85,18 +85,32 @@ body {
     align-items: center;
     color: $default;
     margin-right: 2.5rem;
-
     gap: 0.3rem;
+
+    svg {
+      margin-top: 0.5rem;
+    }
+
+    &:hover {
+      svg {
+        path {
+          transition: ease 0.3s;
+          stroke: $hover
+        }
+
+      }
+    }
+
 
   }
 
   &__svg {
 
 
-    &:hover svg{
+    &:hover svg {
       path {
         transition: ease 0.4s;
-        stroke: #323;
+        stroke: $hover
       }
 
     }
@@ -116,9 +130,21 @@ body {
     align-items: center;
     gap: 0.4rem;
 
+    svg {
+      margin-top: 0.5rem;
+    }
+
     &:hover {
       color: $hover;
       transition: all .3s;
+
+      svg {
+        path {
+          transition: ease 0.3s;
+          stroke: $hover
+        }
+
+      }
 
     }
   }
@@ -1106,6 +1132,9 @@ body {
     margin-right: 2rem;
     font-size: 1.4rem;
     line-height: 2rem;
+    background-color: #F8F8FC;
+    color: $default;
+
   }
 
   &__form-place,
@@ -1170,6 +1199,7 @@ body {
     line-height: 2rem;
     color: #452C60;
     border: 1px solid $default;
+    align-items: center;
 
   }
 
@@ -1315,6 +1345,7 @@ body {
 
 .partners {
   padding-top: 14rem;
+  padding-bottom: 7.5rem;
 
   &__top {
     margin-bottom: 4rem;
@@ -1839,7 +1870,7 @@ body {
   &-left {
     display: block;
     width: 69.5rem;
-    margin-right: 10rem;
+    margin-right: 14rem;
     padding-bottom: 10rem;
   }
 
@@ -1862,7 +1893,7 @@ body {
   &-subtitle {
     font-size: 1.4rem;
     line-height: 2rem;
-    width: 63rem;
+    width: 73rem;
     padding-bottom: 2rem;
   }
 
@@ -1984,7 +2015,9 @@ body {
   }
 
   &-pluses__text {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   &-price {
@@ -2663,7 +2696,10 @@ body {
 
   &__pluses-top {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    img{
+      margin-top: 0.2rem;
+    }
   }
 
   &__pluses-top__title {
@@ -3208,6 +3244,7 @@ body {
 
     p {
       margin-bottom: 2rem;
+      padding-left: 2rem;
     }
 
   }
@@ -3251,6 +3288,7 @@ body {
     margin-right: 2rem;
     margin-top: 4rem;
 
+
     img {
       margin: 0 auto
     }
@@ -3261,7 +3299,7 @@ body {
     line-height: 2.6rem;
     font-size: 2.2rem;
     text-align: center;
-
+    width: 29rem
   }
 
   &-pluses__item-text {

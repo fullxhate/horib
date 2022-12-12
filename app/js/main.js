@@ -26,31 +26,10 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
-// const swiper = new Swiper('.business__items-list', {
-//   // Optional parameters
-//   direction: 'vertical',
-//   loop: true,});
 
-
-$(window).on('load', function () {
-
-  $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
-
-});
-$(document).ready(function () {
-  let brand = $.cookie('business__filter-btn--all');
-  if (!!brand) {
-    $('.tab button[value=' + brand + ']').addClass("active");
-  }
-  initBrandSelector();
-});
 
 
 let swiper = new Swiper('.swiper__one', {
-  // // navigation: {
-  // //   nextEl: '.swiper-button-next--first ',
-  // //   prevEl: '.swiper-button-prev--first',
-  // },
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
@@ -89,18 +68,38 @@ let swiper = new Swiper('.swiper__one', {
 
     },
     480: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       loop: false,
       trueMode: true,
       slidesOffsetAfter: 0,
       slidesPerGroup: 1,
       observer: true,
       observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+
+
 
 
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+
+
     },
   },
 
@@ -108,11 +107,6 @@ let swiper = new Swiper('.swiper__one', {
 });
 
 let swiper__two = new Swiper('.swiper__two', {
-  // navigation: {
-  //   nextEl: '.swiper-button-next--twice',
-  //   prevEl: '.swiper-button-prev--twice',
-
-  // },
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
@@ -144,38 +138,40 @@ let swiper__two = new Swiper('.swiper__two', {
         clickable: true,
       },
     480: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       loop: false,
       trueMode: true,
       slidesOffsetAfter: 0,
       slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,}
 
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
     },
   },
+}
 
 
 }});
 
 
 
-$(document).mouseup(function (e) {
-  let block = $(".modal-wrapper  , .modal , .modal-two, ");
-  if (!block.is(e.target) && block.has(e.target).length === 0) {
-    block.hide();
-  }
-});
 
 
 
 
 $(function () {
-
-
-
-
+  
 
 
   $('.header__right-btn , .btn__sand').on('click', function () {
@@ -279,18 +275,6 @@ $(function () {
   });
 
 
-
-  // $('.business__img-one').on('click', function () {
-  //   $('.business__items-more--one ').slideToggle(300);
-  //   $('.business__items-more--one ').css('display', 'flex');
-  //   $('.business__img-one').toggleClass('transform');
-  // });
-
-  // $('.business__img-two').on('click', function () {
-  //   $('.business__items-more--two ').slideToggle(300);
-  //   $('.business__items-more--two ').css('display', 'flex');
-  //   $('.business__img-two').toggleClass('transform');
-  // });
   $('.audit-faq__question--one').on('click', function () {
     $('.audit-faq__text--one').slideToggle(300), $('.audit-faq__img--one').toggleClass('transform');
 
@@ -431,6 +415,19 @@ $(function () {
 
     return false;
   });
+
+});
+
+$(document).mouseup(function (e) {
+  let block = $(".modal-wrapper  , .modal , .modal-two, ");
+  if (!block.is(e.target) && block.has(e.target).length === 0) {
+    block.hide();
+  }
+});
+
+$(window).on('load', function () {
+
+  $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
 
 });
 
