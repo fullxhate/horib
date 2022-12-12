@@ -763,15 +763,18 @@ body {
   .swiper__arrow{
     position: relative;
   }
-  .swiper-pagination{
-    display: none;
-  }
+
 
   .swiper-wrapper {
     height: 20rem !important;
     padding: 2rem 0.5rem;
     width: 120rem;
   }
+            .swiper-pagination-bullet {
+              background-color: #452c60;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
 
   .swiper-slide,
   .swiper-slide-active,

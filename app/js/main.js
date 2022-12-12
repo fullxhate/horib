@@ -47,10 +47,10 @@ $(document).ready(function () {
 
 
 let swiper = new Swiper('.swiper__one', {
-  navigation: {
-    nextEl: '.swiper-button-next--first ',
-    prevEl: '.swiper-button-prev--first',
-  },
+  // // navigation: {
+  // //   nextEl: '.swiper-button-next--first ',
+  // //   prevEl: '.swiper-button-prev--first',
+  // },
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
@@ -60,6 +60,11 @@ let swiper = new Swiper('.swiper__one', {
   slidesOffsetAfter: 0,
   slidesOffsetBefore: 0,
   WatchSlidesProgress: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
 
 
   mousewheel: {
@@ -77,7 +82,8 @@ let swiper = new Swiper('.swiper__one', {
       observeParents: true,
       pagination: {
         el: '.swiper-pagination',
-        type: 'progressbar'
+        clickable: true,
+        dynamicBullets: true,
       },
 
 
@@ -103,11 +109,11 @@ let swiper = new Swiper('.swiper__one', {
 });
 
 let swiper__two = new Swiper('.swiper__two', {
-  navigation: {
-    nextEl: '.swiper-button-next--twice',
-    prevEl: '.swiper-button-prev--twice',
+  // navigation: {
+  //   nextEl: '.swiper-button-next--twice',
+  //   prevEl: '.swiper-button-prev--twice',
 
-  },
+  // },
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
@@ -117,6 +123,11 @@ let swiper__two = new Swiper('.swiper__two', {
   slidesOffsetAfter: 0,
   slidesOffsetBefore: 0,
   WatchSlidesProgress: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets : true,
+  },
 
 
   mousewheel: {
@@ -132,9 +143,9 @@ let swiper__two = new Swiper('.swiper__two', {
       slidesPerGroup: 1,
       pagination: {
         el: '.swiper-pagination',
-        type: 'progressbar'
-
-    },
+        clickable: true,
+        dynamicBullets: true,
+      },
     480: {
       slidesPerView: 3,
       loop: false,
