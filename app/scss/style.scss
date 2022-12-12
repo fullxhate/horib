@@ -763,6 +763,9 @@ body {
   .swiper__arrow{
     position: relative;
   }
+  .swiper-pagination{
+    display: none;
+  }
 
   .swiper-wrapper {
     height: 20rem !important;
