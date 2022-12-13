@@ -167,9 +167,35 @@
      }
 
      &__subtitle {
-       font-size: 2rem;
+       font-size: 1.5rem;
        line-height: 3rem;
-     }
+      //  animation: none;
+       margin-left: 1rem;
+      animation: cursor 0.1s step-start ,
+          text 4s steps(120) alternate ;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        
+        width: 42rem;
+      }
+      
+      @keyframes cursor {
+      
+        0%,
+        100% {
+          border-color: $default;
+        }
+      }
+      
+      @keyframes text {
+        0% {
+          width: 0;
+        }
+      
+        100% {
+          width: 42rem;
+        }
+      }
 
    }
 

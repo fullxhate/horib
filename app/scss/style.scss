@@ -648,11 +648,37 @@ body {
     text-align: center;
   }
 
+
   &__subtitle {
+    width: 51rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2rem solid $default;
+    animation: cursor 0.1s step-start infinite,
+      text 4s steps(120) alternate infinite;
     font-size: 1.8rem;
-    line-height: 140%;
-    text-align: center;
+    line-height: 2rem;
+    margin-left: 32rem;
   }
+
+  @keyframes cursor {
+
+    0%,
+    100% {
+      border-color: $default;
+    }
+  }
+
+  @keyframes text {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 51rem;
+    }
+  }
+
 }
 
 .business {
@@ -1720,7 +1746,7 @@ body {
     display: block;
     width: 69.5rem;
     margin-right: 10rem;
-    
+
   }
 
   &-left__choise {
@@ -2697,7 +2723,8 @@ body {
   &__pluses-top {
     display: flex;
     align-items: flex-start;
-    img{
+
+    img {
       margin-top: 0.2rem;
     }
   }
