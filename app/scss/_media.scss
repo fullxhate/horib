@@ -1169,6 +1169,13 @@
        display: flex;
        flex-wrap: wrap;
      }
+     &-price__side {
+      display: flex;
+      flex-wrap: wrap;
+    }
+     &-about__text--price {
+      width: auto;
+    }
 
      &-left {
        width: auto;
