@@ -646,6 +646,8 @@ body {
     @extend %manrope-800;
     margin-bottom: 3rem;
     text-align: center;
+    width: 82rem;
+    margin-left: 18rem;
   }
 
 
@@ -658,7 +660,7 @@ body {
       text 3s steps(120) alternate  ;
     font-size: 1.8rem;
     line-height: 2rem;
-    margin-left: 32rem;
+    margin-left: 34rem;
   }
 
   @keyframes cursor {
