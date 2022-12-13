@@ -654,8 +654,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.2rem solid $default;
-    animation: cursor 0.1s step-start infinite,
-      text 4s steps(120) alternate infinite;
+    animation: cursor 1s step-start infinite,
+      text 3s steps(120) alternate  ;
     font-size: 1.8rem;
     line-height: 2rem;
     margin-left: 32rem;
@@ -667,6 +667,9 @@ body {
     100% {
       border-color: $default;
     }
+            50% {
+              border-color: transparent;
+            }
   }
 
   @keyframes text {
