@@ -831,6 +831,7 @@ body {
   // }
   .swiper {
     width: 118rem;
+    border-radius: 1.4rem;
   }
 
   .swiper__arrow {
@@ -1003,15 +1004,16 @@ body {
   }
 
   &__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
 
   }
 
+
   &__item {
-    max-width: 29rem;
-    height: 27rem;
+    max-width: 21rem;
+    height: 20rem;
     padding: 3rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     border-radius: 2rem;
@@ -1020,6 +1022,7 @@ body {
     margin-bottom: 1rem;
     margin-right: 2rem;
     transition: transform .2s;
+    text-align: center;
   }
 
   &__item:hover {

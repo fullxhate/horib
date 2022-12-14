@@ -163,6 +163,158 @@ let swiper__two = new Swiper('.swiper__two', {
 
 
 }});
+let swiper__three = new Swiper('.swiper__three', {
+  loop: false,
+  trueMode: true,
+  slidesPerView: 'auto',
+  spaceBetween: 17,
+  autoHeight: true,
+  slidesPerGroup: 1,
+  slidesOffsetAfter: 0,
+  slidesOffsetBefore: 0,
+  WatchSlidesProgress: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+
+  breakpoints: {
+
+    320: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    480: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,}
+
+    },
+    992: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+  },
+}
+
+
+}});
+
+let swiper__four = new Swiper('.swiper__four', {
+  loop: false,
+  trueMode: true,
+  slidesPerView: 'auto',
+  spaceBetween: 17,
+  autoHeight: true,
+  slidesPerGroup: 1,
+  slidesOffsetAfter: 0,
+  slidesOffsetBefore: 0,
+  WatchSlidesProgress: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+
+  
+  breakpoints: {
+
+    320: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    480: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,}
+
+    },
+    992: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+  },
+}
+
+
+}});
+let swiper__five = new Swiper('.swiper__five', {
+slidesPerView : 4,
+  breakpoints: {
+
+    320: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    480: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,}
+
+    },
+    992: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+  },
+}
+
+
+}});
 
 
 

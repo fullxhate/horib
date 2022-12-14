@@ -30,12 +30,12 @@
         <div class="header__right">
           <a class="header__contact" href="tel:+74956405400">
             <div class="header__svg">
-                          <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3E3F58"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.24275 3.6544C2.47999 3.26159 3.78712 1.83282 4.71991 1.87596C4.99875 1.89906 5.24523 2.06774 5.4455 2.26338C5.90535 2.71242 7.22172 4.41076 7.29644 4.76814C7.47822 5.64466 6.43375 6.14993 6.7534 7.03337C7.56834 9.02748 8.97253 10.4316 10.9675 11.2457C11.8502 11.5654 12.3555 10.5209 13.2321 10.7035C13.5887 10.7782 15.2879 12.0945 15.737 12.5543C15.9319 12.7538 16.1013 13.0011 16.1244 13.2799C16.1591 14.2619 14.6417 15.5875 14.3459 15.7569C13.648 16.256 12.7376 16.2476 11.6276 15.7315C8.5304 14.4429 3.58069 9.58666 2.26817 6.37252C1.76596 5.26879 1.73129 4.35222 2.24275 3.6544Z"
-                stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3E3F58"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.24275 3.6544C2.47999 3.26159 3.78712 1.83282 4.71991 1.87596C4.99875 1.89906 5.24523 2.06774 5.4455 2.26338C5.90535 2.71242 7.22172 4.41076 7.29644 4.76814C7.47822 5.64466 6.43375 6.14993 6.7534 7.03337C7.56834 9.02748 8.97253 10.4316 10.9675 11.2457C11.8502 11.5654 12.3555 10.5209 13.2321 10.7035C13.5887 10.7782 15.2879 12.0945 15.737 12.5543C15.9319 12.7538 16.1013 13.0011 16.1244 13.2799C16.1591 14.2619 14.6417 15.5875 14.3459 15.7569C13.648 16.256 12.7376 16.2476 11.6276 15.7315C8.5304 14.4429 3.58069 9.58666 2.26817 6.37252C1.76596 5.26879 1.73129 4.35222 2.24275 3.6544Z"
+                  stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
             +7 (495) 640 54 00
           </a>
@@ -51,7 +51,7 @@
               </svg>
 
             </div>
-            
+
             Задать вопрос
           </a>
           <div class="modal-wrapper">
@@ -446,15 +446,15 @@
             Финансовые риски
           </p>
           <div class="business__inner">
-            <div class="business__items">
-              <div class="business__finance">
-                <a class="business__item" href="debtor.html">
+            <div class="business__items swiper swiper__three">
+              <div class="business__finance swiper-wrapper">
+                <a class="business__item swiper-slide" href="debtor.html">
                   <img src="images/main/finance/1.png" alt="png Страхование дебиторской задолженности">
                   <p class="business__item-text">
                     Страхование дебиторской задолженности
                   </p>
                 </a>
-                <a class="business__item" href="contract.html">
+                <a class="business__item swiper-slide" href="contract.html">
                   <img src="images/main/finance/2.png"
                     alt="png Страхование ответственности за нарушение договорных обязательств">
                   <p class="business__item-text">
@@ -462,6 +462,7 @@
                   </p>
                 </a>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -469,26 +470,29 @@
           <p class="business__subtitle ">
             Личное страхование
           </p>
-          <div class="business__personal">
-            <a class="business__item" href="dms.html">
-              <img src="images/main/personal/1.png" alt="png ДМС для организаций ">
-              <p class="business__item-text">
-                ДМС для организаций
-              </p>
-            </a>
-            <a class="business__item" href="collective.html">
-              <img src="images/main/personal/2.png" alt="png Коллективное страхование от несчастных случаев и болезней">
-              <p class="business__item-text">
-                Коллективное страхование от несчастных случаев и болезней
-              </p>
-            </a>
+          <div class="business__personal swiper swiper__four">
+            <div class="swiper-wrapper">
+              <a class="business__item swiper-slide" href="dms.html">
+                <img src="images/main/personal/1.png" alt="png ДМС для организаций ">
+                <p class="business__item-text">
+                  ДМС для организаций
+                </p>
+              </a>
+              <a class="business__item swiper-slide" href="collective.html">
+                <img src="images/main/personal/2.png"
+                  alt="png Коллективное страхование от несчастных случаев и болезней">
+                <p class="business__item-text">
+                  Коллективное страхование от несчастных случаев и болезней
+                </p>
+              </a>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
+
+
+
       </div>
-
-
-
-    </div>
 
     </div>
     </div>
@@ -503,48 +507,52 @@
           Частным лицам
         </div>
       </div>
-      <div class="person__items">
-        <a class="person__item" href="#">
-          <img class="person__img" src="images/main/person/1.png" alt="png  Жизнь и здоровье">
-          <h4 class="person__item-title">
-            Жизнь и здоровье
-          </h4>
-          <p class="person__subtitle">
-            Чтобы повысить свою финансовую защищённость, оформите медицинскую страховку.
-          </p>
+      <div class="swiper swiper__five">
+        <div class="person__items swiper-wrapper">
+          <a class="person__item swiper-slide" href="#">
+            <img class="person__img" src="images/main/person/1.png" alt="png  Жизнь и здоровье">
+            <h4 class="person__item-title">
+              Жизнь и здоровье
+            </h4>
+            <p class="person__subtitle">
+              Чтобы повысить свою финансовую защищённость, оформите медицинскую страховку.
+            </p>
 
-        </a>
-        <a class="person__item" href="#">
-          <img class="person__img" src="images/main/person/2.png" alt="png Дом и квартира">
-          <h4 class="person__item-title">
-            Дом и квартира
-          </h4>
-          <p class="person__subtitle">
-            Защита квартиры от залива, пожара и других непредвиденных жизненных ситуаций.
-          </p>
+          </a>
+          <a class="person__item swiper-slide" href="#">
+            <img class="person__img" src="images/main/person/2.png" alt="png Дом и квартира">
+            <h4 class="person__item-title">
+              Дом и квартира
+            </h4>
+            <p class="person__subtitle">
+              Защита квартиры от залива, пожара и других непредвиденных жизненных ситуаций.
+            </p>
 
-        </a>
-        <a class="person__item" href="#">
-          <img class="person__img" src="images/main/person/3.png" alt="png Транспорт">
-          <h4 class="person__item-title">
-            Транспорт
-          </h4>
-          <p class="person__subtitle">
-            Позаботьтесь о себе и своём авто — приобретите надёжную страховку от ущерба и угона онлайн.
-          </p>
+          </a>
+          <a class="person__item swiper-slide" href="#">
+            <img class="person__img" src="images/main/person/3.png" alt="png Транспорт">
+            <h4 class="person__item-title">
+              Транспорт
+            </h4>
+            <p class="person__subtitle">
+              Позаботьтесь о себе и своём авто — приобретите надёжную страховку от ущерба и угона онлайн.
+            </p>
 
-        </a>
-        <a class="person__item" href="#">
-          <img class="person__img" src="images/main/person/4.png" alt="png Искусство">
-          <h4 class="person__item-title">
-            Искусство
-          </h4>
-          <p class="person__subtitle">
-            Чем бы ни являлся предмет искусства для вас, позаботиться о его защите вполне разумно.
-          </p>
+          </a>
+          <a class="person__item swiper-slide" href="#">
+            <img class="person__img" src="images/main/person/4.png" alt="png Искусство">
+            <h4 class="person__item-title">
+              Искусство
+            </h4>
+            <p class="person__subtitle">
+              Чем бы ни являлся предмет искусства для вас, позаботиться о его защите вполне разумно.
+            </p>
 
-        </a>
+          </a>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
+
     </div>
   </section>
   <section class="about">
