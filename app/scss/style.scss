@@ -3202,11 +3202,13 @@ body {
     border-radius: 2rem;
     margin-bottom: 3rem;
     margin-right: 1rem;
-
-
-
-
-
+    transition: transform .2s;
+  }
+  &-programms__link:hover{
+    transform: scale(1.1);
+    .personal-programms__title{
+      color: $hover
+    }
   }
 
   &-programms__title {
@@ -3214,12 +3216,14 @@ body {
     font-size: 2.2rem;
     line-height: 2.6rem;
     padding: 1rem 0 1rem 0;
+
   }
 
   &-programms__text {
     font-size: 1.4rem;
     line-height: 2rem;
     width: 33rem;
+    color: $default;
   }
 
   &-faq {
