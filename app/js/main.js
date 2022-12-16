@@ -33,7 +33,7 @@ let swiper = new Swiper('.swiper__one', {
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
-  spaceBetween: 17,
+  spaceBetween: 20,
   autoHeight: true,
   slidesPerGroup: 3,
   slidesOffsetAfter: 0,
