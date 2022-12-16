@@ -872,12 +872,13 @@ body {
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2rem);
   }
-    .pagination-bullet-active-prev-prev{
-      width: 0.8rem;
-      height: 0.8rem;
-    }
 
- 
+  .pagination-bullet-active-prev-prev {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+
 
 
 
@@ -1391,20 +1392,48 @@ body {
 
   &__inner {
     padding: 2rem;
-    width: 39rem;
+    width: 14.8rem;
     border-radius: 2rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     background-color: #fff;
-    margin-right: 2rem;
     z-index: 1;
+    height: 18.5rem;
+    cursor: pointer;
 
+    img {
+      width: 11.5rem;
+      height: 15rem
+    }
+  }
+
+  .swiper-wrapper {
+    height: 26rem;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2rem);
+  }
+
+  .swiper-pagination-bullet {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $default;
+    // width: 1rem;
+    // height: 1rem;
   }
 
   &__inner-title {
     @extend %circe-700;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     z-index: 1;
+    text-align: center;
+    margin-top: 1rem;
+
 
 
   }
@@ -1857,7 +1886,10 @@ body {
 
 .business__page {
   padding-top: 12rem;
-
+  .swiper-slide-clients {
+      height: 18.5rem !important;
+      width: 14.8rem !important;
+    }
   &-top {
     display: flex;
     align-items: center;
@@ -2030,6 +2062,8 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
+
 }
 
 

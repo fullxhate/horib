@@ -339,7 +339,70 @@ slidesPerView : 4,
 
 
 }});
+let swiper__six = new Swiper('.swiper__six', {
+  loop: false,
+  trueMode: true,
+  slidesPerView: 'auto',
+  spaceBetween: 17,
+  slidesPerGroup: 1,
+  slidesOffsetAfter: 0,
+  slidesOffsetBefore: 0,
+  WatchSlidesProgress: true,
+  mousewheel: {
+    sensitivity: 1,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
 
+
+
+
+  breakpoints: {
+
+    320: {
+      slidesPerView: 'auto',
+      loop: false,
+      trueMode: true,
+      slidesOffsetAfter: 0,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      480: {
+        slidesPerView: 'auto',
+        loop: false,
+        trueMode: true,
+        slidesOffsetAfter: 0,
+        slidesPerGroup: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        }
+
+      },
+      992: {
+        slidesPerView: 'auto',
+        loop: false,
+        trueMode: true,
+        slidesOffsetAfter: 0,
+        slidesPerGroup: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+      },
+    }
+
+
+  }
+});
 
 
 

@@ -539,24 +539,25 @@
        padding-bottom: 0;
      }
 
-     &__feedback {
-       display: flex;
-       flex-direction: column;
-     }
 
      &__inner {
-       margin-bottom: 3rem;
-       width: 45rem;
+       width: 35rem !important;
+       height: 22rem !important;
+
      }
 
      &__inner-title {
-       font-size: 3rem;
-       line-height: 3rem;
+      margin-top: 2rem;
+       font-size: 2.5rem;
+       line-height:4rem;
      }
 
      &__inner-text {
        line-height: 2rem;
        font-size: 2rem;
+     }
+     .swiper{
+      height: 35rem;
      }
 
 

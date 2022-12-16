@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@chakra-ui/skeleton": "^2.0.18",
+    "@fancyapps/ui": "^4.0.31",
     "@googlemaps/js-api-loader": "^1.15.1",
     "ansi-colors": "^1.1.0",
     "ansi-gray": "^0.1.1",
