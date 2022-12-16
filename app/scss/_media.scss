@@ -331,6 +331,27 @@
        padding-bottom: 0;
 
      }
+            .swiper-wrapper {
+              height: 30rem !important;
+              padding: 2rem 0.5rem;
+              width: 120rem;
+            }
+      
+            .swiper-pagination-bullet {
+              background-color: #452c60;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+            .swiper-pagination__person{
+              top: 30rem;
+            }
+      
+            .swiper-slide,
+            .swiper-slide-active,
+            .swiper-slide-next {
+              height: 18rem !important;
+              width: 32.4rem !important;
+            }
 
 
 
