@@ -35,13 +35,16 @@ let swiper = new Swiper('.swiper__one', {
   slidesPerView: 'auto',
   spaceBetween: 17,
   autoHeight: true,
-  slidesPerGroup: 1,
+  slidesPerGroup: 3,
   slidesOffsetAfter: 0,
   slidesOffsetBefore: 0,
   WatchSlidesProgress: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets : true,
+    
+    
     
   },
 
@@ -62,6 +65,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
 
 
@@ -78,6 +82,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
 
 
@@ -96,6 +101,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
 
 
@@ -119,6 +125,7 @@ let swiper__two = new Swiper('.swiper__two', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 
 
@@ -136,6 +143,7 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
     480: {
       slidesPerView: 'auto',
@@ -145,7 +153,9 @@ let swiper__two = new Swiper('.swiper__two', {
       slidesPerGroup: 1,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,}
+        clickable: true,
+        dynamicBullets: true,
+      }
 
     },
     992: {
@@ -157,6 +167,7 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
   },
 }
@@ -176,6 +187,7 @@ let swiper__three = new Swiper('.swiper__three', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 
 
@@ -191,6 +203,7 @@ let swiper__three = new Swiper('.swiper__three', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
     480: {
       slidesPerView: 'auto',
@@ -200,7 +213,9 @@ let swiper__three = new Swiper('.swiper__three', {
       slidesPerGroup: 1,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,}
+        clickable: true, 
+        dynamicBullets: true,
+}
 
     },
     992: {
@@ -212,6 +227,7 @@ let swiper__three = new Swiper('.swiper__three', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
   },
 }
@@ -232,6 +248,7 @@ let swiper__four = new Swiper('.swiper__four', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
   },
 
 
@@ -248,6 +265,7 @@ let swiper__four = new Swiper('.swiper__four', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
     480: {
       slidesPerView: 'auto',
@@ -257,7 +275,9 @@ let swiper__four = new Swiper('.swiper__four', {
       slidesPerGroup: 1,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,}
+        clickable: true,
+        dynamicBullets: true,
+      }
 
     },
     992: {
@@ -269,6 +289,7 @@ let swiper__four = new Swiper('.swiper__four', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
   },
 }
@@ -288,6 +309,7 @@ slidesPerView : 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
     480: {
       slidesPerView: 'auto',
@@ -297,7 +319,8 @@ slidesPerView : 4,
       slidesPerGroup: 1,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,}
+        clickable: true, dynamicBullets: true,
+      }
 
     },
     992: {
@@ -309,6 +332,7 @@ slidesPerView : 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
   },
 }
