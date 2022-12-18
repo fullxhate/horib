@@ -646,8 +646,7 @@ body {
     @extend %manrope-800;
     margin-bottom: 3rem;
     text-align: center;
-    width: 82rem;
-    margin-left: 18rem;
+
   }
 
 
@@ -833,6 +832,7 @@ body {
   .swiper {
     width: 117rem;
     border-radius: 1.4rem;
+    background-color: transparent;
   }
 
   .swiper__arrow {
@@ -860,7 +860,7 @@ body {
   .swiper-slide,
   .swiper-slide-active,
   .swiper-slide-next {
-    height: 11rem !important;
+    height: 10rem !important;
     width: 31.2rem !important;
   }
 
@@ -1401,13 +1401,17 @@ body {
     cursor: pointer;
 
     img {
-      width: 11.5rem;
+      width: 11.5rem ;
       height: 15rem
     }
   }
 
   .swiper-wrapper {
-    height: 26rem;
+    height: 26rem !important;
+  }
+  .swiper-slide-clients{
+    width:14rem !important;
+    height: 18.5rem !important;
   }
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
