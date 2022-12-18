@@ -427,12 +427,12 @@ let swiper__six = new Swiper('.swiper__six', {
   }
 });
 
-lightbox.option({
-  'resizeDuration': 20,
-  'fadeDuration': 20,
-  'imageFadeDuration': 30,
-  'wrapAround': false,
-})
+// lightbox.option({
+//   'resizeDuration': 20,
+//   'fadeDuration': 20,
+//   'imageFadeDuration': 30,
+//   'wrapAround': false,
+// })
 
 
 
