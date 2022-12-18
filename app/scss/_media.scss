@@ -371,6 +371,7 @@
        max-width: none;
        max-height: none;
        text-align: center;
+       transform: none;
 
        img {
          margin: 0 auto;
@@ -378,6 +379,10 @@
 
        img {
          max-width: 50%;
+       }
+
+       &:hover {
+         transform: none;
        }
 
 
