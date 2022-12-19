@@ -905,7 +905,7 @@ body {
   }
 
   &__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 
     .business__item-text {
       color: $hover;
@@ -1400,12 +1400,17 @@ body {
     z-index: 1;
     height: 18.5rem;
     cursor: pointer;
+    transition: transform .2s;
 
     img {
       width: 11.5rem ;
       height: 15rem
     }
+
   }
+    &__inner:hover{
+      transform: scale(1.03);
+    }
 
   .swiper-wrapper {
     height: 26rem !important;
