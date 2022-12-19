@@ -36,14 +36,13 @@ let swiper = new Swiper('.swiper__one', {
   speed: 500,
   spaceBetween: 20,
   autoHeight: true,
-  slidesPerGroup: 3,
   slidesOffsetAfter: 0,
   slidesOffsetBefore: 0,
   WatchSlidesProgress: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets : true,
+
     
     
     
@@ -67,7 +66,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
       },
 
 
@@ -85,7 +84,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
       },
 
 
@@ -105,7 +104,7 @@ let swiper = new Swiper('.swiper__one', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+       
       },
 
 
@@ -130,7 +129,7 @@ let swiper__two = new Swiper('.swiper__two', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+    
   },
 
 
@@ -149,7 +148,7 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
       },
     480: {
       slidesPerView: 'auto',
@@ -161,7 +160,7 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+       
       }
 
     },
@@ -175,7 +174,7 @@ let swiper__two = new Swiper('.swiper__two', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
     },
   },
 }
@@ -196,7 +195,7 @@ let swiper__three = new Swiper('.swiper__three', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+    
   },
 
 
@@ -213,7 +212,7 @@ let swiper__three = new Swiper('.swiper__three', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+       
       },
     480: {
       slidesPerView: 'auto',
@@ -225,7 +224,7 @@ let swiper__three = new Swiper('.swiper__three', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true, 
-        dynamicBullets: true,
+        
 }
 
     },
@@ -239,7 +238,7 @@ let swiper__three = new Swiper('.swiper__three', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+       
     },
   },
 }
@@ -261,7 +260,7 @@ let swiper__four = new Swiper('.swiper__four', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+    
   },
 
 
@@ -291,7 +290,7 @@ let swiper__four = new Swiper('.swiper__four', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
       }
 
     },
@@ -305,7 +304,7 @@ let swiper__four = new Swiper('.swiper__four', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
     },
   },
 }
@@ -326,7 +325,7 @@ slidesPerView : 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+       
       },
     480: {
       slidesPerView: 'auto',
@@ -337,7 +336,7 @@ slidesPerView : 4,
       speed: 500,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true, dynamicBullets: true,
+        clickable: true,
       }
 
     },
@@ -351,7 +350,7 @@ slidesPerView : 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
     },
   },
 }
@@ -374,7 +373,7 @@ let swiper__six = new Swiper('.swiper__six', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+    
   },
 
 
@@ -392,7 +391,7 @@ let swiper__six = new Swiper('.swiper__six', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
+        
       },
       480: {
         slidesPerView: 'auto',
@@ -404,7 +403,7 @@ let swiper__six = new Swiper('.swiper__six', {
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-          dynamicBullets: true,
+        
         }
 
       },
@@ -418,7 +417,7 @@ let swiper__six = new Swiper('.swiper__six', {
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-          dynamicBullets: true,
+          
         },
       },
     }
