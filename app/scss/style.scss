@@ -868,7 +868,7 @@ body {
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2rem);
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 1rem);
   }
 
   .pagination-bullet-active-prev-prev {
@@ -1425,7 +1425,7 @@ body {
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2rem);
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
   }
 
   .swiper-pagination-bullet {

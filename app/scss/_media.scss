@@ -338,10 +338,7 @@
        width: 120rem;
      }
 
-     .swiper-pagination-bullet {
-       width: 0.8rem;
-       height: 0.8rem;
-     }
+
 
      .swiper-pagination-bullet-active {
        background-color: $default;
@@ -362,7 +359,7 @@
 
      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
      .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 2rem);
+       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 1rem);
      }
 
 
@@ -554,6 +551,10 @@
      .swiper-pagination-fraction {
        bottom: 0;
      }
+         .clients .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+         .clients .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+           margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
+         }
 
 
 
