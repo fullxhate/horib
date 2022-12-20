@@ -221,7 +221,6 @@ body {
     align-items: center;
     text-align: center;
     padding-bottom: 2rem;
-
   }
 
 
@@ -236,6 +235,7 @@ body {
 
 
   }
+
 
   &__list-link--bg {
     color: #fff;
@@ -307,7 +307,7 @@ body {
     align-items: center;
     background: rgba(62, 63, 88, 0.15);
     display: none;
-    z-index: 1;
+    z-index: 4;
     overflow: auto;
 
 
@@ -328,6 +328,9 @@ body {
     overflow: hidden;
 
 
+  }
+  &__option{
+    border-radius: 1.4rem;
   }
 
 
@@ -413,6 +416,7 @@ body {
     border-radius: 2rem;
     width: 37.2rem;
     color: #fff;
+    border: none;
 
     &:hover {
       background-color: $hover;
@@ -530,6 +534,7 @@ body {
     border-radius: 2rem;
     width: 37.2rem;
     color: #fff;
+    
 
     &:hover {
       background-color: $hover;
@@ -3198,6 +3203,9 @@ body {
     font-size: 6.8rem;
     line-height: 7rem;
     padding-bottom: 2rem;
+  }
+  .swiper {
+    display: none;
   }
 
   &-top__text {

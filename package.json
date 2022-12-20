@@ -273,6 +273,7 @@
     "strip-bom": "^2.0.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "sver-compat": "^1.5.0",
+    "swiper": "^8.4.5",
     "through2": "^2.0.5",
     "through2-filter": "^3.0.0",
     "time-stamp": "^1.1.0",

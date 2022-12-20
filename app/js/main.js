@@ -29,11 +29,11 @@ function init() {
 
 
 
-let swiper = new Swiper('.swiper__one', {
+let swiper__one = new Swiper('.swiper__one', {
   loop: false,
   trueMode: true,
   slidesPerView: 'auto',
-  speed: 500,
+  speed: 800,
   spaceBetween: 20,
   autoHeight: true,
   slidesOffsetAfter: 0,
@@ -59,7 +59,7 @@ let swiper = new Swiper('.swiper__one', {
       loop: false,
       trueMode: true,
       slidesOffsetAfter: 0,
-      speed: 500,
+      speed: 800,
       slidesPerGroup: 1,
       observer: true,
       observeParents: true,
@@ -278,7 +278,6 @@ let swiper__four = new Swiper('.swiper__four', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        dynamicBullets: true,
       },
     480: {
       slidesPerView: 'auto',
@@ -431,15 +430,22 @@ lightbox.option({
   'fadeDuration': 20,
   'imageFadeDuration': 30,
   'wrapAround': false,
-})
+});
 
-
-
-
+document.querySelectorAll(".header__list a").forEach((el) => {
+  if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) {
+    el.classList.add("active");
+  }
+});
 
 
 $(function () {
-  
+
+
+
+
+
+ 
 
 
   $('.header__right-btn , .btn__sand').on('click', function () {
