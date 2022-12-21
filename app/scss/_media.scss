@@ -560,11 +560,11 @@
 
 
 
-    //  &__inner {
-    //    width: 35rem !important;
-    //    height: 24rem !important;
+     //  &__inner {
+     //    width: 35rem !important;
+     //    height: 24rem !important;
 
-    //  }
+     //  }
 
      &__inner-title {
        margin-top: 2rem;
@@ -951,9 +951,13 @@
        padding-top: 1rem;
      }
 
+     &-programms__items {
+       display: none;
+     }
+
      &-programms__inner {
        display: flex;
-       flex-wrap: wrap;
+
      }
 
      &-programms__link {
@@ -972,8 +976,11 @@
      }
 
      &-programms__text {
-       line-height: 2.5rem;
-       font-size: 2rem;
+       display: none;
+     }
+
+     &-faq {
+       padding-top: 5rem;
      }
 
      &-faq__question {
@@ -987,6 +994,51 @@
        width: 40rem;
        line-height: 2rem;
 
+     }
+
+     .swiper {
+       display: block;
+     }
+
+     .swiper-wrapper {
+       height: 30rem !important;
+       width: 120rem;
+       padding: 1rem
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets,
+     .swiper-pagination-bullets.swiper-pagination-horizontal,
+     .swiper-pagination-custom,
+     .swiper-pagination-fraction {
+       bottom: 0;
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
+     }
+
+     .swiper-slide {
+       width: 31rem;
+       height: 19rem;
+     }
+
+     .swiper-slide,
+     .swiper-slide-active,
+     .swiper-slide-next {
+       height: 18rem !important;
+       width: 32.4rem !important;
+     }
+
+     .swiper-pagination-bullet {
+       width: 0.8rem;
+       height: 0.8rem;
+     }
+
+     .swiper-pagination-bullet-active {
+       background-color: $default;
+       // width: 1rem;
+       // height: 1rem;
      }
 
    }
@@ -1086,7 +1138,7 @@
 
    .audit {
      padding-top: 5rem;
-     padding-bottom: 10rem;
+     padding-bottom: 5rem;
 
      &-top__title {
        font-size: 4rem;
@@ -1101,9 +1153,13 @@
        margin-left: 0;
      }
 
+     &-programms__items {
+       display: none;
+     }
+
      &-programms__inner {
        display: flex;
-       flex-wrap: wrap;
+
      }
 
      &-programms__link {
@@ -1119,6 +1175,10 @@
 
      &-programms__title {
        font-size: 2.5rem;
+     }
+
+     &-programms__text {
+       font-size: 2rem;
      }
 
      &__pluses-inner {
@@ -1154,6 +1214,51 @@
        width: auto;
        margin-left: 0;
      }
+
+     .swiper {
+       display: block;
+     }
+
+     .swiper-wrapper {
+       height: 36rem !important;
+       width: 120rem;
+       padding: 1rem
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets,
+     .swiper-pagination-bullets.swiper-pagination-horizontal,
+     .swiper-pagination-custom,
+     .swiper-pagination-fraction {
+       bottom: 0;
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
+     }
+
+     .swiper-slide {
+       width: 31rem;
+       height: 27rem;
+     }
+
+     .swiper-slide,
+     .swiper-slide-active,
+     .swiper-slide-next {
+       height: 27rem !important;
+       width: 32.4rem !important;
+     }
+
+     .swiper-pagination-bullet {
+       width: 0.8rem;
+       height: 0.8rem;
+     }
+
+     .swiper-pagination-bullet-active {
+       background-color: $default;
+       // width: 1rem;
+       // height: 1rem;
+     }
    }
 
    .marketplace {
@@ -1171,9 +1276,13 @@
        margin-left: 0;
      }
 
+     &-programms__items {
+       display: none;
+     }
+
      &-programms__inner {
        display: flex;
-       flex-wrap: wrap;
+
      }
 
      &-programms__link {
@@ -1189,12 +1298,18 @@
 
      &-programms__title {
        font-size: 2.5rem;
+       width: auto;
      }
 
      &-programms__text {
        font-size: 2rem;
        width: auto;
+       margin-top: 1rem;
 
+     }
+
+     &-faq {
+       padding-top: 5rem;
      }
 
      &-faq__question {
@@ -1259,6 +1374,52 @@
        margin-bottom: 5rem;
        margin-left: 15rem;
      }
+
+     .swiper {
+       display: block;
+     }
+
+     .swiper-wrapper {
+       height: 30rem !important;
+       width: 120rem;
+       padding: 1rem
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets,
+     .swiper-pagination-bullets.swiper-pagination-horizontal,
+     .swiper-pagination-custom,
+     .swiper-pagination-fraction {
+       bottom: 0;
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
+     }
+
+     .swiper-slide {
+       width: 31rem;
+       height: 19rem;
+     }
+
+     .swiper-slide,
+     .swiper-slide-active,
+     .swiper-slide-next {
+       height: 18rem !important;
+       width: 32.4rem !important;
+     }
+
+     .swiper-pagination-bullet {
+       width: 0.8rem;
+       height: 0.8rem;
+     }
+
+     .swiper-pagination-bullet-active {
+       background-color: $default;
+       // width: 1rem;
+       // height: 1rem;
+     }
+
    }
 
    .business__page {

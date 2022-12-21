@@ -1751,6 +1751,9 @@ body {
     }
 
   }
+  .swiper{
+    display: none;
+  }
 
 
 }
@@ -2133,7 +2136,7 @@ body {
   }
 
   &__link:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 
     .about-us__link-title {
       color: $hover
@@ -2602,6 +2605,9 @@ body {
     }
 
   }
+  .swiper{
+    display: none;
+  }
 
 
 }
@@ -2871,6 +2877,9 @@ body {
 
   &-faq__side {
     display: flex;
+  }
+  .swiper{
+    display: none
   }
 }
 
