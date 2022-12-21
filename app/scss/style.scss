@@ -232,8 +232,9 @@ body {
     line-height: 2rem;
     text-align: center;
     padding-bottom: 4rem;
-
-
+  }
+  .header__list-link.active{
+    color: $hover;
   }
 
 
@@ -866,9 +867,10 @@ body {
   .swiper-slide,
   .swiper-slide-active,
   .swiper-slide-next {
-    height: 10rem !important;
+    height: 11rem !important;
     width: 31.2rem !important;
   }
+  
 
 
 
@@ -2098,6 +2100,7 @@ body {
 
 
 .about-us {
+  
   &__top {
     text-align: center;
   }
@@ -2276,6 +2279,9 @@ body {
     line-height: 1.6rem;
     padding-top: 1rem;
 
+  }
+  .swiper{
+    display: none;
   }
 
 

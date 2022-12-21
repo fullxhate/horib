@@ -183,6 +183,7 @@
    }
 
    .business {
+
      &__title {
        font-size: 5rem;
        line-height: 4rem;
@@ -259,10 +260,7 @@
      }
 
 
-     .swiper-button-next::after,
-     .swiper-button-prev::after {
-       display: none;
-     }
+
 
      .swiper-pagination {
        display: block;
@@ -278,6 +276,17 @@
      .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
        top: 22rem;
      }
+
+     .swiper-slide,
+     .swiper-slide-active,
+     .swiper-slide-next {
+       height: 12rem ;
+       width: 31.2rem;
+     }
+             .swiper-slide-clients {
+               width: 14rem !important;
+               height: 18.5rem !important;
+             }
 
      &__item {
        width: 45rem;
@@ -400,6 +409,7 @@
 
 
    }
+
 
    .about {
      padding-top: 10rem;
@@ -588,6 +598,10 @@
    .popular {
      padding: 5rem 0;
 
+     &__top {
+       padding-bottom: 0;
+     }
+
      .section__title {
        font-size: 3rem;
        line-height: 4rem;
@@ -656,9 +670,13 @@
        margin-bottom: 5rem;
      }
 
+     &__bottom {
+       display: none;
+     }
+
      &__inner {
        display: flex;
-       flex-wrap: wrap;
+
 
      }
 
@@ -747,10 +765,51 @@
        margin: 0 auto;
      }
 
-     .clients .swiper-slide-clients {
-       width: 14rem !important;
-       height: 18.5rem !important;
+     .swiper {
+       display: block;
      }
+
+     .swiper-wrapper {
+       height: 30rem !important;
+       width: 120rem;
+       padding: 1rem
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets,
+     .swiper-pagination-bullets.swiper-pagination-horizontal,
+     .swiper-pagination-custom,
+     .swiper-pagination-fraction {
+       bottom: 0;
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+       margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.9rem);
+     }
+
+     .swiper-slide {
+       width: 31rem;
+       height: 19rem;
+     }
+
+     .swiper-slide,
+     .swiper-slide-active,
+     .swiper-slide-next {
+       height: 18rem !important;
+       width: 32.4rem !important;
+     }
+
+     .swiper-pagination-bullet {
+       width: 0.8rem;
+       height: 0.8rem;
+     }
+
+     .swiper-pagination-bullet-active {
+       background-color: $default;
+       // width: 1rem;
+       // height: 1rem;
+     }
+
 
 
    }
@@ -1425,6 +1484,7 @@
    .business__page {
      padding-top: 5rem;
 
+
      &-title {
        font-size: 3.3rem;
        line-height: 4rem;
@@ -1490,7 +1550,8 @@
          margin-bottom: 1rem;
        }
      }
-   }
+
+  }
 
    .purchases {
      padding-top: 5rem;

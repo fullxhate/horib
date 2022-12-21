@@ -432,21 +432,19 @@ lightbox.option({
   'wrapAround': false,
 });
 
-document.querySelectorAll(".header__list a").forEach((el) => {
+document.querySelectorAll(".header__list a , .business__filter-btn--all").forEach((el) => {
   if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) {
     el.classList.add("active");
   }
 });
 
 
+
 $(function () {
-
-
-
-
-
- 
-
+  $(".business__filter-btn--all").on("click", function () {
+    localStorage.setItem('active');
+    
+ });
 
   $('.header__right-btn , .btn__sand').on('click', function () {
     $('.modal').slideToggle(300), $('.modal-wrapper').fadeIn(297).css('display', 'flex');
