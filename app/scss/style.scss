@@ -1507,7 +1507,7 @@ body {
 
 
 .popular {
-  padding: 7.5rem 11.2rem 7.5rem;
+  padding: 7.5rem 4rem 7.5rem;
   gap: 4rem;
   background-color: #F8F8FC;
 
@@ -1530,8 +1530,8 @@ body {
 
   &__link {
     font-size: 1.4rem;
-    line-height: 2rem;
-    color: #452C60;
+    line-height: 2.5rem;
+    color: $default;
     padding-bottom: 1rem;
   }
 
@@ -1564,8 +1564,7 @@ body {
 
   &__contact-number,
   &__contact-post,
-  &__contact-adress,
-  &__contact-btn {
+  &__contact-adress {
     margin-bottom: 3.2rem;
   }
 
@@ -1579,7 +1578,7 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
     @extend %circe-700;
-    min-width: 21.2rem;
+    
 
     &:hover {
       color: #fff;
