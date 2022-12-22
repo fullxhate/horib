@@ -359,7 +359,6 @@ slidesPerView : 4,
 let swiper__six = new Swiper('.swiper__six', {
   loop: false,
   trueMode: true,
-  speed: 500,
   slidesPerView: 'auto',
   spaceBetween: 17,
   slidesPerGroup: 1,
@@ -382,7 +381,6 @@ let swiper__six = new Swiper('.swiper__six', {
 
     320: {
       slidesPerView: 'auto',
-      speed: 500,
       loop: false,
       trueMode: true,
       slidesOffsetAfter: 0,
@@ -398,7 +396,6 @@ let swiper__six = new Swiper('.swiper__six', {
         trueMode: true,
         slidesOffsetAfter: 0,
         slidesPerGroup: 1,
-        speed: 500,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -412,7 +409,6 @@ let swiper__six = new Swiper('.swiper__six', {
         trueMode: true,
         slidesOffsetAfter: 0,
         slidesPerGroup: 1,
-        speed: 500,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
