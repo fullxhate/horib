@@ -233,7 +233,8 @@ body {
     text-align: center;
     padding-bottom: 4rem;
   }
-  .header__list-link.active{
+
+  .header__list-link.active {
     color: $hover;
   }
 
@@ -330,7 +331,8 @@ body {
 
 
   }
-  &__option{
+
+  &__option {
     border-radius: 1.4rem;
   }
 
@@ -535,7 +537,7 @@ body {
     border-radius: 2rem;
     width: 37.2rem;
     color: #fff;
-    
+
 
     &:hover {
       background-color: $hover;
@@ -795,7 +797,7 @@ body {
     &:hover {
       background-color: $hover;
       color: #fff;
-      
+
       transition: all .6s;
     }
 
@@ -870,7 +872,7 @@ body {
     height: 11rem !important;
     width: 31.2rem !important;
   }
-  
+
 
 
 
@@ -961,7 +963,7 @@ body {
   &__personal,
   &__finance {
     display: flex;
-  
+
 
     a {
       margin-right: 1.3rem;
@@ -984,7 +986,8 @@ body {
     // align-items: center;
 
   }
-  .swiper-wrapper{
+
+  .swiper-wrapper {
     padding: 1rem;
   }
 
@@ -1373,9 +1376,10 @@ body {
     display: none;
   }
 }
-        .lb-data .lb-number {
-          display: none !important
-        }
+
+.lb-data .lb-number {
+  display: none !important
+}
 
 .clients {
   padding-top: 14rem;
@@ -1413,21 +1417,23 @@ body {
     transition: transform .2s;
 
     img {
-      width: 11.5rem ;
+      width: 11.5rem;
       height: 15rem
     }
 
   }
-    &__inner:hover{
-      transform: scale(1.03);
-    }
+
+  &__inner:hover {
+    transform: scale(1.03);
+  }
 
   .swiper-wrapper {
     height: 26rem !important;
     padding: 1rem;
   }
-  .swiper-slide-clients{
-    width:14rem !important;
+
+  .swiper-slide-clients {
+    width: 14rem !important;
     height: 18.5rem !important;
   }
 
@@ -1455,45 +1461,24 @@ body {
     z-index: 1;
     text-align: center;
     margin-top: 1rem;
-
-
-
-  }
-
-  &__inner-text {
-    padding-top: 1rem;
-    line-height: 2rem;
-    font-size: 1.4rem;
-    z-index: 1;
-  }
-
-  &__inner--hover {
+    overflow: hidden;
+    white-space: nowrap;
     position: relative;
   }
 
-  &__inner--pictures {
+  &__inner-title::after {
+  content: "";
+    text-align: right;
     position: absolute;
-    right: 34%;
-    background-color: transparent;
-    backdrop-filter: 0.2rem;
-    opacity: 0;
-
-
-
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: linear-gradient(to right, rgba(55, 55, 55, 0), white 100%);
+    pointer-events: none;
   }
 
-  &__inner--pictures:hover {
-    opacity: 1;
-    cursor: pointer;
-    transition: all .3s;
 
-    .CLIENTS__inner-text {
-      opacity: 0;
-    }
-
-
-
-  }
 
 
 
@@ -1578,7 +1563,7 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
     @extend %circe-700;
-    
+
 
     &:hover {
       color: #fff;
@@ -1752,7 +1737,8 @@ body {
     }
 
   }
-  .swiper{
+
+  .swiper {
     display: none;
   }
 
@@ -1912,10 +1898,12 @@ body {
 
 .business__page {
   padding-top: 12rem;
+
   .swiper-slide-clients {
-      height: 18.5rem !important;
-      width: 14.8rem !important;
-    }
+    height: 18.5rem !important;
+    width: 14.8rem !important;
+  }
+
   &-top {
     display: flex;
     align-items: center;
@@ -2099,7 +2087,7 @@ body {
 
 
 .about-us {
-  
+
   &__top {
     text-align: center;
   }
@@ -2279,7 +2267,8 @@ body {
     padding-top: 1rem;
 
   }
-  .swiper{
+
+  .swiper {
     display: none;
   }
 
@@ -2331,16 +2320,11 @@ body {
     border-radius: 2rem;
     margin-right: 2rem;
     width: 29rem;
-    
-  }
-
-  &-programms__link:hover {
-
-    .marketplace-programms__title {
-      color: $hover
-    }
 
   }
+
+
+
 
   &-programms__title {
     @extend %circe-700;
@@ -2510,16 +2494,10 @@ body {
     border-radius: 2rem;
     box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
     gap: 1rem;
-    
+
   }
 
-  &__widget-item:hover {
-    
 
-    .marketplace__widget-item__title {
-      color: $hover
-    }
-  }
 
   &__widget-item__title {
     @extend %circe-700;
@@ -2575,7 +2553,8 @@ body {
   &__left-btn__link {
     @extend %btn;
     margin-top: 3rem;
-    &:hover{
+
+    &:hover {
       color: #fff;
     }
   }
@@ -2610,7 +2589,8 @@ body {
     }
 
   }
-  .swiper{
+
+  .swiper {
     display: none;
   }
 
@@ -2883,7 +2863,8 @@ body {
   &-faq__side {
     display: flex;
   }
-  .swiper{
+
+  .swiper {
     display: none
   }
 }
@@ -2941,9 +2922,10 @@ body {
   &__info-inner {
     padding-bottom: 3rem;
   }
-    &__info--info{
-      margin-right: 1.5rem;
-    }
+
+  &__info--info {
+    margin-right: 1.5rem;
+  }
 
 
   &__info--requisites,
@@ -3218,6 +3200,7 @@ body {
     line-height: 7rem;
     padding-bottom: 2rem;
   }
+
   .swiper {
     display: none;
   }

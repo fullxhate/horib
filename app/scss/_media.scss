@@ -576,13 +576,30 @@
 
      //  }
 
-     &__inner-title {
-       margin-top: 2rem;
-       font-size: 1.5rem;
-       line-height: 2rem;
-       position: absolute;
-       top: 14rem;
-     }
+    &__inner-title {
+      @extend %circe-700;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      z-index: 1;
+      text-align: center;
+      margin-top: 1rem;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+  
+    &__inner-title::after {
+      content: "";
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 70%;
+      height: 1.2em;
+      background: linear-gradient(to right, rgba(55, 55, 55, 0), white 100%);
+      pointer-events: none;
+    }
+
 
      &__inner-text {
        line-height: 2rem;
