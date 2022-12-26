@@ -67,6 +67,7 @@
                 </p>
               </div>
               <form class="modal__window-form">
+
                 <input class="modal__window-firts" type="text" placeholder="Заголовок вопроса">
                 <input class="modal__window-second" type="text" placeholder="Текст вопроса">
                 <p class="modal__window-text">
@@ -286,438 +287,186 @@
       </div>
     </div>
   </header>
-  <section class="personal">
+
+  <section class="breadcrumbs">
     <div class="container">
-      <div class="personal-top">
-        <h2 class="personal-top__title">
-          Страхование онлайн для частных лиц
-        </h2>
-        <p class="personal-top__text">
-          Мы предлагаем сотрудничество с надёжными партнёрами, которые обеспечивают высокое качество обслуживания
-          и выплату
-          страхового возмещения.
-        </p>
-      </div>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="personal.html">
+            / Частным лицам
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="avia.html">
+            / Страхование ипотеки
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="personal-programms">
-      <div class="container">
-        <div class="personal-programms__top">
-          <h2 class="personal-programms__top-title section__title" section__title">
-            Виды страхования для частных лиц
+  </section>
+  <section class="ipo">
+    <div class="container">
+      <div class="ipo-side">
+        <div class="ipo-side__left">
+          <h2 class="ipo__title">
+            Страхование ипотеки
           </h2>
-        </div>
-        <div class="personal-programms__items  ">
-          <div class="personal-programms__inner ">
-            <div class="personal-programms__link ">
-              <img src="images/personal/1.png" alt="">
-              <h4 class="personal-programms__title">
-                Предметы роскоши
-              </h4>
-              <p class="personal-programms__text">
-                Страхование предметов роскоши
-              </p>
-            </div>
-            <div class="personal-programms__link  ">
-              <img src="images/personal/2.png" alt="">
-              <h4 class="personal-programms__title">
-                Несчастный случай
-              </h4>
-
-              <p class="personal-programms__text ">
-                Обеспечим вас и ваших близких финансовой защитой на случай травм, смерти или получения инвалидности.
-              </p>
-            </div>
-            <div class="personal-programms__link  ">
-              <img src="images/personal/3.png" alt="">
-              <h4 class="personal-programms__title">Квартира</h4>
-
-              <p class="personal-programms__text">
-                Страхование квартир от пожара, взрыва, затопления, удара молнии, стихийных бедствий, повреждений и
-                противоправных
-                действий третьих лиц.
-              </p>
-            </div>
-            <div class="personal-programms__link ">
-              <img src="images/personal/4.png" alt="">
-              <h4 class="personal-programms__title">
-                Дача
-              </h4>
-
-              <p class="personal-programms__text">
-                Страхование частных домов от затопления, удара молнии, стихийных бедствий, повреждений и противоправных
-                действий третьих
-                лиц
-              </p>
-            </div>
-            <div class="personal-programms__link ">
-              <img src="images/personal/5.png" alt="">
-              <h4 class="personal-programms__title">
-                Ипотека
-              </h4>
-
-              <p class="personal-programms__text">
-                Страхование имущества, титула, жизни и трудоспособности заемщика
-              </p>
-            </div>
-            <div class="personal-programms__link">
-              <img src="images/personal/6.png" alt="">
-              <h4 class="personal-programms__title">
-                Каско
-              </h4>
-
-              <p class="personal-programms__text">
-                Добровольное страхование каско обеспечит финансовую защиту в случае угона, ущерба и полной гибели вашего
-                автомобиля.
-              </p>
-            </div>
-            <div class="personal-programms__link">
-              <img src="images/personal/7.png" alt="">
-              <h4 class="personal-programms__title">
-                ОСАГО
-              </h4>
-
-              <p class="personal-programms__text">
-                Обязательное страхование автогражданской ответственности. Покрывает ущерб имуществу, здоровью и жизни
-                пострадавшей
-                стороне в ДТП.
-              </p>
-            </div>
-          </div>
+          <p class="ipo__subtitle">
+            Купите онлайн страховку квартиры и жизни при ипотеке в аккредитованных банком компаниях по лучшей цене
+          </p>
 
         </div>
+        <div class="ipo-side__right">
+          <img class="ipo-side__right-img" src="images/ipo/1.png" alt="">
+        </div>
+      </div>
+      <form action="#" class="ipo__form">
+        <select class="ipo__select">
+          <option class="ipo__select-item">Квартира</option>
+          <option class="ipo__select-item">Дом</option>
+          <option class="ipo__select-item">Участок</option>
+        </select>
+        <input type="text" class="ipo__input" placeholder="Остаток по ипотеке">
+        <input type="text" class="ipo__input" placeholder="Возраст">
+        <select class="ipo__input" placeholder="Пол">
+          <option value="1">Мужской</option>
+          <option value="2">Женский</option>
+        </select>
+
+        <div class="ipo__form-section">
+          <h4 class="ipo__form-text">
+            Что нужно застраховать?
+          </h4>
+          <button class="ipo__form-btn">Квартира</button>
+          <button class="ipo__form-btn">Жизнь</button>
+          <button class="ipo__form-btn">Квартира+жизнь</button>
+          <button class="ipo__form-btn">Затрудняюсь ответить</button>
+        </div>
+        <div class="ipo__form-info">
+          <img src="images/icons/info.png" alt="info png">
+          <p>Выбирайте тип полиса «Квартира», когда дом сдан и вы получили право собственности. Для ипотеки страхуются
+            стены, потолки
+            и другие конструктивные элементы. Как правило, стены могут разрушиться при взрыве газа, в результате аварий
+            и природных
+            катастроф. Ремонт страховка не покрывает.</p>
+        </div>
+        <div class="ipo__form-help">
+          <h2 class="ipo__form-help__tiltle">
+            Помощь в выборе типа полиса
+          </h2>
+          <p class="ipo__form-help__subtitle">
+            Если вы сомневаетесь в том, какой полис вам нужен, выберите пункты, которые соответствуют вашей ипотеке, а
+            мы подскажем,
+            что необходимо застраховать.
+          </p>
+          <button class="ipo__form-help__btn">Квартира в новостройке</button>
+          <button class="ipo__form-help__btn">“Вторичка”</button>
+          <button class="ipo__form-help__btn">Квартира в собственности</button>
+          <button class="ipo__form-help__btn">Квартира в новостройке</button>
+          <button class="ipo__form-help__btn">Пониженная ставка от банка за страхование жизни</button>
+                  <div class="ipo__form-info__help">
+                    <img src="images/icons/info.png" alt="">
+                    <p>Рекомендуем застраховать «Квартиру»</p>
+                  </div>
+        </div>
+        <button class="ipo__form-price">
+          Показать цены
+        </button>
 
 
-        <div class="swiper swiper__five ">
-          <div class=" swiper-wrapper">
-            <div class="personal-programms__link swiper-slide">
-              <img src="images/personal/1.png" alt="">
-              <h4 class="personal-programms__title">
-                Предметы роскоши
-              </h4>
-              <p class="personal-programms__text">
-                Страхование предметов роскоши
-              </p>
-            </div>
-            <div class="personal-programms__link swiper-slide ">
-              <img src="images/personal/2.png" alt="">
-              <h4 class="personal-programms__title">
-                Несчастный случай
-              </h4>
 
-              <p class="personal-programms__text ">
-                Обеспечим вас и ваших близких финансовой защитой на случай травм, смерти или получения инвалидности.
-              </p>
-            </div>
-            <div class="personal-programms__link swiper-slide ">
-              <img src="images/personal/3.png" alt="">
-              <h4 class="personal-programms__title">Квартира</h4>
+      </form>
 
-              <p class="personal-programms__text">
-                Страхование квартир от пожара, взрыва, затопления, удара молнии, стихийных бедствий, повреждений и
-                противоправных
-                действий третьих лиц.
-              </p>
-            </div>
-            <div class="personal-programms__link swiper-slide">
-              <img src="images/personal/4.png" alt="">
-              <h4 class="personal-programms__title">
-                Дача
-              </h4>
-
-              <p class="personal-programms__text">
-                Страхование частных домов от затопления, удара молнии, стихийных бедствий, повреждений и противоправных
-                действий третьих
-                лиц
-              </p>
-            </div>
-            <div class="personal-programms__link swiper-slide">
-              <img src="images/personal/5.png" alt="">
-              <h4 class="personal-programms__title">
-                Ипотека
-              </h4>
-
-              <p class="personal-programms__text">
-                Страхование имущества, титула, жизни и трудоспособности заемщика
-              </p>
-            </div>
-            <div class="personal-programms__link swiper-slide">
-              <img src="images/personal/6.png" alt="">
-              <h4 class="personal-programms__title">
-                Каско
-              </h4>
-
-              <p class="personal-programms__text">
-                Добровольное страхование каско обеспечит финансовую защиту в случае угона, ущерба и полной гибели вашего
-                автомобиля.
-              </p>
-            </div>
-            <a class="personal-programms__link swiper-slide" href="osago.html">
-              <img src="images/personal/7.png" alt="">
-              <h4 class="personal-programms__title">
-                ОСАГО
-              </h4>
-
-              <p class="personal-programms__text">
-                Обязательное страхование автогражданской ответственности. Покрывает ущерб имуществу, здоровью и жизни
-                пострадавшей
-                стороне в ДТП.
-              </p>
-            </a> 
+      <div class="ipo__pluses">
+        <div class="section__title">
+          Преимущества
+        </div>
+        <div class="ipo__pluses-items">
+          <div class="ipo__pluses-item">
+            <img class="ipo__pluses-item__img" src="images/ipo/2.png" alt="png преимущества">
+            <h4 class="ipo__pluses-item__title">
+              Экономия
+            </h4>
+            <p class="ipo__pluses-item__subtitle">
+              Рассчитаем полис в нескольких компаниях, чтобы вы могли купить страховку по выгодной цене
+            </p>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="ipo__pluses-item">
+            <img class="ipo__pluses-item__img" src="images/ipo/3.png" alt="png преимущества">
+            <h4 class="ipo__pluses-item__title">
+              Банк примет полис
+            </h4>
+            <p class="ipo__pluses-item__subtitle">
+              Ваш банк примет любой купленный у нас полис
+            </p>
+          </div>
+          <div class="ipo__pluses-item">
+            <img class="ipo__pluses-item__img" src="images/ipo/4.png" alt="png преимущества">
+            <h4 class="ipo__pluses-item__title">
+              Оформление за 5-10 минут
+            </h4>
+            <p class="ipo__pluses-item__subtitle">
+              Полис можно оформить, пока заключаете договор ипотеки
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="ipo-instrictions">
+        <div class="section__title">
+          Как оформить полис
+        </div>
+        <div class="ipo-instrictions__items">
+          <div class="ipo-instrictions__item">
+            <span class="ipo-instrictions__item-num">
+              1
+            </span>
+            <h4 class="ipo-instrictions__item-title">
+              Укажите свой банк, остаток долга, возраст и пол
+            </h4>
+          </div>
+          <div class="ipo-instrictions__item">
+            <span class="ipo-instrictions__item-num">
+              2
+            </span>
+            <h4 class="ipo-instrictions__item-title">
+              Сравните цены и выберите лучшую СК
+            </h4>
+          </div>
+          <div class="ipo-instrictions__item">
+            <span class="ipo-instrictions__item-num">
+              3
+            </span>
+            <h4 class="ipo-instrictions__item-title">
+              Заполните анкету и оплатите полис
+            </h4>
+          </div>
+          <div class="ipo-instrictions__item">
+            <span class="ipo-instrictions__item-num">
+              4
+            </span>
+            <h4 class="ipo-instrictions__item-title">
+              Получите полис на почту и в приложении
+            </h4>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- <section class="calculate">
-    <div class="container">
-      <div class="calculate__title section__title">
-        Рассчитайте предварительную стоимость
-      </div>
-      <div class="calculate__top">
-        <div class="calculate__inner">
-          <div class="calculate__item">
-            <button autofocus class="calculate__item-btn calculate__item-btn--life">
-              Жизни и здоровье
-            </button>
-            <button class="calculate__item-btn calculate__item-btn--house">
-              Дом и квартира
-            </button>
-            <button class="calculate__item-btn calculate__item-btn--transport">
-              Транспорт
-            </button>
-            <button class="calculate__item-btn calculate__item-btn--art">
-              Искусство
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="calculate__form">
-        <div class="calculate__form-inner calculate__form-inner--life">
-          <form class="calculate__form-life">
-            <div class="calculate__form-top">
-              <h4 class="calculate__form-title">
-                Жизнь и здоровье
-              </h4>
-              <p class="calculate__form-text">
-                Для военнослужащих, врачей, учителей и сотрудников IT
-              </p>
-            </div>
-            <div class="calculate__form-center">
-              <select class="calculate__form-list" name="" id="">
-                <option value="1">
-                  Туристическая страховка
-                </option>
-                <option value="2">
-                  Туристическая страховка
-                </option>
-                <option value="3">
-                  Туристическая страховка
-                </option>
-                <option value="4">
-                  Туристическая страховка
-                </option>
-              </select>
-              <select class="calculate__form-place" name="" id="">
-                <option value="">
-                  Куда собираетесь
-                </option>
-              </select>
-              <input class="calculate__form-data__in" type="date" placeholder="Уезжаете">
-              <input class="calculate__form-data__out" type="date" placeholder="Вовзращаетесь">
-              <input class="calculate__form-age" type="text" placeholder="Возраст">
-            </div>
-            <div class="calculate__form-bottom">
-              <button class="calculate__form-add">
-                <img src="images/icons/add.svg" alt="">
-                Добавить Туриста
-              </button>
-              <input class="calculate__form-radio" type="radio">Годовой полис
-              <input class="calculate__form-radio" type="radio">Уже путешествую
-
-            </div>
-            <div class="calculate__form-button">
-              <button class="calculate__form-btn">
-                Показать цены
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="calculate__form-inner calculate__form-inner--house">
-          <form class="calculate__form-house">
-            <div class="calculate__form-top">
-              <h4 class="calculate__form-title">
-                Дом и квартира
-              </h4>
-              <p class="calculate__form-text">
-                Для военнослужащих, врачей, учителей и сотрудников IT
-              </p>
-            </div>
-            <div class="calculate__form-center">
-              <select class="calculate__form-list" name="" id="">
-                <option value="1">
-                  Страхование ипотеки
-                </option>
-                <option value="2">
-                  Страхование ипотеки
-                </option>
-                <option value="3">
-                  Страхование ипотеки
-                </option>
-                <option value="4">
-                  Страхование ипотеки
-                </option>
-              </select>
-              <select class="calculate__form-place" name="" id="">
-                <option value="1">
-                  В каком банке?
-                </option>
-                <option value="2">
-                  Сбербанк
-                </option>
-                <option value="3">
-                  ВТБ
-                </option>
-                <option value="4">
-                  Альфа банк
-                </option>
-                <option value="5">
-                  Открытые
-                </option>
-              </select>
-              <input class="calculate__form-data__out" type="text" placeholder="Остаток по ипотеке">
-              <input class="calculate__form-age" type="text" placeholder="Возраст">
-              <select class="calculate__form-gender" name="" id="">
-                <option value="1">Мужской</option>
-                <option value="2">Женский</option>
-              </select>
-            </div>
-            <div class="calculate__form-bottom">
-              <div class="calculate__form-add">
-                Что нужно застраховать?
-              </div>
-              <button class="calculate__form-choise">Квартира</button>
-              <button class="calculate__form-choise">Жизнь</button>
-              <button class="calculate__form-choise">Квартира+Жизнь</button>
-              <button class="calculate__form-choise">Затрудняюсь ответить</button>
-            </div>
-            <div class="calculate__form-button">
-              <button class="calculate__form-btn">
-                Показать цены
-              </button>
-            </div>
-
-          </form>
-        </div>
-        <div class="calculate__form-inner calculate__form-inner--transport">
-          <form class="calculate__form-transport">
-            <div class="calculate__form-top">
-              <h4 class="calculate__form-title">
-                Транспорт
-              </h4>
-              <p class="calculate__form-text">
-                Для военнослужащих, врачей, учителей и сотрудников IT
-              </p>
-            </div>
-            <div class="calculate__form-center">
-              <select class="calculate__form-list" name="" id="">
-                <option value="1">
-                  ОСАГО
-                </option>
-                <option value="2">
-                  КАСКО
-                </option>
-                <option value="3">
-
-                </option>
-                <option value="4">
-
-                </option>
-              </select>
-
-              <input class="calculate__form-num" type="text" placeholder="Номер авто">
-
-            </div>
-            <div class="calculate__form-bottom">
-              <button class="calculate__form-add">
-                <img src="images/icons/add.svg" alt="">
-                Добавить Туриста
-              </button>
-              <input class="calculate__form-radio" type="radio">Годовой полис
-              <input class="calculate__form-radio" type="radio">Уже путешествую
-
-            </div>
-            <div class="calculate__form-button">
-              <button class="calculate__form-btn">
-                Показать цены
-              </button>
-            </div>
-
-          </form>
-        </div>
-        <div class="calculate__form-inner calculate__form-inner--art">
-          <form class="calculate__form-art">
-            <div class="calculate__form-top">
-              <h4 class="calculate__form-title">
-                Искусство
-              </h4>
-              <p class="calculate__form-text">
-                Для военнослужащих, врачей, учителей и сотрудников IT
-              </p>
-            </div>
-            <div class="calculate__form-center">
-              <select class="calculate__form-list" name="" id="">
-                <option value="1">
-                  Туристическая страховка
-                </option>
-                <option value="2">
-                  Туристическая страховка
-                </option>
-                <option value="3">
-                  Туристическая страховка
-                </option>
-                <option value="4">
-                  Туристическая страховка
-                </option>
-              </select>
-              <select class="calculate__form-place" name="" id="">
-                <option value="">
-                  Куда собираетесь
-                </option>
-              </select>
-              <input class="calculate__form-data__in" type="date" placeholder="Уезжаете">
-              <input class="calculate__form-data__out" type="date" placeholder="Вовзращаетесь">
-              <input class="calculate__form-age" type="text" placeholder="Возраст">
-            </div>
-            <div class="calculate__form-bottom">
-              <button class="calculate__form-add">
-                <img src="images/icons/add.svg" alt="">
-                Добавить Туристическая
-              </button>
-              <input class="calculate__form-radio" type="radio">Годовой полис
-              <input class="calculate__form-radio" type="radio">Уже путешествую
-
-            </div>
-            <div class="calculate__form-button">
-              <button class="calculate__form-btn">
-                Показать цены
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <section class="personal-faq">
     <div class="container">
       <div class="personal-faq__title section__title">
-        Вопросы и ответы
+        Вопросы
       </div>
       <div class="personal-faq__side">
         <div class="personal-left">
           <div class="personal-faq__question personal-faq__question--one">
             <div class="personal-faq__question-title">
-              Что такое страховой полис?
+              Что важно знать о страховании ипотеки?
             </div>
             <div>
               <img class="personal-faq__img personal-faq__img--one" src="images/icons/down.svg" alt="">
@@ -740,7 +489,7 @@
 
           <div class="personal-faq__question personal-faq__question--two">
             <div class="personal-faq__question-title">
-              Зачем нужна страховка?
+              Что важно знать о страховании ипотеки?
             </div>
             <div>
               <img class="personal-faq__img personal-faq__img--two" src="images/icons/down.svg" alt="">
@@ -755,7 +504,7 @@
           </div>
           <div class="personal-faq__question personal-faq__question--three">
             <div class="personal-faq__question-title">
-              В какой компании можно купить страховку?
+              Как расторгнуть полис при полном погашении ипотеки?
             </div>
             <div>
               <img class="personal-faq__img personal-faq__img--three" src="images/icons/down.svg" alt="">
@@ -771,7 +520,7 @@
           <div class="personal-faq__question personal-faq__question--four">
             <div class="personal-faq__question-title">
 
-              Что делать при страховом случае?
+              Почему не стоит отказываться от страхования жизни в банке?
             </div>
             <div>
               <img class="personal-faq__img personal-faq__img--four" src="images/icons/down.svg" alt="">
@@ -803,45 +552,6 @@
     </div>
 
   </section>
-  <div class="personal-pluses">
-    <div class="container">
-      <div class="section__title">
-        Наши преимущества
-      </div>
-      <div class="personal-pluses__items">
-        <div class="personal-pluses__item">
-          <img src="images/personal/medal.png" alt="">
-          <h4 class="personal-pluses__item-title">Высокая надежность</h4>
-          <p class="personal-pluses__item-text">Мы отвечаем за принятые на себя обязательства, как перед страхователями,
-            так и перед страховщиками.</p>
-        </div>
-        <div class="personal-pluses__item">
-          <img src="images/personal/medal.png" alt="">
-          <h4 class="personal-pluses__item-title">Команда профессионалов</h4>
-          <p class="personal-pluses__item-text">Каждый из наших сотрудников имеет стаж в страховании и перестраховании
-            более 10-ти лет.</p>
-        </div>
-        <div class="personal-pluses__item">
-          <img src="images/personal/medal.png" alt="">
-          <h4 class="personal-pluses__item-title">Понимание клиентов</h4>
-          <p class="personal-pluses__item-text">За нашими плечами тысячи реализованных проектов по страхованию для любой
-            отрасли бизнеса.</p>
-        </div>
-        <div class="personal-pluses__item">
-          <img src="images/personal/medal.png" alt="">
-          <h4 class="personal-pluses__item-title">Многолетний опыт</h4>
-          <p class="personal-pluses__item-text">Мы отслеживаем все новые тенденции, повышаем наши навыки и квалификацию
-            каждый день.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
 
 
 
@@ -1087,6 +797,7 @@
 
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=5ca7c517-8f94-429f-8335-382a3cdcc972&lang=ru_RU"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

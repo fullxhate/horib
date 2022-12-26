@@ -684,6 +684,7 @@ $(function () {
     return false;
   });
 
+
 });
 
 $(document).mouseup(function (e) {
@@ -698,6 +699,8 @@ $(window).on('load', function () {
   $('.preloaders').find('preloader__img').fadeOut().end().delay(400).fadeOut('slow');
 
 });
+
+
 
 
 

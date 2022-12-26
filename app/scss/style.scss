@@ -1467,7 +1467,7 @@ body {
   }
 
   &__inner-title::after {
-  content: "";
+    content: "";
     text-align: right;
     position: absolute;
     bottom: 0;
@@ -3375,6 +3375,362 @@ body {
     line-height: 2rem;
     text-align: center;
   }
+
+}
+
+.osago {
+  &-side {
+    padding-top: 2rem;
+    display: flex
+  }
+
+  &-side__left {
+    margin-right: 4rem;
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 4.8rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+
+  }
+
+  &__form {
+    padding-bottom: 11rem;
+  }
+
+  &__input {
+    width: 45rem;
+    background-color: #fff;
+    border: none;
+    margin-right: 2rem;
+    border-radius: 1.4rem;
+    padding: .8rem 1.2rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+
+    &::placeholder {
+      padding: .8rem 1.2rem;
+      color: #DBDBDB
+    }
+
+
+  }
+
+  &__form-btn {
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-right: 2rem;
+    padding: 1.4rem 3rem;
+    border-radius: 1.4rem;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $hover;
+      color: #fff;
+      transition: all .3s
+    }
+  }
+
+  &__pluses-items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin-bottom: 15rem;
+  }
+
+  &__pluses-item {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    width: 39rem
+  }
+
+  &__pluses-item__title {
+    @extend %circe-700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  &__pluses-item__subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem
+  }
+
+  &-instrictions__items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+
+  }
+
+  &-instrictions__item {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8FC;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-right: 2rem;
+
+  }
+
+  &-instrictions__item-num {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $hover;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    padding: .6rem 1.3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+
+
+  }
+
+
+
+
+}
+
+.ipo {
+  &-side {
+    padding-top: 2rem;
+    display: flex
+  }
+
+  &-side__left {
+    margin-right: 4rem;
+  }
+
+  &__title {
+    @extend %manrope-800;
+    font-size: 4.8rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+
+  }
+
+
+
+  &__pluses-items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin-bottom: 15rem;
+  }
+
+  &__pluses-item {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    width: 39rem
+  }
+
+  &__pluses-item__title {
+    @extend %circe-700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+  &__pluses-item__subtitle {
+    font-size: 1.4rem;
+    line-height: 2rem
+  }
+
+  &-instrictions__items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+
+  }
+
+  &-instrictions__item {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8FC;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-right: 2rem;
+
+  }
+
+  &-instrictions__item-num {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $hover;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    padding: .6rem 1.3rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0rem 0.6rem 1.2rem -0.6rem rgba(248, 248, 252, 0.12), 0rem 0.8rem 2.4rem -0.4rem rgba(69, 44, 96, 0.08);
+    border-radius: 2rem;
+    margin-bottom: 15rem;
+  }
+
+  &__select,
+  &__input {
+    padding: .8rem 1.2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: .1rem solid $default;
+    width: 26rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+  }
+
+  &__form-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $default;
+    padding-bottom: 2rem;
+  }
+
+  &__form-text {
+    margin-right: 2rem;
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #452C60;
+  }
+
+  &__form-btn {
+    margin-right: 2rem;
+    background-color: transparent;
+    border-radius: 1.4rem;
+    border: 0.1rem solid $default;
+    padding: .8rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    &:hover {
+      border-color: $hover;
+      color: $hover;
+    }
+  }
+
+  &__form-info {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 1.7rem;
+    background-color: #F8F8FC;
+    border-radius: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+
+    p {
+      margin-left: 1rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+    }
+
+
+  }
+  &__form-help{
+    border-bottom: 1px solid $default;
+    display: none;
+  }
+
+  &__form-help__tiltle {
+    margin-bottom: 1rem;
+    @extend %circe-700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #452C60;
+  }
+
+  &__form-help__subtitle {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    width: 73rem;
+  }
+
+  &__form-help__btn {
+    margin-right: 2rem;
+    background-color: transparent;
+    border-radius: 1.4rem;
+    border: 0.1rem solid $default;
+    padding: .8rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      border-color: $hover;
+      color: $hover;
+    }
+  }
+
+  &__form-info__help {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem 1.7rem;
+    background-color: #F8F8FC;
+    border-radius: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    p {
+      margin-left: 1rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+    }
+
+    
+  }
+  &__form-price{
+    background-color: #452C60;
+    padding: 1.4rem 2rem;
+    border: none;
+    border-radius: 1.4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    @extend %circe-700;
+    margin-top: 2rem;
+
+
+  }
+
+
+
+
+
 
 }
 
